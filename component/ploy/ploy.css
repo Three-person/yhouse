@@ -1,0 +1,44 @@
+#content{width: 100%;height: auto;overflow: auto;background: #f5f5f5;}
+/*轮播图*/
+.swiper-container {
+    width: 100%;
+    height: 9.675rem;
+    margin: 0.3rem 0 0.7rem 0;
+}
+.swiper-slide{width: 100%;height: 100%;}
+.swiper-slide img{width: 100%;height: 100%;}
+.swiper-pagination>span{width: 0.22rem;height: 0.22rem;border-radius: 50%;}
+.swiper-pagination-bullet-active{background-color: #ffffff;box-shadow: 0 0 2px #ccc;}
+
+/*流行/游戏*/
+.popular{width: 100%;height: 9rem;display: flex;justify-content: space-around;}
+.popular div{width: 9rem;height: 9rem;position: relative;}
+.popular img{width: 100%;height: 100%;}
+.popular .shadow{width: 100%;height: 0.7rem;background: #f5f5f5;position: absolute;bottom: 0;}
+
+/*商店信息*/
+.shopInfo{width: 100%;height: 17.45rem;background: #ffffff;}
+.shopInfo .shopImg{width: 100%;height: 11.7rem;}
+.shopInfo .shopImg img{width: 100%;height: 100%;}
+.shopInfo .shopMsg{width: 100%;height: 5.75rem;padding: 0.4rem 0.65rem 0.7rem 0.65rem;}
+.shopInfo .shopMsg .title{width: 100%;height: 1.2rem;line-height: 1.2rem;font-size: 1rem;font-weight: bold;overflow: hidden;}
+.shopInfo .shopMsg .otherInfo{width: 100%;height: 1.2rem;line-height: 1.2rem;font-size: 0.7rem;}
+.shopInfo .shopMsg .des{width: 40%;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;position: absolute;}
+.shopInfo .shopMsg .price{float: right;color: rgb(203,161,98);}
+.shopInfo .shopMsg .category{width: 100%;height: 2.2rem;border-bottom: 0.01rem solid #cccccc;padding-top: 0.3rem;}
+.shopInfo .shopMsg .category span{width: 3.3rem;height: 1.1rem;line-height: 1.1rem;font-size: 0.65rem;border: 0.005rem solid #cccccc;border-radius: 0.65rem;display: block;text-align: center;}
+
+/*查看更多*/
+.seeMore{width: 100%;height: 2.1rem;text-align: center;line-height: 2.1rem;font-size: 0.7rem;background: #ffffff;border-top: 0.005rem solid #cccccc;}
+.seeMore span{width: 0.8rem;height: 0.4rem;display: inline-block;background: url("../../img/arrow-bottom.png");background-size: 100% 100%;}
+
+/*关于我们*/
+.aboutUs{width: 100%;height: 10.6rem;padding: 1.3rem 0;}
+.aboutUs div{width: 100%;height: 2.25rem;}
+.aboutUs ul{padding: 0 2.3rem;}
+.aboutUs ul li{float: left;width: 4.65rem;height: 2.25rem;line-height: 2.25rem;text-align: center;font-size: 0.7rem;}
+.aboutUs ul li span{float: right;}
+.aboutUs .app{width: 100%;height: 2rem;display: flex;justify-content: space-around;padding: 0 2rem;margin: 0.85rem 0 1.3rem 0;}
+.aboutUs img{width: 6.6rem;height: 2rem;display: inline-block;}
+.aboutUs .copyright{width: 100%;height: 1.6rem;font-size: 0.7rem;text-align: center;}
+.aboutUs .copyright p:last-child{color: #cccccc;font-size: 0.5rem;margin-top: 0.1rem;}

@@ -1,1 +1,53 @@
-<h4>looks</h4>
+<div class="lookcontent">
+	<div class="swiper-container">
+	    <div class="swiper-wrapper">
+	        <div class="swiper-slide" ng-repeat="obj in arr"><img src="{{obj.picUrl}}"/></div>
+	    </div>
+	    <!-- 如果需要分页器 -->
+	    <div class="swiper-pagination"></div>
+	</div>
+	<ul class="meal">
+		<li>
+			<h3>{{fourArr.title}}</h3>
+			<h4>{{fourArr.viceTitle}}</h4>
+			<ul class="fourmeal">
+				<li ng-repeat='obj in fourArr.list'>
+					<div class="pic"><img src="{{obj.icon}}"/></div>
+					<div class="desc">
+						<p class="p1">{{obj.title}}</p>
+						<p class="p2">{{obj.bdAndCs}}</p>
+						<p class="p3">{{obj.price}}</p>
+					</div>
+				</li>
+			</ul>
+			<a class="seller">{{fourArr.contentsNumStr}}</a>
+		</li>
+	</ul>
+	<ul class="detail">
+		<li ng-repeat='obj in detailArr'>
+			<div class="logo">
+				<div class="left">
+					<img src="{{obj.logoUrl}}"/>
+				</div>
+				<div class="right">
+					<h2>{{obj.hostName}}</h2>
+				</div>
+			</div>
+			<div class="grids">
+				<img src="{{obj.picUrl}}"/>
+			</div>
+			<div class="desc2">
+				<p>{{obj.highLigth}}</p>
+				<p>
+					<span>{{obj.businessesDistrict}}</span> |
+					<span>{{obj.cuisineStyle}}</span>
+				</p>
+				<span>进店逛逛></span>
+			</div>
+		</li>
+	</ul>
+	<div class="lookmore">
+		查看更多<i class="fa fa-chevron-down" aria-hidden="true"></i>
+	</div>
+	
+</div>
