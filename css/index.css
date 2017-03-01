@@ -1,0 +1,25 @@
+.headAndTab{
+	width: 100%;
+}
+.header{
+	width: 100%;
+	height: 2.3rem;
+	background-color: yellow;
+}
+#tab{
+	width: 100%;
+	height: 1.45rem;
+	display: flex;
+}
+#tab>li{
+	width: 25%;
+	height: 100%;
+	line-height: 1.45rem;
+	text-align: center;
+	font-size: 0.14rem;
+	color: #555;
+}
+.content{
+	width: 100%;
+	height: 10rem;
+}

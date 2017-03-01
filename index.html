@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html ng-app='myApp'>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="css/reset.css"/>
+    <link rel="stylesheet" type="text/css" href="css/index.css"/>
+    
+    <script src="lib/angular.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="lib/angular-ui-router.js" type="text/javascript" charset="utf-8"></script>
+	<script src="lib/angular-css.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="app.js" type="text/javascript" charset="utf-8"></script>
+	<script src="component/cate/cate.js" type="text/javascript" charset="utf-8"></script>
+	<script src="component/looks/looks.js" type="text/javascript" charset="utf-8"></script>
+	<script src="component/nightlife/nightlife.js" type="text/javascript" charset="utf-8"></script>
+	<script src="component/ploy/ploy.js" type="text/javascript" charset="utf-8"></script>
+</head>
+<body>
+	<div class="headAndTab">
+		
+		<div class="header">
+			
+		</div>
+		<ul id="tab">
+			<li><a ui-sref="cate">美食</a></li>
+			<li><a ui-sref="ploy">玩乐</a></li>
+			<li><a ui-sref="nightlife">夜生活</a></li>
+			<li><a ui-sref="looks">美容/SPA</a></li>
+		</ul>
+	</div>
+	<div ui-view class="content">
+		
+	</div>
+	
+	<script type="text/javascript">
+		document.documentElement.style.fontSize=innerWidth/18.75+'px';
+		window.onresize=function(){
+			document.documentElement.style.fontSize=innerWidth/18.75+'px';
+		}
+	</script>
+</body>
+
+</html>
