@@ -22,13 +22,24 @@ angular.module('looksModule',['ui.router'])
 		return $http.get('data/main4.json');
 	}
 }])
+	.service('swiper1',['$timeout',function($timeout){
+		this.swiper = function(){
+			$timeout(function(){
+				Swiper('.swiper-container',{
+					loop: true,
+					autoplay: 2500,
+					pagination: '.swiper-pagination'
+				})
+			},50);
+		}
+	}])
 
-.controller('looksCtrl',['$scope','bannerData','mainData',function($scope,bannerData,mainData){
+.controller('looksCtrl',['$scope','bannerData','mainData','swiper1',function($scope,bannerData,mainData,swiper1){
 	bannerData.get().success(function(res){
 		$scope.arr=res.data.reserveList[0].content;
 		console.log($scope.arr);
 	})
-	bannerData.swiper();
+	swiper1.swiper();
 	mainData.get().success(function(res){
 		$scope.fourArr=res.data.doc[2].itemData[0];
 		console.log($scope.fourArr);
