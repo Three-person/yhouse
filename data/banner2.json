@@ -1,0 +1,97 @@
+{
+  "code": "0",
+  "message": "success",
+  "detail": "",
+  "data": {
+    "reserveBanner": [],
+    "reserveList": [
+      {
+        "adsName": "reserveList",
+        "content": [
+          {
+            "id": 0,
+            "description": null,
+            "picUrl": "http://p.yhres.com/topic/2017/02/27/156808_1488175825424.jpg-q75",
+            "sPicUrl": "http://p.yhres.com/topic/2017/02/27/156808_1488175825424.jpg-ssq75",
+            "title": "无聊才是负担",
+            "linkUrl": "/topic/4298",
+            "schemeUrl": "yhouse://topic/4298",
+            "linkName": "TOPIC",
+            "linkType": 6,
+            "pvUrl": null,
+            "linkId": 4298,
+            "xsort": 1,
+            "actual": false
+          },
+          {
+            "id": 1615,
+            "description": null,
+            "picUrl": "http://p.yhres.com/ads/2016/11/17/1479356132232759.jpg-q75",
+            "sPicUrl": "http://p.yhres.com/ads/2016/11/17/1479356132232759.jpg-ssq75",
+            "title": "adidas city trail",
+            "linkUrl": "http://wx.adidasevents.com/originals/lookbook/?mz_ca=2032771&mz_sp=73pwO&mz_sb=1",
+            "schemeUrl": "yhouse://web?title=adidas+city+trail&url=http%3A%2F%2Fwx.adidasevents.com%2Foriginals%2Flookbook%2F%3Fmz_ca%3D2032771%26mz_sp%3D73pwO%26mz_sb%3D1&shareIcon=http%3A%2F%2Fp.yhres.com%2Fads%2F2016%2F11%2F17%2F1479356132232759.jpg-ssq75&shareTitle=adidas+city+trail&shareDesc=",
+            "linkName": "HTML5",
+            "linkType": 4,
+            "pvUrl": "",
+            "linkId": null,
+            "xsort": 4,
+            "actual": false
+          },
+          {
+            "id": 0,
+            "description": null,
+            "picUrl": "http://p.yhres.com/topic/2016/11/14/156970_1479100812065.jpg-q75",
+            "sPicUrl": "http://p.yhres.com/topic/2016/11/14/156970_1479100812065.jpg-ssq75",
+            "title": "绅士不止扎领带",
+            "linkUrl": "/topic/3035",
+            "schemeUrl": "yhouse://topic/3035",
+            "linkName": "TOPIC",
+            "linkType": 6,
+            "pvUrl": null,
+            "linkId": 3035,
+            "xsort": 5,
+            "actual": false
+          }
+        ],
+        "position": 1
+      }
+    ],
+    "bundle": [
+      {
+        "adsName": "bundle",
+        "id": 56,
+        "content": [
+          {
+            "id": 0,
+            "description": null,
+            "picUrl": "http://p.yhres.com/bundle/2017/02/21/1487673397623662.png-q75",
+            "sPicUrl": "http://p.yhres.com/bundle/2017/02/21/1487673397623662.png-ssq75",
+            "title": "时下最流行",
+            "linkUrl": "/topic/4244",
+            "schemeUrl": "yhouse://topic/4244",
+            "linkName": "TOPIC",
+            "linkType": 6,
+            "pvUrl": null,
+            "linkId": 4244
+          },
+          {
+            "id": 0,
+            "description": null,
+            "picUrl": "http://p.yhres.com/bundle/2017/02/21/1487673397672970.png-q75",
+            "sPicUrl": "http://p.yhres.com/bundle/2017/02/21/1487673397672970.png-ssq75",
+            "title": "游玩大作战",
+            "linkUrl": "/topic/4248",
+            "schemeUrl": "yhouse://topic/4248",
+            "linkName": "TOPIC",
+            "linkType": 6,
+            "pvUrl": null,
+            "linkId": 4248
+          }
+        ],
+        "layout": 2,
+        "position": 1
+      }
+    ]
+  }
+}

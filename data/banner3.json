@@ -1,0 +1,32 @@
+{
+  "code": "0",
+  "message": "success",
+  "detail": "",
+  "data": {
+    "reserveBanner": [],
+    "reserveList": [
+      {
+        "adsName": "reserveList",
+        "content": [
+          {
+            "id": 0,
+            "description": null,
+            "picUrl": "http://p.yhres.com/topic/2017/02/09/156745_1486610698747.jpg-q75",
+            "sPicUrl": "http://p.yhres.com/topic/2017/02/09/156745_1486610698747.jpg-ssq75",
+            "title": "当你想喝小酒的时候应该去哪",
+            "linkUrl": "/topic/4061",
+            "schemeUrl": "yhouse://topic/4061",
+            "linkName": "TOPIC",
+            "linkType": 6,
+            "pvUrl": null,
+            "linkId": 4061,
+            "xsort": 1,
+            "actual": false
+          }
+        ],
+        "position": 1
+      }
+    ],
+    "bundle": []
+  }
+}

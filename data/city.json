@@ -1,0 +1,593 @@
+{
+  "code": "0",
+  "version": "2017-02-10 17:07:22",
+  "data": [
+    {
+      "catalogs": [
+        {
+          "catalogId": 1,
+          "catalogName": "玩乐",
+          "catalogType": "event"
+        },
+        {
+          "catalogId": 2,
+          "catalogName": "美食",
+          "catalogType": "meal"
+        },
+        {
+          "catalogId": 3,
+          "catalogName": "生活课程",
+          "catalogType": "course"
+        },
+        {
+          "catalogId": 12,
+          "catalogName": "美容/SPA",
+          "catalogType": "spa"
+        },
+        {
+          "catalogId": 13,
+          "catalogName": "夜生活",
+          "catalogType": "club"
+        }
+      ]
+    }
+  ],
+  "city": {
+    "0": {
+      "id": 0,
+      "name": "0",
+      "item1": 1,
+      "item2": 2,
+      "item3": 0,
+      "item4": 0,
+      "item5": 0,
+      "english": ""
+    },
+    "1": {
+      "id": 1,
+      "name": "北京",
+      "item1": 2,
+      "item2": 1,
+      "item3": 13,
+      "item4": 12,
+      "item5": 0,
+      "english": "BEIJING"
+    },
+    "2": {
+      "id": 2,
+      "name": "上海",
+      "item1": 2,
+      "item2": 1,
+      "item3": 13,
+      "item4": 12,
+      "item5": 0,
+      "english": "SHANGHAI"
+    },
+    "3": {
+      "id": 3,
+      "name": "广州",
+      "item1": 2,
+      "item2": 1,
+      "item3": 13,
+      "item4": 12,
+      "item5": 0,
+      "english": "GUANGZHOU"
+    },
+    "4": {
+      "id": 4,
+      "name": "深圳",
+      "item1": 2,
+      "item2": 1,
+      "item3": 13,
+      "item4": 12,
+      "item5": 0,
+      "english": "SHENZHEN"
+    },
+    "5": {
+      "id": 5,
+      "name": "珠海",
+      "item1": 2,
+      "item2": 0,
+      "item3": 0,
+      "item4": 0,
+      "item5": 0,
+      "english": "ZHUHAI"
+    },
+    "12": {
+      "id": 12,
+      "name": "东莞",
+      "item1": 2,
+      "item2": 0,
+      "item3": 0,
+      "item4": 0,
+      "item5": 0,
+      "english": "DONGGUAN"
+    },
+    "15": {
+      "id": 15,
+      "name": "佛山",
+      "item1": 2,
+      "item2": 0,
+      "item3": 0,
+      "item4": 0,
+      "item5": 0,
+      "english": "FOSHAN"
+    },
+    "24": {
+      "id": 24,
+      "name": "南京",
+      "item1": 2,
+      "item2": 1,
+      "item3": 13,
+      "item4": 12,
+      "item5": 0,
+      "english": "NANJING"
+    },
+    "29": {
+      "id": 29,
+      "name": "南通",
+      "item1": 2,
+      "item2": 0,
+      "item3": 0,
+      "item4": 0,
+      "item5": 0,
+      "english": "NANTONG"
+    },
+    "31": {
+      "id": 31,
+      "name": "常州",
+      "item1": 2,
+      "item2": 0,
+      "item3": 0,
+      "item4": 0,
+      "item5": 0,
+      "english": "CHANGZHOU"
+    },
+    "32": {
+      "id": 32,
+      "name": "无锡",
+      "item1": 2,
+      "item2": 0,
+      "item3": 0,
+      "item4": 0,
+      "item5": 0,
+      "english": "WUXI"
+    },
+    "33": {
+      "id": 33,
+      "name": "苏州",
+      "item1": 2,
+      "item2": 1,
+      "item3": 13,
+      "item4": 12,
+      "item5": 0,
+      "english": "SUZHOU"
+    },
+    "37": {
+      "id": 37,
+      "name": "武汉",
+      "item1": 2,
+      "item2": 1,
+      "item3": 13,
+      "item4": 12,
+      "item5": 0,
+      "english": "WUHAN"
+    },
+    "53": {
+      "id": 53,
+      "name": "合肥",
+      "item1": 2,
+      "item2": 0,
+      "item3": 0,
+      "item4": 0,
+      "item5": 0,
+      "english": "HEFEI"
+    },
+    "70": {
+      "id": 70,
+      "name": "西安",
+      "item1": 2,
+      "item2": 1,
+      "item3": 13,
+      "item4": 12,
+      "item5": 0,
+      "english": "XIAN"
+    },
+    "80": {
+      "id": 80,
+      "name": "重庆",
+      "item1": 2,
+      "item2": 1,
+      "item3": 13,
+      "item4": 0,
+      "item5": 0,
+      "english": "CHONGQING"
+    },
+    "81": {
+      "id": 81,
+      "name": "郑州",
+      "item1": 2,
+      "item2": 0,
+      "item3": 0,
+      "item4": 0,
+      "item5": 0,
+      "english": "ZHENGZHOU"
+    },
+    "99": {
+      "id": 99,
+      "name": "福州",
+      "item1": 2,
+      "item2": 0,
+      "item3": 0,
+      "item4": 0,
+      "item5": 0,
+      "english": "FUZHOU"
+    },
+    "100": {
+      "id": 100,
+      "name": "厦门",
+      "item1": 2,
+      "item2": 1,
+      "item3": 13,
+      "item4": 12,
+      "item5": 0,
+      "english": "XIAMEN"
+    },
+    "136": {
+      "id": 136,
+      "name": "贵阳",
+      "item1": 2,
+      "item2": 0,
+      "item3": 0,
+      "item4": 0,
+      "item5": 0,
+      "english": "GUIYANG"
+    },
+    "145": {
+      "id": 145,
+      "name": "石家庄",
+      "item1": 2,
+      "item2": 0,
+      "item3": 0,
+      "item4": 0,
+      "item5": 0,
+      "english": "SHIJIAZHUANG"
+    },
+    "156": {
+      "id": 156,
+      "name": "哈尔滨",
+      "item1": 2,
+      "item2": 0,
+      "item3": 0,
+      "item4": 0,
+      "item5": 0,
+      "english": "HAERBING"
+    },
+    "169": {
+      "id": 169,
+      "name": "海口",
+      "item1": 2,
+      "item2": 0,
+      "item3": 0,
+      "item4": 0,
+      "item5": 0,
+      "english": "HAIKOU"
+    },
+    "170": {
+      "id": 170,
+      "name": "三亚",
+      "item1": 2,
+      "item2": 0,
+      "item3": 0,
+      "item4": 0,
+      "item5": 0,
+      "english": "SANYA"
+    },
+    "187": {
+      "id": 187,
+      "name": "长春",
+      "item1": 2,
+      "item2": 0,
+      "item3": 0,
+      "item4": 0,
+      "item5": 0,
+      "english": "CHANGCHUN"
+    },
+    "196": {
+      "id": 196,
+      "name": "南昌",
+      "item1": 2,
+      "item2": 0,
+      "item3": 0,
+      "item4": 0,
+      "item5": 0,
+      "english": "NANCHANG"
+    },
+    "207": {
+      "id": 207,
+      "name": "沈阳",
+      "item1": 2,
+      "item2": 1,
+      "item3": 13,
+      "item4": 12,
+      "item5": 0,
+      "english": "SHENYANG"
+    },
+    "208": {
+      "id": 208,
+      "name": "大连",
+      "item1": 2,
+      "item2": 1,
+      "item3": 13,
+      "item4": 12,
+      "item5": 0,
+      "english": "DALIAN"
+    },
+    "246": {
+      "id": 246,
+      "name": "成都",
+      "item1": 2,
+      "item2": 1,
+      "item3": 13,
+      "item4": 12,
+      "item5": 0,
+      "english": "CHENGDU"
+    },
+    "267": {
+      "id": 267,
+      "name": "济南",
+      "item1": 2,
+      "item2": 0,
+      "item3": 0,
+      "item4": 0,
+      "item5": 0,
+      "english": "JINAN"
+    },
+    "268": {
+      "id": 268,
+      "name": "青岛",
+      "item1": 2,
+      "item2": 1,
+      "item3": 13,
+      "item4": 12,
+      "item5": 0,
+      "english": "QINGDAO"
+    },
+    "272": {
+      "id": 272,
+      "name": "烟台",
+      "item1": 2,
+      "item2": 0,
+      "item3": 0,
+      "item4": 0,
+      "item5": 0,
+      "english": "YANTAI"
+    },
+    "273": {
+      "id": 273,
+      "name": "威海",
+      "item1": 2,
+      "item2": 0,
+      "item3": 0,
+      "item4": 0,
+      "item5": 0,
+      "english": "WEIHAI"
+    },
+    "284": {
+      "id": 284,
+      "name": "太原",
+      "item1": 2,
+      "item2": 0,
+      "item3": 0,
+      "item4": 0,
+      "item5": 0,
+      "english": "TAIYUAN"
+    },
+    "295": {
+      "id": 295,
+      "name": "天津",
+      "item1": 2,
+      "item2": 1,
+      "item3": 13,
+      "item4": 12,
+      "item5": 0,
+      "english": "TIANJIN"
+    },
+    "296": {
+      "id": 296,
+      "name": "长沙",
+      "item1": 2,
+      "item2": 1,
+      "item3": 13,
+      "item4": 0,
+      "item5": 0,
+      "english": "CHANGSHA"
+    },
+    "302": {
+      "id": 302,
+      "name": "杭州",
+      "item1": 2,
+      "item2": 1,
+      "item3": 13,
+      "item4": 12,
+      "item5": 0,
+      "english": "HANGZHOU"
+    },
+    "303": {
+      "id": 303,
+      "name": "宁波",
+      "item1": 2,
+      "item2": 1,
+      "item3": 13,
+      "item4": 12,
+      "item5": 0,
+      "english": "NINGBO"
+    },
+    "304": {
+      "id": 304,
+      "name": "温州",
+      "item1": 2,
+      "item2": 0,
+      "item3": 0,
+      "item4": 0,
+      "item5": 0,
+      "english": "WENZHOU"
+    },
+    "305": {
+      "id": 305,
+      "name": "嘉兴",
+      "item1": 2,
+      "item2": 0,
+      "item3": 0,
+      "item4": 0,
+      "item5": 0,
+      "english": "JIAXING"
+    },
+    "307": {
+      "id": 307,
+      "name": "绍兴",
+      "item1": 2,
+      "item2": 0,
+      "item3": 0,
+      "item4": 0,
+      "item5": 0,
+      "english": "SHAOXING"
+    },
+    "312": {
+      "id": 312,
+      "name": "台州",
+      "item1": 2,
+      "item2": 0,
+      "item3": 0,
+      "item4": 0,
+      "item5": 0,
+      "english": "TAIZHOU"
+    },
+    "345": {
+      "id": 345,
+      "name": "昆明",
+      "item1": 2,
+      "item2": 0,
+      "item3": 0,
+      "item4": 0,
+      "item5": 0,
+      "english": "KUNMING"
+    },
+    "360": {
+      "id": 360,
+      "name": "丽江",
+      "item1": 2,
+      "item2": 0,
+      "item3": 0,
+      "item4": 0,
+      "item5": 0,
+      "english": "LIJIANG"
+    }
+  },
+  "cityGroup": {
+    "热门": [
+      "2",
+      "1",
+      "3",
+      "4"
+    ],
+    "A~G": [
+      "1",
+      "187",
+      "296",
+      "31",
+      "246",
+      "80",
+      "208",
+      "12",
+      "15",
+      "99",
+      "3",
+      "136"
+    ],
+    "H~N": [
+      "156",
+      "169",
+      "302",
+      "53",
+      "305",
+      "267",
+      "345",
+      "360",
+      "196",
+      "24",
+      "29",
+      "303"
+    ],
+    "O~T": [
+      "268",
+      "170",
+      "2",
+      "307",
+      "207",
+      "4",
+      "145",
+      "33",
+      "284",
+      "312",
+      "295"
+    ],
+    "U~Z": [
+      "273",
+      "304",
+      "37",
+      "32",
+      "100",
+      "70",
+      "272",
+      "81",
+      "5"
+    ]
+  },
+  "cityShow": [
+    "2",
+    "1",
+    "3",
+    "4",
+    "187",
+    "296",
+    "31",
+    "246",
+    "80",
+    "208",
+    "12",
+    "15",
+    "99",
+    "136",
+    "156",
+    "169",
+    "302",
+    "53",
+    "305",
+    "267",
+    "345",
+    "360",
+    "196",
+    "24",
+    "29",
+    "303",
+    "268",
+    "170",
+    "307",
+    "207",
+    "145",
+    "33",
+    "284",
+    "312",
+    "295",
+    "273",
+    "304",
+    "37",
+    "32",
+    "100",
+    "70",
+    "272",
+    "81",
+    "5"
+  ]
+}
