@@ -1,4 +1,4 @@
-var routerApp=angular.module('myApp',['ui.router','angularCSS','cateModule','looksModule','nightlifeModule','ployModule','cityModule'])
+var routerApp=angular.module('myApp',['ui.router','angularCSS','cateModule','looksModule','nightlifeModule','ployModule'])
 .config(function($stateProvider, $urlRouterProvider){
 	$urlRouterProvider.otherwise('/cate');
 	
@@ -26,13 +26,6 @@ var routerApp=angular.module('myApp',['ui.router','angularCSS','cateModule','loo
 			templateUrl:'component/looks/looks.html',
 			controller:'looksCtrl',
 			css:'component/looks/looks.css'
-		})
-
-		.state('city',{
-			url:'/city',
-			templateUrl:'component/city/city.html',
-			controller:'cityCtrl',
-			css:'component/city/city.css'
 		})
 	
 })

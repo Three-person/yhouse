@@ -1,1 +1,0 @@
-angular.module('cityModule',['ui.router'])
