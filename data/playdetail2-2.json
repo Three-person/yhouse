@@ -1,0 +1,93 @@
+{
+  "code": "0",
+  "data": {
+    "contentList": [
+      {
+        "cuisineStyle": null,
+        "dataType": 1,
+        "description": "",
+        "distance": "",
+        "districtName": "金银湖",
+        "eventType": 0,
+        "hostName": "798club轰趴馆(汉口金银湖别墅会所)",
+        "isHaveEquities": 0,
+        "linkId": 14995,
+        "picUrl": "http://p.yhres.com/event/2017/01/19/1484809206902102.jpg-q75h",
+        "price": "1998元起/20人",
+        "sort": 1,
+        "title": "798club汉口金银湖高端别墅聚会轰趴館"
+      },
+      {
+        "cuisineStyle": null,
+        "dataType": 1,
+        "description": "",
+        "distance": "",
+        "districtName": "经开万达",
+        "eventType": 0,
+        "hostName": "VR VThree虚拟现实体验馆(广埠屯店)",
+        "isHaveEquities": 0,
+        "linkId": 14405,
+        "picUrl": "http://p.yhres.com/event/2016/10/25/1477386249516098.png-q75h",
+        "price": "120元/1人",
+        "sort": 2,
+        "title": "畅玩100多款VR虚拟游戏 单人老友记套餐"
+      },
+      {
+        "cuisineStyle": null,
+        "dataType": 1,
+        "description": "",
+        "distance": "",
+        "districtName": "",
+        "eventType": 0,
+        "hostName": "俱乐部俱乐部",
+        "isHaveEquities": 0,
+        "linkId": 14359,
+        "picUrl": "http://p.yhres.com/event/2016/10/24/1477274702705161.jpg-q75h",
+        "price": "40元/1人",
+        "sort": 3,
+        "title": "Clubclub艺术空间 带你打开艺术世界的新大门"
+      },
+      {
+        "cuisineStyle": null,
+        "dataType": 1,
+        "description": "",
+        "distance": "",
+        "districtName": "宝丰",
+        "eventType": 0,
+        "hostName": "大白鲨户外潜水培训俱乐部",
+        "isHaveEquities": 0,
+        "linkId": 14503,
+        "picUrl": "http://p.yhres.com/event/2016/03/17/109102_1458116286935.jpg-q75h",
+        "price": "260元/1人",
+        "sort": 5,
+        "title": "武汉唯一专业潜水中心 持证练习潜"
+      },
+      {
+        "cuisineStyle": null,
+        "dataType": 1,
+        "description": "",
+        "distance": "",
+        "districtName": "",
+        "eventType": 0,
+        "hostName": "大白鲨户外潜水培训俱乐部",
+        "isHaveEquities": 0,
+        "linkId": 14498,
+        "picUrl": "http://p.yhres.com/event/2016/10/27/1477549969792513.jpg-q75h",
+        "price": "360元/1人",
+        "sort": 6,
+        "title": "水肺潜水激情体验"
+      }
+    ],
+    "layout": 1,
+    "picUrl": "http://p.yhres.com/topic/2017/02/21/156970_1487672575045.jpg-q75",
+    "promoCode": "",
+    "promoDesc": "",
+    "sPicUrl": "http://p.yhres.com/topic/2017/02/21/156970_1487672575045.jpg-ssq75",
+    "topicDescription": "<p>\r\n\t你怎么舍得宅在家中\r\n</p>\r\n<p>\r\n\t将大把时光白白浪费？\r\n</p>\r\n<p>\r\n\t<br />\r\n</p>\r\n<p>\r\n\t不如翻出你的游玩计划\r\n</p>\r\n<p>\r\n\t逃去未知的旅途\r\n</p>\r\n<p>\r\n\t淋漓尽致地体会这场探险之路\r\n</p>\r\n<p>\r\n\t给你的心情放大假！\r\n</p>",
+    "topicId": 4248,
+    "topicName": "游玩大作战",
+    "usable": 2
+  },
+  "detail": "",
+  "message": "success"
+}

@@ -23,10 +23,16 @@
 </head>
 <body>
 	<div class="headAndTab">
-		
+		<!--搜索框-->
 		<div class="header">
-			
+			<a ui-sref="city"><div class="city">武汉<span></span></div></a>
+			<div class="search">
+				<input type="search" value="" name="search" placeholder="请输入商家、商圈、菜系、活动..."/>
+				<span></span>
+			</div>
+			<div class="select">筛选<span></span></div>
 		</div>
+		<!--tab切换-->
 		<ul id="tab">
 			<li><a ui-sref="cate">美食</a></li>
 			<li><a ui-sref="ploy">玩乐</a></li>
@@ -34,10 +40,7 @@
 			<li><a ui-sref="looks">美容/SPA</a></li>
 		</ul>
 	</div>
-	<div ui-view class="content">
-		
-	</div>
-	
+	<div ui-view></div>
 	<script type="text/javascript">
 		document.documentElement.style.fontSize=innerWidth/18.75+'px';
 		window.onresize=function(){

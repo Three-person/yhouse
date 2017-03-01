@@ -1,1 +1,42 @@
-<h4><i class="fa fa-backward fa-2x"></i></h4>
+<div id="content">
+    <!--轮播图-->
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide" ng-repeat="obj in imgSwiperArr"><img src="{{obj.picUrl}}"></div>
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+    <!--流行/游戏-->
+    <div class="popular">
+        <div ng-repeat="obj in imgPopArr"><img src="{{obj.picUrl}}"><div class="shadow"></div></div>
+    </div>
+    <!--商家信息-->
+    <div class="shopInfo" ng-repeat="obj in allInfoArr">
+        <div class="shopImg"><img src="{{obj.picUrl}}"/></div>
+        <div class="shopMsg">
+            <p class="title">{{obj.title}}</p>
+            <p class="otherInfo"><span class="address">{{obj.district}} </span>|&nbsp;<span class="des">{{obj.hostName}}</span><span class="price">{{obj.neededCredits}}</span></p>
+            <p class="category"><span>{{obj.categorys[0]}}</span></p>
+        </div>
+    </div>
+    <!--查看更多-->
+    <div class="seeMore"><a href="javascript:void(0)">查看更多 <span></span></a></div>
+    <!--关于我们-->
+    <div class="aboutUs">
+        <div>
+            <ul>
+                <li><a href="javascript:void(0)">首页<span>|</span></a></li>
+                <li><a href="javascript:void(0)">订单<span>|</span></a></li>
+                <li><a href="javascript:void(0)">登录</a></li>
+            </ul>
+        </div>
+        <div class="app">
+            <img src="img/icon_apple@2x.png"/>
+            <img src="img/icon_android@2x.png"/>
+        </div>
+        <div class="copyright">
+            <p>关于我们</p>
+            <p>Copyright YHOUSE moblie</p>
+        </div>
+    </div>
+</div>
