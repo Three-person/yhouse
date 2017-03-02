@@ -1,9 +1,31 @@
-<!DOCTYPE html>
-<html>
-	<head>
-		<meta charset="UTF-8">
-		<title></title>
-	</head>
-	<body>
-	</body>
-</html>
+<div class="renqichaoba">
+	<div class="renqiChaoBar">
+		<a ui-sref="nightlife"><i class="fa fa-angle-left"></i></a>
+		<div class="topTitle">专题详情</div>
+		<a ui-sref="cate"><i class="fa fa-home"></i></a>
+	</div>
+	<div class="fiveteenShopContent">
+		<div class="picUrl">
+			<img src="{{picUrl}}"/>
+		</div>
+		<div class="floor1">
+			<div class="msg">
+				<p>{{topicDescription}}</p>
+			</div>
+		</div>
+		<!---->
+		<div class="img-wrap" ng-repeat="obj in contentList">
+		<a href="#">
+			<div class="img-wrap-box">
+				<img src="{{obj.picUrl}}" />
+			</div>
+			<div class="backcover"></div>
+			<div class="img-wrap-text">
+				<p>{{obj.hostName}}</p>
+				<p>{{obj.price}}</p>
+				<p>{{obj.districtName}}&nbsp;|&nbsp;{{obj.cuisineStyle}}</p>
+			</div>
+		</a>
+	</div>
+	</div>
+</div>

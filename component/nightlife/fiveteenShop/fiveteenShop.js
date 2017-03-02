@@ -9,6 +9,15 @@ angular.module('fiveteenShopModule',['ui.router'])
 		css:'component/nightlife/fiveteenShop/fiveteenShop.css'
 	})
 })
-.controller('fiveteenShopCtrl',['$scope',function($scope){
-	
+.service('fiveteenShopData',['$http',function($http){
+	this.get=function(){
+		return $http.get('data/fiveteenShop.json');
+	}
+}])
+.controller('fiveteenShopCtrl',['$scope','$http','fiveteenShopData',function($scope,$http,fiveteenShopData){
+	fiveteenShopData.get().success(function(res){
+		$scope.picUrl=res.data.picUrl;
+		$scope.topicDescription=res.data.topicDescription;
+		$scope.contentList=res.data.contentList;
+	})
 }])
