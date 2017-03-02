@@ -8,7 +8,7 @@
     </div>
     <!--流行/游戏-->
     <div class="popular">
-        <div ng-repeat="obj in imgPopArr"><img src="{{obj.picUrl}}"><div class="shadow"></div></div>
+        <div ng-repeat="obj in imgPopArr"><a ui-sref="ploy.popular"><img src="{{obj.picUrl}}"><div class="shadow"></div></a></div>
     </div>
     <!--商家信息-->
     <div class="shopInfo" ng-repeat="obj in allInfoArr">
@@ -39,4 +39,5 @@
             <p>Copyright YHOUSE moblie</p>
         </div>
     </div>
+    <div ui-view></div>
 </div>
