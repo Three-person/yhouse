@@ -30,7 +30,6 @@ angular.module('looksModule',['ui.router'])
 	})
 	mainData.get().success(function(res){
 		$scope.fourArr=res.data.doc[2].itemData[0];
-//		console.log($scope.fourArr);
 		$scope.detailArr=res.data.doc[3].itemData;
 	})
 }])
