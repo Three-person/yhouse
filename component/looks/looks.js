@@ -26,12 +26,10 @@ angular.module('looksModule',['ui.router'])
 .controller('looksCtrl',['$scope','bannerData','mainData',function($scope,bannerData,mainData){
 	bannerData.get().success(function(res){
 		$scope.arr=res.data.reserveList[0].content;
-		console.log($scope.arr);
 	})
 	bannerData.swiper();
 	mainData.get().success(function(res){
 		$scope.fourArr=res.data.doc[2].itemData[0];
-		console.log($scope.fourArr);
 		$scope.detailArr=res.data.doc[3].itemData;
 	})
 }])
