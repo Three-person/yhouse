@@ -1,0 +1,153 @@
+{
+    "code": "0",
+    "data": {
+        "address": "中北路54号宏城金都6号门5楼",
+        "avgPrice": "人均：120元",
+        "canBook": 1,
+        "categoryId": 4,
+        "cityId": 37,
+        "cityName": "武汉",
+        "contactNumber": "027-87893009,027-87363363",
+        "coordType": "1",
+        "countOfInterested": 541,
+        "defaultTime": "3月2日 星期四 21:00",
+        "discountDesc": null,
+        "discountPerThreshold": null,
+        "discountThreshold": null,
+        "discountType": null,
+        "distance": null,
+        "duration": "",
+        "durationList": [
+            "每天 09:00-21:00"
+        ],
+        "functionScript": null,
+        "goodList": [],
+        "headPics": [
+            "http://p.yhres.com/meal/2016/11/24/1479974827047.jpg-q75",
+            "http://p.yhres.com/meal/2016/11/24/1479974827766.jpg-q75",
+            "http://p.yhres.com/meal/2016/11/24/1479974830051.jpg-q75",
+            "http://p.yhres.com/meal/2016/11/24/1479974831791.jpg-q75",
+            "http://p.yhres.com/meal/2016/11/24/1479974833064.jpg-q75",
+            "http://p.yhres.com/meal/2016/11/24/1479974833480.jpg-q75",
+            "http://p.yhres.com/meal/2016/11/24/1479974834088.jpg-q75",
+            "http://p.yhres.com/meal/2016/11/24/1479974834734.jpg-q75"
+        ],
+        "highlight": "<p>\r\n\t淇•会所，湖北美容行业知名美容美体机构，创办于1996年，其前身是中南自然美，在自然美体系成绩卓越、名列前茅。淇会所的淇”取自《诗经》中的《淇奥》这首诗，喻意富贵、高雅、美好、吉祥。\r\n</p>\r\n<p>\r\n\t<img src=\"http://p.yhres.com/file/2016/11/24/1479974255483667.jpg\" alt=\"\" /> \r\n</p>\r\n<p>\r\n\t走进淇会所中北路店就像到了曼谷，典型的泰式装修给人强烈的异域风情之感同时也更添一份神秘。高吊顶配合室内舒缓的音乐极适合闭目静养是一个易于让人放松的环境。每个房间单独配备的私人置物的地方，也避免了客人之间共用造成的不便。\r\n</p>\r\n<p>\r\n\t<img src=\"http://p.yhres.com/file/2016/11/24/1479974280631566.jpg\" alt=\"\" /> \r\n</p>\r\n<p>\r\n\t专业细致的按摩手法配合高端产品线的产品使用，在给客人良好放松的同时达到增强身体新陈代谢，唤醒沉睡肌肤，让逐渐衰老的容颜找回往昔光彩。\r\n</p>\r\n<p>\r\n\t<img src=\"http://p.yhres.com/file/2016/11/24/1479974292009100.jpg\" alt=\"\" /> \r\n</p>",
+        "highs": [
+            "美容行业知名美容美体机构",
+            "拥有十余年美容美体行业从业经验",
+            "独具一格的泰式奢华装修保证完美私密体"
+        ],
+        "hostId": 47888,
+        "hostName": "淇•会所(中北路店)",
+        "hostPos": "114.346361,30.547035",
+        "hostShareTag": {
+            "picUrl": "http://f.yhres.com/share-tag-default-header-spa.jpg-smq75",
+            "smallPicUrl": "http://f.yhres.com/share-tag-default-header-spa.jpg-ssq75",
+            "contentNum": 0,
+            "description": "这么棒的店，快晒出来与大家分享吧，当然你的高颜值自拍一样不能错过！你的图文评价，可以帮更多用户找到人生挚爱哦！",
+            "id": 39179,
+            "title": "淇•会所(中北路店)",
+            "contentList": []
+        },
+        "hotContent": {
+            "firstTitle": "无论多忙都不停止变美",
+            "itemList": [
+                {
+                    "id": 3229,
+                    "picUrl": "http://p.yhres.com/topic/2016/12/08/156808_1481179306569.jpg-sq75h",
+                    "title": "无论多忙都不停止变美"
+                },
+                {
+                    "id": 3234,
+                    "picUrl": "http://p.yhres.com/topic/2016/12/08/156970_1481182573304.jpg-sq75h",
+                    "title": "闺蜜首选"
+                },
+                {
+                    "id": 4103,
+                    "picUrl": "http://p.yhres.com/topic/2017/02/10/156970_1486714744004.jpg-sq75h",
+                    "title": "冻龄有方 驻颜有术"
+                },
+                {
+                    "id": 4192,
+                    "picUrl": "http://p.yhres.com/topic/2017/02/17/156970_1487321743032.jpg-sq75h",
+                    "title": "蛋壳肌养成指南"
+                },
+                {
+                    "id": 4316,
+                    "picUrl": "http://p.yhres.com/topic/2017/02/27/156970_1488186020602.jpg-sq75h",
+                    "title": "一眼怦然心动"
+                }
+            ],
+            "numStr": "5篇热文"
+        },
+        "id": 47888,
+        "isExpired": 0,
+        "isHaveEquities": 0,
+        "isInterested": 0,
+        "isPayExpiry": 1,
+        "latitude": "30.547035",
+        "logoUrl": "http://p.yhres.com/hostInfo/2016/11/24/1479974852236177.jpg-ssq75",
+        "longitude": "114.346361",
+        "offLineEqs": [],
+        "orderNumShoppay": 0,
+        "orderNumSku": 0,
+        "orderRuleUrl": "yhouse://sku-pop?title=%E4%BC%98%E6%83%A0%E4%B9%B0%E5%8D%95%E8%AF%B4%E6%98%8E&icon=http%3A%2F%2Fr.yhres.com%2Fsku%2Frule%403x.png",
+        "orderRuleUrlH5": "https://m.yhouse.com/host-order-rule-app?discountDesc=&agreementDuration=",
+        "picUrl": "http://p.yhres.com/hostInfo/2016/11/24/1479974852156695.jpg-q75",
+        "productLabels": [
+            {
+                "index": 3,
+                "name": "Wi-Fi"
+            },
+            {
+                "index": 0,
+                "name": "近地铁"
+            },
+            {
+                "index": 7,
+                "name": "近商圈"
+            },
+            {
+                "index": 9,
+                "name": "有包厢"
+            }
+        ],
+        "redPackets": [],
+        "roomPersonsMin": 0,
+        "saleList": null,
+        "sharePicUrl": "http://p.yhres.com/hostInfo/2016/11/24/1479974852156695.jpg-ssq75",
+        "shareTagSimpleVO": {
+            "contentNum": 0,
+            "description": "这么棒的店，快晒出来与大家分享吧，当然你的高颜值自拍一样不能错过！你的图文评价，可以帮更多用户找到人生挚爱哦！",
+            "followNum": 0,
+            "followUserList": [],
+            "id": 39179,
+            "isEvent": 0,
+            "isHot": 0,
+            "isTagFollow": 0,
+            "newContentNum": null,
+            "picUrl": "http://f.yhres.com/share-tag-default-header-spa.jpg-smq75",
+            "plate": null,
+            "schemeUrl": null,
+            "simpleContentList": [],
+            "smallPicUrl": "http://f.yhres.com/share-tag-default-header-spa.jpg-ssq75",
+            "status": 0,
+            "tags": [],
+            "title": "淇•会所(中北路店)",
+            "updateTime": "2016-12-12 10:56:21"
+        },
+        "shareUrl": "http://m.yhouse.com/host/47888?pk_campaign=share&pk_kwd=host",
+        "shopPay": 0,
+        "tagArr": [],
+        "tags": [
+            "美容/SPA",
+            "楚河汉街"
+        ],
+        "title": "淇•会所(中北路店)"
+    },
+    "detail": "",
+    "message": "success",
+    "recommendAutomatic": [],
+    "recommendManual": null
+}

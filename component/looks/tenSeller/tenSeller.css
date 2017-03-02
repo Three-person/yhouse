@@ -1,0 +1,133 @@
+.special{
+	display: flex;
+	width: 100%;
+	height: 2.25rem;
+	justify-content: space-between;
+	align-items: center;
+}
+.special>h2{
+	width: 80%;
+	height: 100%;
+	line-height: 2.25rem;
+	text-align: center;
+	margin: 0 auto;
+	color: #111;
+	font-weight: 700;
+	font-size: 1rem;
+}
+.special>a{
+	width: 1.5rem;
+	height: 1.5rem;
+	display: block;
+	
+}
+.spback{
+	background-position: 0 center;
+	padding: 0.2rem;
+}
+.spback>div{
+	width: 0.9rem;
+	height: 0.9rem;
+	background: url(../../../img-h/special.png) no-repeat;
+	background-size: 1.8rem 0.9rem;
+}
+.sphome{
+	background-position: 0 center;
+	padding: 0.2rem;
+}
+.sphome>div{
+	width: 0.9rem;
+	height: 0.9rem;
+	background: url(../../../img-h/special.png) no-repeat;
+	background-size: 1.8rem 0.9rem;
+	background-position: -0.9rem 0;
+}
+.sister{
+	width: 100%;
+	height: 9.65rem;
+}
+.sister>img{
+	width: 100%;
+	height: 100%;
+}
+.description{
+	width: 100%;
+	height: 10.5rem;
+}
+.description>div{
+	width: 100%;
+	height: 100%;
+	padding: 1.25rem 0 1.5rem;
+}
+.words{
+	width: 100%;
+	height: 1.4rem;
+	line-height: 1.4rem;
+	text-align: center;
+	color: #666;
+	font-size: 0.8rem;
+}
+.floor2{
+	width: 100%;
+	padding: 0 0.5rem;
+	color: #fff;
+}
+.floorImg{
+	width: 17.75rem;
+	height: 10.78rem;
+	margin-bottom: 0.5rem;
+	position: relative;
+	/*background: rgba(0,0,0,0);*/
+}
+.floorImg>a{
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+.floorImg img{
+	width: 100%;
+	height: 100%;
+	border-radius: 0.5rem;
+}
+.nameAndprice{
+	width: 17.25rem;
+	height: 8rem;
+	margin: 0 auto;
+	margin-bottom: 0;
+	position: absolute;
+	bottom: 0;
+	left: 0.2rem;
+}
+.nameAndprice>p:nth-child(1){
+	width: 100%;
+	height: 1.1rem;
+	line-height: 1.1rem;
+	text-align: center;
+	font-size: 0.8rem;
+	font-weight: 700;
+}
+.nameAndprice>p:nth-child(2){
+	width: 100%;
+	height: 1.1rem;
+	line-height: 1.1rem;
+	text-align: center;
+	font-size: 0.6rem;
+	font-weight: 700;
+	margin-top: 3rem;
+}
+.nameAndprice>p:nth-child(3){
+	width: 100%;
+	height: 1.1rem;
+	line-height: 1.1rem;
+	text-align: center;
+	font-size: 0.6rem;
+}
+.aboutUs{width: 100%;height: 10.6rem;padding: 1.3rem 0;}
+.aboutUs div{width: 100%;height: 2.25rem;}
+.aboutUs ul{padding: 0 2.3rem;}
+.aboutUs ul li{float: left;width: 4.65rem;height: 2.25rem;line-height: 2.25rem;text-align: center;font-size: 0.7rem;}
+.aboutUs ul li span{float: right;}
+.aboutUs .app{width: 100%;height: 2rem;display: flex;justify-content: space-around;padding: 0 2rem;margin: 0.85rem 0 1.3rem 0;}
+.aboutUs img{width: 6.6rem;height: 2rem;display: inline-block;}
+.aboutUs .copyright{width: 100%;height: 1.6rem;font-size: 0.7rem;text-align: center;}
+.aboutUs .copyright p:last-child{color: #cccccc;font-size: 0.5rem;margin-top: 0.1rem;}

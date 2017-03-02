@@ -1,4 +1,4 @@
-angular.module('looksModule',['ui.router'])
+angular.module('looksModule',['ui.router','tenSellerModule'])
 .service('bannerData4',['$http',function($http){
 	this.get=function(){
 		return $http.get('data/banner4.json');
@@ -31,5 +31,11 @@ angular.module('looksModule',['ui.router'])
 	mainData.get().success(function(res){
 		$scope.fourArr=res.data.doc[2].itemData[0];
 		$scope.detailArr=res.data.doc[3].itemData;
+	})
+	$('.seller').on('click',function(){
+		console.log('xiaoshi');
+		$('.headAndTab').css({
+			'display':'none'
+		})
 	})
 }])

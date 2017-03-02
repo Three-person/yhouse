@@ -213,4 +213,14 @@
 	font-size: 0.7rem;
 	color: #555;
 	text-align: center;
+	background-color: #fff;
 }
+.aboutUs{width: 100%;height: 10.6rem;padding: 1.3rem 0;}
+.aboutUs div{width: 100%;height: 2.25rem;}
+.aboutUs ul{padding: 0 2.3rem;}
+.aboutUs ul li{float: left;width: 4.65rem;height: 2.25rem;line-height: 2.25rem;text-align: center;font-size: 0.7rem;}
+.aboutUs ul li span{float: right;}
+.aboutUs .app{width: 100%;height: 2rem;display: flex;justify-content: space-around;padding: 0 2rem;margin: 0.85rem 0 1.3rem 0;}
+.aboutUs img{width: 6.6rem;height: 2rem;display: inline-block;}
+.aboutUs .copyright{width: 100%;height: 1.6rem;font-size: 0.7rem;text-align: center;}
+.aboutUs .copyright p:last-child{color: #cccccc;font-size: 0.5rem;margin-top: 0.1rem;}

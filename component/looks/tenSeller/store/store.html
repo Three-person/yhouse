@@ -1,0 +1,36 @@
+<div class="store">
+	<div class="storeHead">
+		<a class="spback" ui-sref='tenSeller'>
+			<div>
+				
+			</div>
+		</a>
+		<h2>{{dataObj.hostName}}</h2>
+		<a href="" class="sphome">
+			<div>	
+			</div>
+		</a>
+	</div>
+	<div class="swiper-container">
+	    <div class="swiper-wrapper">
+	        <div class="swiper-slide" ng-repeat="obj in dataObj.headPics"><img src="{{obj}}"/></div>
+	    </div>
+	    <!-- 如果需要分页器 -->
+	    <div class="swiper-pagination"></div>
+	</div>
+	<div class="icon">
+		<img src="{{dataObj.logoUrl}}"/>
+	</div>
+	<div class="artical">
+		<div class="articalss">
+			<p class="huisuo">{{dataObj.hostName}}</p>
+			<p class="averageperson">
+				<span>{{dataObj.avgPrice}} </span>
+				<span ng-repeat='obj in dataObj.tags'> | {{obj}}</span>
+			</p>
+			<p class="collect">
+				<span>{{dataObj.countOfInterested}}</span>人收藏
+			</p>
+		</div>
+	</div>
+</div>

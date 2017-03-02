@@ -1,0 +1,51 @@
+<div class="tenSeller">
+	<div class="special">
+		<a class="spback" ui-sref='looks'>
+			<div>
+				
+			</div>
+		</a>
+		<h2>专题详情</h2>
+		<a href="" class="sphome">
+			<div>	
+			</div>
+		</a>
+	</div>
+	<div class="sister">
+		<img src="{{arr.itemData[0].picUrl}}"/>
+	</div>
+	<div class="description">
+		<div>
+			<p ng-repeat='obj in str1' class="words">{{obj.innerHTML}}</p>
+		</div>
+	</div>
+	<div class="floor2">
+		<div class="floorImg" ng-repeat='obj in itemArr'>
+		<a ui-sref='store'>
+			<img src="{{obj.picUrl}}"/>
+			<div class="nameAndprice">
+				<p>{{obj.hostName}}</p>
+				<p>{{obj.priceStr}}</p>
+				<p><span>{{obj.businessesDistrict}}</span> | <span>{{obj.cuisineStyle}}</span></p>
+			</div>
+		</a>
+		</div>
+	</div>
+	 <div class="aboutUs">
+        <div>
+            <ul>
+                <li><a href="javascript:void(0)">首页<span>|</span></a></li>
+                <li><a href="javascript:void(0)">订单<span>|</span></a></li>
+                <li><a href="javascript:void(0)">登录</a></li>
+            </ul>
+        </div>
+        <div class="app">
+            <img src="img/icon_apple@2x.png"/>
+            <img src="img/icon_android@2x.png"/>
+        </div>
+        <div class="copyright">
+            <p>关于我们</p>
+            <p>Copyright YHOUSE moblie</p>
+        </div>
+    </div>
+</div>
