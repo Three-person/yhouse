@@ -1,15 +1,11 @@
-.jiuguanContent{background: #fff;width: 100%;height: 100%;overflow: auto;position: fixed;top: 0;}
-.zhuanti{width: 100%;height: 2.25rem;position: fixed;top: 0;line-height: 2.25rem;text-align: center;display: flex;justify-content: flex-start;background: #fff;border-bottom: 1px solid #f5f5f5;z-index: 100;}
-.zhuanti>a{display: block;width: 10%;}
+.renqichaoba{background: #fff;width: 100%;height: 100%;overflow: auto;position: fixed;top: 0;}
+.renqiChaoBar{width: 100%;height: 2.25rem;position: fixed;top: 0;line-height: 2.25rem;text-align: center;display: flex;justify-content: flex-start;background: #fff;border-bottom: 1px solid #f5f5f5;z-index: 100;}
+.renqiChaoBar>a{display: block;width: 10%;}
 .topTitle{width: 80%;}
-.textContent{margin-top: 2.25rem;}
-.pic{width: 100%;height: 9.675rem;}
-.pic>img{width: 100%;height: 100%;}
+.fiveteenShopContent{margin-top: 2.25rem;}
+.picUrl{width: 100%;height: 9.675rem;}
+.picUrl>img{width: 100%;height: 100%;}
 .floor1{width: 100%;padding: 1.25rem 0 1.5rem;}
-.floorText{margin: 0 .75rem;font-size: 14px;color: #666;white-space: normal;line-height: 28px;}
-.pic>img{width: 100%;padding: 0 .75rem;}
-.floorTextTitle{margin: 0 .75rem;font-size: 14px;color: #666;white-space: normal;line-height: 28px;}
-.floorTextTitle{text-align: center;font-weight: bold;font-size: .8rem;}
 .img-wrap{width: 17.25rem;height: 10.76rem;position: relative;overflow: hidden;margin: 0 auto .5rem;}
 .img-wrap>a{display: block;width: 100%;height: 100%;}
 .img-wrap>a>div{position: absolute;}

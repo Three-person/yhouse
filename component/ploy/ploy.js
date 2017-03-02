@@ -1,4 +1,4 @@
-angular.module('ployModule',['ui.router','angularCSS','popularModule'])
+angular.module('ployModule',['ui.router','angularCSS','popularModule','playgameModule'])
 
 .service('bannerData',['$http',function($http){
     this.get = function(){

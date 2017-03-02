@@ -1,16 +1,83 @@
+<div class="jiuguanContent">
 <div class="zhuanti">
-	<span><i class="fa fa-angle-left"></i></span>
-	<div>专题详情</div>
-	<span><i class="fa fa-home"></i></span>
-</div>
-<div class="liveBanner" ng-repeat="obj in arr">
-	<a class="bannerLink" href="#">
-		<img src="{{obj.picUrl}}"/>
-	</a>
+	<a ui-sref="nightlife"><i class="fa fa-angle-left"></i></a>
+	<div class="topTitle">专题详情</div>
+	<a ui-sref="cate"><i class="fa fa-home"></i></a>
 </div>
 <div class="textContent">
-	<div class="floor1">
-		<p><span>这个世界以令人眩晕的速度变幻莫测着，每日碌碌无终的追逐令人无从喘息，黄昏日落之时，潜伏了一个白昼的夜开始鼓噪，发出喧嚣的呼号，借着酒精气息分泌出诱人的荷尔蒙，向面露疲惫的倦客招手。</span></p>
-		<p><img src="" alt="" /></p>
+	<div class="pic" ng-repeat="obj in arr">
+		<img src="{{obj.picUrl}}"/>
 	</div>
+	<div class="floor1">
+		<div class="floorText"><span>这个世界以令人眩晕的速度变幻莫测着，每日碌碌无终的追逐令人无从喘息，黄昏日落之时，潜伏了一个白昼的夜开始鼓噪，发出喧嚣的呼号，借着酒精气息分泌出诱人的荷尔蒙，向面露疲惫的倦客招手。</span></div>
+		<div><br /></div>
+		<div class="pic"><img src="{{pic1}}" alt="" /></div>
+		<div><br /></div>
+		
+		<div class="floorText">
+			<span>找个地方，借着酒精的温度适当的放松下来，或在餐厅一隅沉思神游或尽兴喧闹发泄或跟随音乐的节拍一起摇摆，当你想喝小酒的时候应该去哪里？老司机这就来给你带路~</span>
+		</div>
+		<div><br /></div>
+		<div><br /></div>
+		<div><br /></div>
+		<div class="floorTextTitle">音乐餐厅来点音乐喝小酒</div>
+		<div><br /></div>
+		<div class="floorText">
+			<span>光有小酒默默独酌总觉得是不是缺点什么，迷离灯光劲爆音效又觉得略微无所适从，也许音乐餐厅是个不错的选择。好的酒吧有很多种，有气质的60分，有故事的80分，好酒配音乐，是不是考虑来个100分~</span>
+		</div>
+		<div><br /></div>
+		<div class="pic">
+			<img src="{{pic2}}" alt="" />
+		</div>
+		<div><br /></div>
+		<div class="floorText">
+			<span>将音乐、美食、美酒、驻唱表演融于一体，音乐餐厅已经逐渐成为比酒吧更具文化氛围且高性价比的夜生活形式，加入觉得寂寞，满上一杯酒，跟着音乐慢慢摇摆起来吧~</span>
+		</div>
+		<div><br /></div>
+		<div><br /></div>
+		<div><br /></div>
+		
+		<div class="floorTextTitle">酒窖会所 就是要这么优雅的品酒</div>
+		<div><br /></div>
+		<div class="pic">
+			<img src="{{pic3}}" alt="" />
+		</div>
+		<div><br /></div>
+		<div class="floorText">
+			<span>对于爱酒人士来说，在品尝美食的同时，再能小酌一口美酒，算是一大幸事。近年风靡起来的酒窖餐厅也许是个不错的选择：自动恒温的湿度控制，多国进口的红白葡萄酒种，甚至连窖内灯具也是按照严格标准定制，为品一口好酒，丝毫都不显得夸张。</span>
+		</div>
+		<div><br /></div>
+		<div><br /></div>
+		<div><br /></div>
+		
+		<div class="floorTextTitle">酒吧 在酒精中释放压力</div>
+		<div><br /></div>
+		<div class="pic">
+			<img src="{{pic4}}" alt="" />
+		</div>
+		<div><br /></div>
+		<div class="floorText">
+			<span>众多的吧虫们在迷离闪烁的灯光中，劲歌热舞混合着，在酒精的催化下张扬出惊人的的活力，使你暂时忘却了白天的奔波忙碌，紧张谨慎统统看卸去，就像一尾鱼，从水洼进入大海，刹那间变得轻松自在，酣畅惬意。</span>
+		</div>
+		<div><br /></div>
+		
+		
+	</div>
+	<!---->
+	<div class="img-wrap" ng-repeat="obj in contentList">
+		<a href="#">
+			<div class="img-wrap-box">
+				<img src="{{obj.picUrl}}" />
+			</div>
+			<div class="backcover"></div>
+			<div class="img-wrap-text">
+				<p>{{obj.hostName}}</p>
+				<p>{{obj.price}}</p>
+				<p>{{obj.districtName}}&nbsp;|&nbsp;{{obj.cuisineStyle}}</p>
+			</div>
+		</a>
+	</div>
+	
+	
+</div>
 </div>
