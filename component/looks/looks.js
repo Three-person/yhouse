@@ -1,20 +1,8 @@
 angular.module('looksModule',['ui.router'])
-.service('bannerData',['$http','$timeout',function($http,$timeout){
+.service('bannerData4',['$http',function($http){
 	this.get=function(){
 		return $http.get('data/banner4.json');
 	}
-	  	 this.swiper=function(){
-	  	 	$timeout(function(){
-	  	 		new Swiper ('.swiper-container', {
-					loop: true,
-				    autoplay:'3000',
-				    
-				    // 如果需要分页器
-				    pagination: '.swiper-pagination',
-			    
-			 	 })
-	  	 	},50)
-	  	 }
 	
 }])
 .service('mainData',['$http',function($http){
@@ -22,7 +10,7 @@ angular.module('looksModule',['ui.router'])
 		return $http.get('data/main4.json');
 	}
 }])
-	.service('swiper1',['$timeout',function($timeout){
+	.service('swiper',['$timeout',function($timeout){
 		this.swiper = function(){
 			$timeout(function(){
 				Swiper('.swiper-container',{
@@ -34,15 +22,14 @@ angular.module('looksModule',['ui.router'])
 		}
 	}])
 
-.controller('looksCtrl',['$scope','bannerData','mainData','swiper1',function($scope,bannerData,mainData,swiper1){
-	bannerData.get().success(function(res){
+.controller('looksCtrl',['$scope','bannerData4','mainData','swiper',function($scope,bannerData4,mainData,swiper){
+	bannerData4.get().success(function(res){
 		$scope.arr=res.data.reserveList[0].content;
 		console.log($scope.arr);
+		swiper.swiper();
 	})
-	swiper1.swiper();
 	mainData.get().success(function(res){
 		$scope.fourArr=res.data.doc[2].itemData[0];
-		console.log($scope.fourArr);
 		$scope.detailArr=res.data.doc[3].itemData;
 	})
 }])
