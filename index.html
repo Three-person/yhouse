@@ -13,13 +13,15 @@
     <script src="lib/angular-ui-router.js" type="text/javascript" charset="utf-8"></script>
 	<script src="lib/angular-css.min.js" type="text/javascript" charset="utf-8"></script>
 	<script src="lib/jquery.min.js" type="text/javascript" charset="utf-8"></script>
-	<script src="lib/me-lazyload.js" type="text/javascript" charset="utf-8"></script>
 	<script src="lib/swiper-3.4.1.min.js" type="text/javascript" charset="utf-8"></script>
 	<script src="app.js" type="text/javascript" charset="utf-8"></script>
+	<script src="lib/me-lazyload.js" type="text/javascript" charset="utf-8"></script>
 	<script src="component/cate/cate.js" type="text/javascript" charset="utf-8"></script>
 	<script src="component/looks/looks.js" type="text/javascript" charset="utf-8"></script>
 	<script src="component/nightlife/nightlife.js" type="text/javascript" charset="utf-8"></script>
+	<script src="component/nightlife/jiuguan/jiuguan.js" type="text/javascript" charset="utf-8"></script>
 	<script src="component/ploy/ploy.js" type="text/javascript" charset="utf-8"></script>
+	<script src="component/ploy/popular/popular.js" type="text/javascript" charset="utf-8"></script>
 </head>
 <body>
 	<div class="headAndTab">
@@ -45,6 +47,18 @@
 		document.documentElement.style.fontSize=innerWidth/18.75+'px';
 		window.onresize=function(){
 			document.documentElement.style.fontSize=innerWidth/18.75+'px';
+		}
+		
+		window.onscroll=function(){
+			var s=$(window).scrollTop();
+			console.log(s);
+			if(s>0.5){
+				$('#tab').css({
+					'position':'fixed',
+					'left':0,
+					'top':0
+				})
+			}
 		}
 	</script>
 </body>
