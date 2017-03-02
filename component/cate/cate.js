@@ -1,4 +1,4 @@
-angular.module('cateModule',['ui.router'])
+angular.module('cateModule',['ui.router','angularCSS'])
 
 .service('cateBanner',['$http',function($http){
     this.get = function(){
@@ -24,12 +24,14 @@ angular.module('cateModule',['ui.router'])
     }
 }])
 
-.controller('cateCtrl',['$scope','cateBanner','cateData','swiper2',function($scope,bannerData,ployData,swiper2){
+.controller('cataCtrl',['$scope','cateBanner','cateData','swiper2',function($scope,cateBanner,cateData,swiper2){
     cateBanner.get().success(function(res){
         $scope.imgSwiperArr = res.data.reserveList[0].content;
         swiper2.swiper();
     })
     cateData.get().success(function(res){
         $scope.allInfoArr = res.data.doc[2].itemData;
+        $scope.allShopArr = res.data.doc[3].itemData;
+        console.log($scope.allShopArr);
     })
 }])
