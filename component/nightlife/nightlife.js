@@ -25,7 +25,7 @@ angular.module('nightlifeModule',['ui.router'])
 		
 		var itemData=res.data.doc[3].itemData;
 		$scope.itemData=itemData;
-		console.log(itemData);
+//		console.log(itemData);
 		
 	});
 }])

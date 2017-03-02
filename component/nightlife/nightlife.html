@@ -1,7 +1,9 @@
 <div class="liveContent">
 	<!--banner图-->
 	<div class="liveBanner" ng-repeat="obj in arr">
-		<img src="{{obj.picUrl}}"/>
+		<a class="bannerLink" ui-sref="nightlife.jiuguan">
+			<img src="{{obj.picUrl}}"/>
+		</a>
 	</div>
 	<!--人气潮Bar-->
 	<div class="chaoBar">
@@ -9,7 +11,7 @@
 		<h4>{{viceTitle}}</h4>
 		<ul class="jiubaList">
 			<li ng-repeat="obj1 in arr1">
-				<a href="">
+				<a href="#">
 					<div class="imgBox">
 						<img src="{{obj1.icon}}"/>
 					</div>
@@ -49,11 +51,17 @@
 	</div>
 	<div class="more"><a href="#">查看更多</a></div>
 	
+	<div ui-view></div>
+	
 	<footer>
 		<div class="row">
-			<ul>
-				<li></li>
-			</ul>
+			<p class="clearfix">
+				<a href="#cate">首页</a>
+				<span>|</span>
+				<a href="#">订单</a>
+				<span>|</span>
+				<a href="">登录</a>
+			</p>
 		</div>
 	</footer>
 	

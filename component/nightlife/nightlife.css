@@ -1,20 +1,24 @@
+.liveContent{background: #F5F5F5;}
 .liveBanner{width: 100%;height: 9.675rem;}
-.liveBanner>img{width: 100%;height: 100%;}
-.chaoBar{width: 100%;padding: 0 .5rem;margin-bottom: .75rem;padding-bottom: 1rem;text-align: center;}
+.liveBanner>a{display: block;width: 100%;height: 100%;}
+.liveBanner>a>img{width: 100%;height: 100%;}
+.chaoBar{width: 100%;margin-top: .5rem;margin-bottom: .75rem;padding-bottom: 1rem;text-align: center;background: #fff;}
 .chaoBar>h3,.chaoBar>h4{width: 100%;text-align: center;}
 .chaoBar>h3{line-height: 1.25rem;color: #111;font-size: 0.85rem;padding-top: 1rem;}
-.chaoBar>h4{line-height: 1rem;font-size: .6rem;}
-.jiubaList{display: flex;justify-content: center;flex-wrap: wrap;align-items: center;}
-.jiubaList>li{width: 50%;padding: 0 .125rem;}
+.chaoBar>h4{line-height: 1rem;font-size: .6rem;margin-bottom: .55rem;}
+.jiubaList{display: flex;justify-content: center;flex-wrap: wrap;align-items: center;margin-bottom: .6rem;}
+.jiubaList>li{width: 50%;padding: 0 .25rem;}
 .jiubaList>li>a{display: block;width: 100%;height: 100%;}
 .jiubaList>li .imgBox{width: 100%;border-radius: 4px;overflow: hidden;}
 .jiubaList>li .imgBox>img{width: 100%;height: 100%;}
+.shopMsg{width: 100%;height: 3.75rem;}
 .jiubaList>li p{white-space: nowrap;overflow: hidden;text-overflow: ellipsis;font-size: .6rem;color: #555;line-height: .7rem;text-align: left;}
 .jiubaList>li p:first-of-type{font-size: .75rem;line-height: 1.1rem;color: #111;}
 .jiubaList>li p:last-of-type{line-height: 1.1rem;}
 .chaoBar>a{font-size: .7rem;color: #111;}
 
-.barClub{width: 100%;border-bottom: 1px solid #ddd;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;}
+/*.liveContent{background: #fff;}*/
+.barClub{width: 100%;border-bottom: 1px solid #ddd;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;background: #fff;}
 .barClub>a{display: block;width: 100%;height: 100%;}
 .barTitle{width: 100%;height: 3.5rem;display: flex;align-items: center;}
 .barLogo{width: 2rem;height: 2rem;margin: 0 .75rem;outline-style: none!important;}
@@ -27,3 +31,8 @@
 .barAddress{font-size: .7rem;line-height: 1.4rem;margin-top: .5rem;}
 .barAddress>.join{float: right;color: #cba162;}
 .more{width: 100%;height: 2.1rem;text-align: center;line-height: 2.1rem;font-size: .7rem;color: #555;}
+
+footer{width: 100%;padding: 1.25rem 0;}
+.row{width: 100%;}
+.clearfix{text-align: center;}
+.clearfix>a{display: inline-block;width: 20%;color: #555;font-size: .7rem;line-height: 2.25rem;}
