@@ -42,21 +42,42 @@
 			<li><a ui-sref="looks">美容/SPA</a></li>
 		</ul>
 	</div>
-	<div ui-view></div>
+	<div class="twindow">
+		<div class="close"></div>
+		<div class="openApp">打开APP</div>
+	</div>
+	<div ui-view class="content"></div>
 	<script type="text/javascript">
 		document.documentElement.style.fontSize=innerWidth/18.75+'px';
 		window.onresize=function(){
 			document.documentElement.style.fontSize=innerWidth/18.75+'px';
 		}
 		
+		//切换下标
+		for(var i=0;i<4;i++){
+			$('#tab>li').eq(i).on('click',function(){
+				$('#tab>li').css({
+					'border-bottom':'none'
+				})
+				$(this).css({
+					'border-bottom':'2px solid #333'
+				})
+			})
+		}
+		
+		
 		window.onscroll=function(){
 			var s=$(window).scrollTop();
 			console.log(s);
-			if(s>0.5){
+			if(s==0){
+				$('#tab').css({
+					'position':'static'
+				})
+			}
+			if(s>=3){
 				$('#tab').css({
 					'position':'fixed',
-					'left':0,
-					'top':0
+					'top':'0'
 				})
 			}
 		}
