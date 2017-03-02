@@ -30,7 +30,7 @@
 .barMsg>.barName{width: 100%;font-size: .85rem;line-height: 1.55rem;}
 .barAddress{font-size: .7rem;line-height: 1.4rem;margin-top: .5rem;}
 .barAddress>.join{float: right;color: #cba162;}
-.more{width: 100%;height: 2.1rem;text-align: center;line-height: 2.1rem;font-size: .7rem;color: #555;}
+.more{width: 100%;height: 2.1rem;text-align: center;line-height: 2.1rem;font-size: .7rem;color: #555;background: #fff;}
 
 footer{width: 100%;padding: 1.25rem 0;}
 .row{width: 100%;}
