@@ -8,6 +8,45 @@
 .header .select{font-size: 0.7rem;width: 2.65rem;height: 100%;text-align: center;margin-left: 0.3rem;}
 .header .select span{width: 0.3rem;height: 0.55rem;display: inline-block;background: url("../img/arrow-right.png");background-size: 100% 100%;}
 
-#tab{width: 100%;height: 1.45rem;display: flex;}
+#tab{width: 100%;height: 1.45rem;display: flex;z-index: 99;}
 #tab li{width: 25%;height: 100%;line-height: 1.45rem;text-align: center;font-size: 0.14rem;color: #555;background-color: #fff;}
 #tab li a{font-size: 0.7rem;}
+#tab>li:nth-child(1){
+	border-bottom: 2px solid #333;
+}
+.content{
+	height: 80%;
+}
+.content>div{
+	overflow: auto;
+	height: 100%;
+}
+.twindow{
+	width: 100%;
+	height: 2.5rem;
+	background: url(../img-h/lujiao.png) 1.9rem center no-repeat rgba(255,255,255,0.95);
+	background-size: auto 1.75rem;
+	position: fixed;
+	left: 0;
+	bottom: 0;
+}
+.close{
+	width: 1.9rem;
+	height: 100%;
+	background: url(../img-h/close.png) 0.5rem center no-repeat;
+	background-size: auto 0.5rem;
+}
+.openApp{
+	width: 4.5rem;
+	height: 1.75rem;
+	line-height: 1.75rem;
+	border-radius: 0.3rem;
+	color: #fff;
+	text-align: center;
+	font-size: 0.7rem;
+	background-color: #cba162;
+	position: absolute;
+	top: 0.5rem;
+	right: 0.5rem;
+	
+}
