@@ -18,6 +18,7 @@ angular.module('fiveteenShopModule',['ui.router'])
 	fiveteenShopData.get().success(function(res){
 		$scope.picUrl=res.data.picUrl;
 		$scope.topicDescription=res.data.topicDescription;
+		$scope.topicDescription=$($scope.topicDescription);
 		$scope.contentList=res.data.contentList;
 	})
 }])

@@ -1,0 +1,26 @@
+<div class="everShop">
+	<div class="shopTop">
+		<a ui-sref="nightlife"><i class="fa fa-angle-left"></i></a>
+		<div class="topTitle">{{hostName}}</div>
+		<a ui-sref="nightlife"><i class="fa fa-home"></i></a>
+	</div>
+	<div class="everShopContent">
+		<!--轮播图-->
+		<div class="swiper-container">
+	        <div class="swiper-wrapper">
+	            <div class="swiper-slide" ng-repeat="obj in headPics"><img src="{{obj}}"></div>
+	        </div>
+	        <div class="swiper-pagination"></div>
+   		</div>
+   		
+   		<!---->
+   		<div class="partials">
+   			<div class="container">
+   				<h1>{{hostName}}</h1>
+   				<p><span>{{avgPrice}}</span><span>酒吧</span><span>{{businessesDistrict}}</span></p>
+   				<div></div>
+   			</div>
+   		</div>
+   		
+	</div>
+</div>

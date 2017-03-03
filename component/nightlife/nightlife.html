@@ -11,7 +11,7 @@
 		<h4>{{viceTitle}}</h4>
 		<ul class="jiubaList">
 			<li ng-repeat="obj1 in arr1">
-				<a href="#">
+				<a ui-sref="everShop">
 					<div class="imgBox">
 						<img src="{{obj1.icon}}"/>
 					</div>
@@ -29,7 +29,7 @@
 	<!--酒吧-->
 	<div class="barClubContent">
 		<div class="barClub" ng-repeat="obj2 in itemData">
-			<a href="#">
+			<a ui-sref="everShop">
 				<div class="barTitle">
 					<div class="barLogo">
 						<img src="{{obj2.logoUrl}}"/>
@@ -49,19 +49,23 @@
 			</a>
 		</div>
 	</div>
-	<div class="more"><a href="#">查看更多</a></div>
-	
-	<div ui-view></div>
-	<footer>
-		<div class="row">
-			<p class="clearfix">
-				<a href="#cate">首页</a>
-				<span>|</span>
-				<a href="#">订单</a>
-				<span>|</span>
-				<a href="">登录</a>
-			</p>
-		</div>
-	</footer>
+	<div class="more"><a href="#">查看更多</a></div>	
+	<div class="aboutUs">
+        <div>
+            <ul>
+                <li><a href="javascript:void(0)">首页<span>|</span></a></li>
+                <li><a href="javascript:void(0)">订单<span>|</span></a></li>
+                <li><a href="javascript:void(0)">登录</a></li>
+            </ul>
+        </div>
+        <div class="app">
+            <img src="img/icon_apple@2x.png"/>
+            <img src="img/icon_android@2x.png"/>
+        </div>
+        <div class="copyright">
+            <p>关于我们</p>
+            <p>Copyright YHOUSE moblie</p>
+        </div>
+    </div>
 	
 </div>

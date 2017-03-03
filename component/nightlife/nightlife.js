@@ -1,4 +1,4 @@
-angular.module('nightlifeModule',['ui.router','jiuguanXQModule','fiveteenShopModule'])
+angular.module('nightlifeModule',['ui.router','jiuguanXQModule','fiveteenShopModule','everShopModule'])
 .service('liveBanData',['$http',function($http){
 	this.get=function(){
 		return $http.get('data/banner3.json');
