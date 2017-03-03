@@ -13,12 +13,14 @@
     </div>
     <!--商家信息-->
     <div class="shopInfo" ng-repeat="obj in allInfoArr">
+        <a ui-sref="ploydetail">
         <div class="shopImg"><img src="{{obj.picUrl}}"/></div>
         <div class="shopMsg">
             <p class="title">{{obj.title}}</p>
             <p class="otherInfo"><span class="address">{{obj.district}} </span>|&nbsp;<span class="des">{{obj.hostName}}</span><span class="price">{{obj.neededCredits}}</span></p>
             <p class="category"><span>{{obj.categorys[0]}}</span></p>
         </div>
+        </a>
     </div>
     <!--查看更多-->
     <div class="seeMore"><a href="javascript:void(0)">查看更多 <span></span></a></div>
@@ -41,4 +43,3 @@
         </div>
     </div>
 </div>
-<div ui-view></div>
