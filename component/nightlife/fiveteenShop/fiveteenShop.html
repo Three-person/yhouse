@@ -10,7 +10,7 @@
 		</div>
 		<div class="floor1">
 			<div class="msg">
-				<p>{{topicDescription}}</p>
+				<p ng-repeat="obj in topicDescription">{{obj.innerHTML}}</p>
 			</div>
 		</div>
 		<!---->
@@ -28,4 +28,23 @@
 		</a>
 	</div>
 	</div>
+	
+	 <div class="aboutUs">
+        <div>
+            <ul>
+                <li><a href="javascript:void(0)">首页<span>|</span></a></li>
+                <li><a href="javascript:void(0)">订单<span>|</span></a></li>
+                <li><a href="javascript:void(0)">登录</a></li>
+            </ul>
+        </div>
+        <div class="app">
+            <img src="img/icon_apple@2x.png"/>
+            <img src="img/icon_android@2x.png"/>
+        </div>
+        <div class="copyright">
+            <p>关于我们</p>
+            <p>Copyright YHOUSE moblie</p>
+        </div>
+    </div>
+	
 </div>

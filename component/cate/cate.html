@@ -7,7 +7,7 @@
         <div class="swiper-pagination"></div>
     </div>
     <!--店铺分类-->
-    <div class="shopType" ng-repeat="obj in allInfoArr">
+    <div class="shopType" ng-repeat="(i,obj) in allInfoArr">
         <div class="top">
             <p class="title">{{obj.title}}</p>
             <p class="viceTitle">{{obj.viceTitle}}</p>
@@ -22,7 +22,7 @@
                     </a>
             </li></ul>
         </div>
-        <div class="seeMore">{{obj.contentsNumStr}} ></div>
+        <a ui-sref="catedetail"><div class="seeMore">{{obj.contentsNumStr}} ></div></a>
     </div>
     <!--优选店铺-->
     <div class="box">
@@ -58,4 +58,5 @@
             <p>Copyright YHOUSE moblie</p>
         </div>
     </div>
+    <div ui-view></div>
 </div>
