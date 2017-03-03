@@ -1,28 +1,5 @@
-angular.module('cateModule',['ui.router','angularCSS','catedetailModule','shopDetailModule'])
+angular.module('cateModule',['ui.router','angularCSS','catedetailModule'])
 
-.service('cateBanner',['$http',function($http){
-    this.get = function(){
-        return $http.get('data/banner1.json');
-    }
-}])
-
-.service('cateData',['$http',function($http){
-    this.get = function(){
-        return $http.get('data/main1.json');
-    }
-}])
-
-.service('swiper2',['$timeout',function($timeout){
-    this.swiper = function(){
-        $timeout(function(){
-            Swiper('.swiper-container',{
-                loop: true,
-                autoplay: 2500,
-                pagination: '.swiper-pagination'
-            })
-        },50);
-    }
-}])
 
 .service('secondPage1',['$http',function($http){
     this.get = function(){
@@ -36,27 +13,9 @@ angular.module('cateModule',['ui.router','angularCSS','catedetailModule','shopDe
     }
 }])
 
-.service('secondPage3',['$http',function($http){
-    this.get = function(){
-        return $http.get('data/catedetail2-3.json');
-    }
-}])
-
-.controller('cataCtrl',['$scope','cateBanner','cateData','swiper2','secondPage2','secondPage3',function($scope,cateBanner,cateData,swiper2,secondPage1,secondPage2,secondPage3){
-
-    cateBanner.get().success(function(res){
-        $scope.imgSwiperArr = res.data.reserveList[0].content;
-        swiper2.swiper();
-
-    })
-    cateData.get().success(function(res){
-        $scope.allInfoArr = res.data.doc[2].itemData;
-        $scope.allShopArr = res.data.doc[3].itemData;
-        //console.log($scope.allShopArr);
-    })
+.controller('cataCtrl',['$scope','cateBanner','cateData','swiper2','secondPage1','secondPage2',function($scope,cateBanner,cateData,swiper2,secondPage1,secondPage2){
 
 
-    //跳转二级子页面---闭包
     secondPage1.get().success(function(res){
         var detailArr = [];
         var allDetailArr = res.data;
