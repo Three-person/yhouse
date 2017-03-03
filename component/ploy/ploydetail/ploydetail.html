@@ -1,0 +1,63 @@
+<div id="content">
+    <div class="title">
+        <a ui-sref="ploy"><i class="fa fa-chevron-left"></i></a>
+        <p>活动详情</p>
+        <a ui-sref="ploy"><i class="fa fa-home"></i></a>
+    </div>
+    <div class="headImg"><img src="{{headArr.mPicUrl}}"/></div>
+    <div class="headMsg">
+        <p class="name">{{headArr.title}}</p>
+        <p class="price">{{headArr.neededCredits}}<span>元/1人</span></p>
+        <p class="like"><i class="fa fa-heart"></i> {{headArr.countOfInterested}}人喜欢</p>
+    </div>
+    <div class="other">
+        <p class="duration">{{headArr.duration}}<span class="tel"></span></p>
+        <p class="address">{{headArr.address}}<span class="map"></span></p>
+        <p class="hostname">{{headArr.hostName}}</p>
+        <div class="app">
+            <img src="img/sku_banner_text@2x.png"/>
+            <div>打开APP</div>
+        </div>
+    </div>
+    <div class="reason">
+        <p class="name2"><span></span>推荐理由</p>
+        <p ng-repeat="obj in reason" class="words">{{obj}}</p>
+    </div>
+    <div class="detail">
+        <p class="name2"><span></span>活动详情</p>
+        <div><p ng-repeat="obj in detail" class="words">{{obj.innerHTML}}</p></div>
+        <p class="more">完整活动详情></p>
+    </div>
+    <div class="attention">
+        <p class="name2"><span></span>注意事项</p>
+        <p ng-repeat="obj in attention" class="words">{{obj.name}}</div>
+        <div class="tips">
+            <p class="name2"><span></span>温馨提示</p>
+            <p class="duration">使用日期: {{tips.startDate}}-{{tips.endDate}}</p>
+            <p class="finalDate">截止时间: {{tips.applyExpiredTime}}</p>
+            <p class="book"><span></span>{{tips.refundDesc}}<span></span>{{tips.subscribeDesc}}</p>
+            <p class="service"><span class="s1"></span>在线客服<span class="s2"></span>电话客服</p>
+        </div>
+        <!--关于我们-->
+        <div class="aboutUs">
+            <div>
+                <ul>
+                    <li><a href="javascript:void(0)">首页<span>|</span></a></li>
+                    <li><a href="javascript:void(0)">订单<span>|</span></a></li>
+                    <li><a href="javascript:void(0)">登录</a></li>
+                </ul>
+            </div>
+            <div class="app">
+                <img src="img/icon_apple@2x.png"/>
+                <img src="img/icon_android@2x.png"/>
+            </div>
+            <div class="copyright">
+                <p>关于我们</p>
+                <p>Copyright YHOUSE moblie</p>
+            </div>
+        </div>
+        <div class="buyNow">立即购买 ></div>
+    </div>
+</div>
+
+
