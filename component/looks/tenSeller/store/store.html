@@ -17,10 +17,11 @@
 	    </div>
 	    <!-- 如果需要分页器 -->
 	    <div class="swiper-pagination"></div>
+	    <div class="icon">
+			<img src="{{dataObj.logoUrl}}"/>
+		</div>
 	</div>
-	<div class="icon">
-		<img src="{{dataObj.logoUrl}}"/>
-	</div>
+	
 	<div class="artical">
 		<div class="articalss">
 			<p class="huisuo">{{dataObj.hostName}}</p>
@@ -31,6 +32,57 @@
 			<p class="collect">
 				<span>{{dataObj.countOfInterested}}</span>人收藏
 			</p>
+			<div class="addressDetail">
+				<p class="storeAddress">{{dataObj.address}}</p>
+				<p class="addressicon"></p>
+				<p class="telicon"></p>
+			</div>
+			<div class="storetwindow">
+				<div class="storeopenApp">打开APP</div>
+			</div>
+			<ul class="storeul">
+				<li class="result">
+					<h3>
+						<span>推荐理由</span>
+					</h3>
+					<div>
+						<p ng-repeat='obj in dataObj.highs'>{{obj}}</p>
+						<a class="check">查看详情 > </a>
+					</div>
+				</li>
+				<li class="storetopic">
+					<h3>
+						<span>商户话题</span>
+					</h3>
+					<p>{{dataObj.hostShareTag.description}}</p>
+					<a class="send">发布第一条内容 > </a>
+				</li>
+				<li class="hotarticle">
+					<h3>
+						<span>热文收录</span>
+					</h3>
+					<div>
+						<div>{{dataObj.hotContent.firstTitle}}</div>
+						<div>5篇热文 > </div>
+					</div>
+				</li>
+				<li class="addInfo">
+					<h3>
+						<span>附加信息</span>
+					</h3>
+					<ul>
+						<li ng-repeat='obj in dataObj.productLabels'>
+							<i></i>
+							<p>{{obj.name}}</p>
+						</li>
+					</ul>
+					<p>{{dataObj.durationList[0]}}</p>
+					<div class="custom">
+						<a class="online">在线客服 ></a>
+						<a class="telnum">电话客服 ></a>
+					</div>
+				</li>
+			</ul>
 		</div>
 	</div>
 </div>
