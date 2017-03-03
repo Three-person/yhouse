@@ -35,5 +35,10 @@ angular.module('everShopModule',['ui.router'])
 		$scope.avgPrice=res.data.avgPrice;
 		$scope.businessesDistrict=res.data.goodList[0].businessesDistrict;
 		$scope.countOfInterested=res.data.countOfInterested;
+		$scope.address=res.data.address;
+		var tagArr=res.data.tagArr;
+		$scope.tagArr=tagArr;
+		$scope.highs=res.data.highs;
+		$scope.recommendAutomatic=res.recommendAutomatic;
 	})
 }])
