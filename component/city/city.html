@@ -1,0 +1,35 @@
+<div class="cityContent">
+	<div class="chooseCityTitle"><a ui-sref="cate">X</a>选择城市</div>
+	<div class="cityContainer">
+		<ul class="cityList">
+			<li>
+				<div class="myPlace">
+					<span>当前城市:</span>
+					{{}}
+				</div>
+			</li>
+		</ul>
+		<ul class="cityCategory">
+			<li>
+				<p>热门</p>
+				<div><span ng-repeat="obj in hotCityArr">{{obj}}</span></div>
+			</li>
+			<li>
+				<p>A~G</p>
+				<div><span ng-repeat="obj in agCityArr">{{obj}}</span></div>
+			</li>
+			<li>
+				<p>H~N</p>
+				<div><span ng-repeat="obj in hnCityArr">{{obj}}</span></div>
+			</li>
+			<li>
+				<p>O~T</p>
+				<div><span ng-repeat="obj in otCityArr">{{obj}}</span></div>
+			</li>
+			<li>
+				<p>U~Z</p>
+				<div><span ng-repeat="obj in uzCityArr">{{obj}}</span></div>
+			</li>
+		</ul>
+	</div>
+</div>

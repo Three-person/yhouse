@@ -18,9 +18,61 @@
    			<div class="container">
    				<h1>{{hostName}}</h1>
    				<p><span>{{avgPrice}}</span><span>酒吧</span><span>{{businessesDistrict}}</span></p>
-   				<div></div>
+   				<div class="sc"><span>{{countOfInterested}}人收藏</span></div>
+   				<div class="tagArr"><span>{{tagArr[0]}}</span></div>
+   				<div class="detail_contact">
+   					<div class="detail_address">
+   						<p>{{address}}</p>
+   						<div class="dw"><a href=""></a></div>
+   						<div class="lx"><a href=""></a></div>
+   					</div>
+   				</div>
+   				<div class="openApp1"><a href="#">打开APP</a></div>
+   				<!--推荐理由-->
+   				<div class="tj">
+   					<h3><span>推荐理由</span></h3>
+   					<p ng-repeat="obj in highs">{{obj}}</p>
+   				</div>
+   				<!--猜你喜欢-->
+   				<div class="cnxh">
+   					<h3><span>猜你喜欢</span></h3>
+   					<ul class="tjShopList">
+   						<li ng-repeat="obj in recommendAutomatic">
+   							<a href="">
+	   							<div class="tjShopImg">
+	   								<img src="{{obj.data.picUrl}}"/>
+	   							</div>
+	   							<div class="tjShopMsg">
+	   								<h4>{{obj.data.hostName}}</h4>
+	   								<p>{{obj.data.businessesDistrict}}·{{obj.data.cuisineStyle}}</p>
+	   								<p>人均:{{obj.data.price}}元</p>
+	   							</div>
+	   							<div class="clearFix"></div>
+   							</a>
+   						</li>
+   					</ul>
+   				</div>
    			</div>
    		</div>
    		
 	</div>
+	
+	<div class="aboutUs">
+        <div>
+            <ul>
+                <li><a href="javascript:void(0)">首页<span>|</span></a></li>
+                <li><a href="javascript:void(0)">订单<span>|</span></a></li>
+                <li><a href="javascript:void(0)">登录</a></li>
+            </ul>
+        </div>
+        <div class="app">
+            <img src="img/icon_apple@2x.png"/>
+            <img src="img/icon_android@2x.png"/>
+        </div>
+        <div class="copyright">
+            <p>关于我们</p>
+            <p>Copyright YHOUSE moblie</p>
+        </div>
+    </div>
+	
 </div>

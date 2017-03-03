@@ -1,0 +1,12 @@
+.cityContent{width: 100%;height: 100%;position: fixed;top: 0;background: #f4f4f4;}
+.chooseCityTitle{width: 100%;height: 2.2rem;line-height: 2.2rem;text-align: center;background: #fff;position: relative;border-bottom: 1px solid #e1e1e1;box-sizing: border-box;font-size: .8rem;}
+.chooseCityTitle>a{position: absolute;left: 1rem;font-size: .9rem;color: #ccc;outline-style: none!important;}
+.cityContainer{width: 100%;}
+.cityList{width: 100%;}
+.cityList>li{padding: .75rem .6rem;background: #fff;margin-top: .75rem;}
+.myPlace{font-size: .7rem;color: #111;}
+.myPlace>span{color: #999;}
+.cityCategory{width: 100%;}
+.cityCategory>li{margin-bottom: .55rem;padding: 0 .6rem;}
+.cityCategory>li>p{color: #999;margin: .75rem 0 .3rem;}
+.cityCategory>li span{display: inline-block;width: 5.35rem;height: 1.75rem;line-height: 1.75rem;border: 1px solid #ccc;margin-right: .4rem;background: #fff;text-align: center;color: #111;margin-bottom: .8rem;font-size: .7rem;outline: none;}
