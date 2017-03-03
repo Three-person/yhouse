@@ -39,8 +39,8 @@
 .joinShop .p2 .s2 a{color: rgb(243,136,98);}
 
 /*查看更多*/
-.seeMore{width: 100%;height: 2.1rem;text-align: center;line-height: 2.1rem;font-size: 0.7rem;background: #ffffff;}
-.seeMore span{width: 0.8rem;height: 0.4rem;display: inline-block;background: url("../../img/arrow-bottom.png");background-size: 100% 100%;}
+.lookMore{width: 100%;height: 2.1rem;text-align: center;line-height: 2.1rem;font-size: 0.7rem;background: #ffffff;}
+.lookMore span{width: 0.8rem;height: 0.4rem;display: inline-block;background: url("../../img/arrow-bottom.png");background-size: 100% 100%;}
 
 /*关于我们*/
 .aboutUs{width: 100%;height: 10.6rem;padding: 1.3rem 0;}

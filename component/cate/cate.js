@@ -36,71 +36,61 @@ angular.module('cateModule',['ui.router','angularCSS','catedetailModule'])
     }
 }])
 
-.controller('cataCtrl',['$scope','cateBanner','cateData','swiper2','secondPage1','secondPage2',function($scope,cateBanner,cateData,swiper2,secondPage1,secondPage2){
+.service('secondPage3',['$http',function($http){
+    this.get = function(){
+        return $http.get('data/catedetail2-3.json');
+    }
+}])
 
-
-
-
-
-
-
+.controller('cataCtrl',['$scope','cateBanner','cateData','swiper2','secondPage2','secondPage3',function($scope,cateBanner,cateData,swiper2,secondPage1,secondPage2,secondPage3){
 
     cateBanner.get().success(function(res){
         $scope.imgSwiperArr = res.data.reserveList[0].content;
         swiper2.swiper();
+
     })
     cateData.get().success(function(res){
         $scope.allInfoArr = res.data.doc[2].itemData;
         $scope.allShopArr = res.data.doc[3].itemData;
         //console.log($scope.allShopArr);
-
-        //$('.seeMore').eq(0).on('click',function(){
-            console.log($('.seeMore'));
-            console.log('123');
-            //var index=$(this).index();
-            //console.log(index);
-            //var ss='qwer';
-            //console.log((ss+index+1));
-        //})
-
-
     })
 
 
+    //跳转二级子页面---闭包
     secondPage1.get().success(function(res){
         var detailArr = [];
         var allDetailArr = res.data;
         $scope.allDetailArr = allDetailArr;
         $scope.allDetailArr = res.data;
         detailArr.push(allDetailArr);
-        //for (var i=0;i<detailArr.length;i++){
-        //    var obj = detailArr[i];
-        //
-        //    (function (obj1) {
-        //        $('.seeMore').on('click', function () {
-        //            if (localStorage.getItem('shop')&& localStorage.getItem('shop').length>0){
-        //                var arr1 = JSON.parse(localStorage.getItem('shop'));
-        //                var flag = false;
-        //                for (var i = 0; i < arr1.length; i++){
-        //                    if (arr1[i].name == obj1.name){
-        //                        flag = true;
-        //                    }
-        //                }
-        //                if (!flag){
-        //                    arr1.push(obj1);
-        //                }
-        //                localStorage.setItem('shop',JSON.stringify(arr1));
-        //            }else{
-        //                var arr2 = [];
-        //                //obj1.count = 1;
-        //                arr2.push(obj1);
-        //                //console.log(arr2);
-        //                localStorage.setItem('shop',JSON.stringify(arr2));
-        //            }
-        //        })
-        //    })(obj)
-        //
-        //}
+        for (var i=0;i<detailArr.length;i++){
+            var obj = detailArr[i];
+
+            (function (obj1) {
+                $('.seeMore').on('click', function () {
+                    if (localStorage.getItem('shop')&& localStorage.getItem('shop').length>0){
+                        var arr1 = JSON.parse(localStorage.getItem('shop'));
+                        var flag = false;
+                        for (var i = 0; i < arr1.length; i++){
+                            if (arr1[i].name == obj1.name){
+                                flag = true;
+                            }
+                        }
+                        if (!flag){
+                            arr1.push(obj1);
+                        }
+                        localStorage.setItem('shop',JSON.stringify(arr1));
+                    }else{
+                        var arr2 = [];
+                        //obj1.count = 1;
+                        arr2.push(obj1);
+                        //console.log(arr2);
+                        localStorage.setItem('shop',JSON.stringify(arr2));
+                    }
+                })
+            })(obj)
+
+        }
         localStorage.setItem('catedetailArr',JSON.stringify(detailArr));
     })
 
