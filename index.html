@@ -48,6 +48,29 @@
 			<li><a ui-sref="looks">美容/SPA</a></li>
 		</ul>
 	</div>
+	<!--筛选页面-->
+	<div class="filter">
+		<div class="filterHeader">
+			<p><i class="fa fa-angle-left" aria-hidden="true"></i></p>
+			<ul>
+				<!--<li><a>商户</a></li>
+				<li><a>商品</a></li>-->
+			</ul>
+			<p><i class="fa fa-search" aria-hidden="true"></i></p>
+		</div>
+		<ul class="selectAndsort">
+			<li>
+				<span>全部</span>
+			</li>
+			<li>
+				<span>分类筛选</span>
+			</li>
+			<li>
+				<span>智能排序</span>
+			</li>
+		</ul>
+	</div>
+	
 	<div class="twindow">
 		<div class="close"></div>
 		<div class="openApp">打开APP</div>
@@ -87,6 +110,19 @@
 				})
 			}
 		}
+		
+		$.getJSON("data/select.json",function(res){
+			var urlParamValuesArr=res.data.urlParamValues;
+			console.log(urlParamValuesArr);
+			console.log($('.filterHeader>ul'));
+			for(var i=0;i<urlParamValuesArr.length;i++){
+				var liEle=$("<li><a>"+urlParamValuesArr[i].name+"</a></li>");
+				$('.filterHeader>ul').append(liEle);
+			}
+			
+			
+		})
+		
 	</script>
 </body>
 

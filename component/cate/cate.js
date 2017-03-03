@@ -23,26 +23,26 @@ angular.module('cateModule',['ui.router','angularCSS','catedetailModule'])
         },50);
     }
 }])
-
+//第一个json
 .service('secondPage1',['$http',function($http){
     this.get = function(){
         return $http.get('data/catedetail2-1.json');
     }
 }])
-
+//第二个json
 .service('secondPage2',['$http',function($http){
     this.get = function(){
         return $http.get('data/catedetail2-2.json');
     }
 }])
-
+//第三个json
 .service('secondPage3',['$http',function($http){
     this.get = function(){
         return $http.get('data/catedetail2-3.json');
     }
 }])
 
-.controller('cataCtrl',['$scope','cateBanner','cateData','swiper2','secondPage2','secondPage3',function($scope,cateBanner,cateData,swiper2,secondPage1,secondPage2,secondPage3){
+.controller('cataCtrl',['$scope','cateBanner','cateData','swiper2','secondPage1','secondPage2','secondPage3',function($scope,cateBanner,cateData,swiper2,secondPage1,secondPage2,secondPage3){
 
     cateBanner.get().success(function(res){
         $scope.imgSwiperArr = res.data.reserveList[0].content;
@@ -55,69 +55,76 @@ angular.module('cateModule',['ui.router','angularCSS','catedetailModule'])
         //console.log($scope.allShopArr);
     })
 
-
+	
     //跳转二级子页面---闭包
-    secondPage1.get().success(function(res){
-        var detailArr = [];
-        var allDetailArr = res.data;
-        $scope.allDetailArr = allDetailArr;
-        $scope.allDetailArr = res.data;
-        detailArr.push(allDetailArr);
-        for (var i=0;i<detailArr.length;i++){
-            var obj = detailArr[i];
-
-            (function (obj1) {
-                $('.seeMore').on('click', function () {
-                    if (localStorage.getItem('shop')&& localStorage.getItem('shop').length>0){
-                        var arr1 = JSON.parse(localStorage.getItem('shop'));
-                        var flag = false;
-                        for (var i = 0; i < arr1.length; i++){
-                            if (arr1[i].name == obj1.name){
-                                flag = true;
-                            }
-                        }
-                        if (!flag){
-                            arr1.push(obj1);
-                        }
-                        localStorage.setItem('shop',JSON.stringify(arr1));
-                    }else{
-                        var arr2 = [];
-                        //obj1.count = 1;
-                        arr2.push(obj1);
-                        //console.log(arr2);
-                        localStorage.setItem('shop',JSON.stringify(arr2));
-                    }
-                })
-            })(obj)
-
-        }
-        localStorage.setItem('catedetailArr',JSON.stringify(detailArr));
-    })
+//  secondPage1.get().success(function(res){
+//      var detailData = [];
+//      var allDetailArr = res.data;
+//      $scope.allDetailArr = allDetailArr;
+//      $scope.allDetailArr = res.data;
+//      detailData.push(allDetailArr);
+//      for (var i=0;i<detailData.length;i++){
+//          var obj = detailData[i];
+//
+//          (function (obj1) {
+//              $('.seeMore').on('click', function () {
+//                  if (localStorage.getItem('shop')&& localStorage.getItem('shop').length>0){
+//                      var arr1 = JSON.parse(localStorage.getItem('shop'));
+//                      var flag = false;
+//                      for (var i = 0; i < arr1.length; i++){
+//                          if (arr1[i].name == obj1.name){
+//                              flag = true;
+//                          }
+//                      }
+//                      if (!flag){
+//                          arr1.push(obj1);
+//                      }
+//                      localStorage.setItem('shop',JSON.stringify(arr1));
+//                  }else{
+//                      var arr2 = [];
+//                      //obj1.count = 1;
+//                      arr2.push(obj1);
+//                      //console.log(arr2);
+//                      localStorage.setItem('shop',JSON.stringify(arr2));
+//                  }
+//              })
+//          })(obj)
+//
+//      }
+//      console.log(detailData);
+//      localStorage.setItem('shop',JSON.stringify(detailData));
+//  })
 
     //跳转二级子页面
-    //(function(obj1){
-    //    var detailArr = [];
-    //    $scope.cclick = function (i) {
-    //        if (i == 0){
-    //            secondPage1.get().success(function(res){
-    //                var allDetailArr = res.data;
-    //                $scope.allDetailArr = allDetailArr;
-    //                $scope.allDetailArr = res.data;
-    //                detailArr.push(allDetailArr);
-    //                console.log(detailArr);
-    //                localStorage.setItem('catedetailArr',JSON.stringify(detailArr));
-    //            })
-    //        }
-    //        if (i == 1){
-    //            secondPage2.get().success(function(res){
-    //                var allDetailArr = res.data;
-    //                $scope.allDetailArr = allDetailArr;
-    //                $scope.allDetailArr = res.data;
-    //                detailArr.push(allDetailArr);
-    //                console.log(detailArr);
-    //                localStorage.setItem('catedetailArr',JSON.stringify(detailArr));
-    //            })
-    //        }
-    //    }
-    //})(obj)
+//    (function(obj1){
+          var detailData = {};
+          
+          $scope.cclick = function (i) {
+              	console.log(i);
+              if (i == 0){
+                  secondPage1.get().success(function(res){
+                      var allDetailArr = res.data;
+					  detailData=allDetailArr;
+                      console.log(detailData);
+                      localStorage.setItem('catedetailArr2',JSON.stringify(detailData));
+                  })
+              }
+              if (i == 1){
+                  secondPage2.get().success(function(res){
+                      var allDetailArr = res.data;
+					  detailData=allDetailArr;
+                      console.log(detailData);
+                      localStorage.setItem('catedetailArr2',JSON.stringify(detailData));
+                  })
+              }
+              if (i == 2){
+                  secondPage3.get().success(function(res){
+                      var allDetailArr = res.data;
+					  detailData=allDetailArr;
+                      console.log(detailData);
+                      localStorage.setItem('catedetailArr2',JSON.stringify(detailData));
+                  })
+              }
+          }
+//    })(obj)
 }])

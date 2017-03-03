@@ -1,0 +1,1491 @@
+{
+    "code": "0",
+    "data": {
+        "urlParamValues": [
+            {
+                "urlParamValues": [
+                    {
+                        "urlParamValues": [
+                            {
+                                "urlParamValues": [
+                                    {
+                                        "name": "全部",
+                                        "value": "0"
+                                    }
+                                ],
+                                "name": "全部频道",
+                                "icon": "http://r.yhres.com/search2/all@2x.png",
+                                "value": "-1",
+                                "urlParam": "cx"
+                            },
+                            {
+                                "urlParamValues": [
+                                    {
+                                        "name": "全部",
+                                        "value": "0"
+                                    },
+                                    {
+                                        "name": "咖啡厅",
+                                        "count": "87",
+                                        "value": "2"
+                                    },
+                                    {
+                                        "name": "西餐",
+                                        "count": "69",
+                                        "value": "41"
+                                    },
+                                    {
+                                        "name": "其它",
+                                        "count": "64",
+                                        "value": "40"
+                                    },
+                                    {
+                                        "name": "火锅",
+                                        "count": "54",
+                                        "value": "23"
+                                    },
+                                    {
+                                        "name": "日本料理",
+                                        "count": "44",
+                                        "value": "1"
+                                    },
+                                    {
+                                        "name": "酒吧",
+                                        "count": "32",
+                                        "value": "37"
+                                    },
+                                    {
+                                        "name": "粤菜",
+                                        "count": "28",
+                                        "value": "5"
+                                    },
+                                    {
+                                        "name": "自助餐",
+                                        "count": "27",
+                                        "value": "3"
+                                    },
+                                    {
+                                        "name": "创意菜",
+                                        "count": "21",
+                                        "value": "25"
+                                    },
+                                    {
+                                        "name": "融合菜",
+                                        "count": "20",
+                                        "value": "24"
+                                    },
+                                    {
+                                        "name": "川菜",
+                                        "count": "19",
+                                        "value": "7"
+                                    },
+                                    {
+                                        "name": "韩国料理",
+                                        "count": "16",
+                                        "value": "4"
+                                    },
+                                    {
+                                        "name": "湘菜",
+                                        "count": "12",
+                                        "value": "13"
+                                    },
+                                    {
+                                        "name": "海鲜",
+                                        "count": "10",
+                                        "value": "34"
+                                    },
+                                    {
+                                        "name": "甜品店",
+                                        "count": "8",
+                                        "value": "45"
+                                    },
+                                    {
+                                        "name": "江浙菜",
+                                        "count": "7",
+                                        "value": "9"
+                                    },
+                                    {
+                                        "name": "创意菜",
+                                        "count": "7",
+                                        "value": "25"
+                                    },
+                                    {
+                                        "name": "特色小吃",
+                                        "count": "7",
+                                        "value": "11"
+                                    },
+                                    {
+                                        "name": "甜品店",
+                                        "count": "6",
+                                        "value": "45"
+                                    },
+                                    {
+                                        "name": "东南亚菜",
+                                        "count": "5",
+                                        "value": "6"
+                                    },
+                                    {
+                                        "name": "法国菜",
+                                        "count": "4",
+                                        "value": "27"
+                                    },
+                                    {
+                                        "name": "私房菜",
+                                        "count": "4",
+                                        "value": "43"
+                                    },
+                                    {
+                                        "name": "海鲜",
+                                        "count": "3",
+                                        "value": "34"
+                                    },
+                                    {
+                                        "name": "其它",
+                                        "count": "3",
+                                        "value": "40"
+                                    },
+                                    {
+                                        "name": "意大利菜",
+                                        "count": "2",
+                                        "value": "26"
+                                    },
+                                    {
+                                        "name": "上海菜",
+                                        "count": "1",
+                                        "value": "8"
+                                    },
+                                    {
+                                        "name": "印度菜",
+                                        "count": "1",
+                                        "value": "31"
+                                    },
+                                    {
+                                        "name": "台湾菜",
+                                        "count": "1",
+                                        "value": "17"
+                                    },
+                                    {
+                                        "name": "淮扬菜",
+                                        "count": "1",
+                                        "value": "10"
+                                    },
+                                    {
+                                        "name": "素食",
+                                        "count": "1",
+                                        "value": "14"
+                                    },
+                                    {
+                                        "name": "西北菜",
+                                        "count": "1",
+                                        "value": "16"
+                                    }
+                                ],
+                                "name": "餐厅",
+                                "icon": "http://r.yhres.com/search2/restaurant@2x.png",
+                                "value": "31",
+                                "urlParam": "cx"
+                            },
+                            {
+                                "urlParamValues": [
+                                    {
+                                        "name": "全部",
+                                        "value": "0"
+                                    }
+                                ],
+                                "name": "美容/SPA",
+                                "icon": "http://r.yhres.com/search2/spa@2x.png",
+                                "value": "32",
+                                "urlParam": "cx"
+                            },
+                            {
+                                "urlParamValues": [
+                                    {
+                                        "name": "全部",
+                                        "value": "0"
+                                    }
+                                ],
+                                "name": "夜生活",
+                                "icon": "http://r.yhres.com/search2/club@2x.png",
+                                "value": "33",
+                                "urlParam": "cx"
+                            }
+                        ],
+                        "name": "频道分类",
+                        "value": "1",
+                        "urlParam": "catalog"
+                    },
+                    {
+                        "urlParamValues": [
+                            {
+                                "urlParamValues": [
+                                    {
+                                        "urlParamValues": [
+                                            {
+                                                "name": "不限",
+                                                "value": "0"
+                                            },
+                                            {
+                                                "name": "预订",
+                                                "value": "1"
+                                            },
+                                            {
+                                                "name": "促销",
+                                                "value": "2"
+                                            },
+                                            {
+                                                "name": "套餐",
+                                                "value": "3"
+                                            },
+                                            {
+                                                "name": "优惠买单",
+                                                "value": "4"
+                                            }
+                                        ],
+                                        "name": "服务及优惠",
+                                        "icon": "http://r.yhres.com/home/service@3x.png",
+                                        "urlParam": "sc"
+                                    },
+                                    {
+                                        "urlParamValues": [
+                                            {
+                                                "name": "不限",
+                                                "value": "0"
+                                            },
+                                            {
+                                                "name": "100以下",
+                                                "value": "1"
+                                            },
+                                            {
+                                                "name": "100-200",
+                                                "value": "2"
+                                            },
+                                            {
+                                                "name": "200-300",
+                                                "value": "3"
+                                            },
+                                            {
+                                                "name": "300-500",
+                                                "value": "4"
+                                            },
+                                            {
+                                                "name": "500以上",
+                                                "value": "5"
+                                            }
+                                        ],
+                                        "name": "价格",
+                                        "icon": "http://r.yhres.com/search2/price@2x.png",
+                                        "urlParam": "pc"
+                                    },
+                                    {
+                                        "urlParamValues": [
+                                            {
+                                                "name": "全部",
+                                                "value": "0"
+                                            },
+                                            {
+                                                "name": "客运港/江滩",
+                                                "value": "2436"
+                                            },
+                                            {
+                                                "name": "解放公园",
+                                                "value": "2438"
+                                            },
+                                            {
+                                                "name": "楚河汉街",
+                                                "value": "2443"
+                                            },
+                                            {
+                                                "name": "光谷/鲁巷",
+                                                "value": "2483"
+                                            },
+                                            {
+                                                "name": "西北湖",
+                                                "value": "2457"
+                                            },
+                                            {
+                                                "name": "徐东大街",
+                                                "value": "2447"
+                                            },
+                                            {
+                                                "name": "石牌岭/街道口",
+                                                "value": "2484"
+                                            },
+                                            {
+                                                "name": "江汉路步行街",
+                                                "value": "2454"
+                                            },
+                                            {
+                                                "name": "武汉广场",
+                                                "value": "2455"
+                                            },
+                                            {
+                                                "name": "唐家墩/菱角湖",
+                                                "value": "2459"
+                                            },
+                                            {
+                                                "name": "其它",
+                                                "value": "-1"
+                                            }
+                                        ],
+                                        "name": "商圈",
+                                        "icon": "http://r.yhres.com/search2/district@2x.png",
+                                        "urlParam": "bc"
+                                    },
+                                    {
+                                        "urlParamValues": [
+                                            {
+                                                "name": "提供点心",
+                                                "value": 66
+                                            },
+                                            {
+                                                "name": "近地铁",
+                                                "value": 62
+                                            },
+                                            {
+                                                "name": "提供茶水",
+                                                "value": 65
+                                            },
+                                            {
+                                                "name": "Wi-Fi",
+                                                "value": 1
+                                            },
+                                            {
+                                                "name": "停车位",
+                                                "value": 2
+                                            },
+                                            {
+                                                "name": "代客泊车",
+                                                "value": 3
+                                            },
+                                            {
+                                                "name": "地铁",
+                                                "value": 4
+                                            },
+                                            {
+                                                "name": "近商圈",
+                                                "value": 5
+                                            },
+                                            {
+                                                "name": "有观景位",
+                                                "value": 6
+                                            },
+                                            {
+                                                "name": "有包厢",
+                                                "value": 7
+                                            },
+                                            {
+                                                "name": "有露台",
+                                                "value": 8
+                                            },
+                                            {
+                                                "name": "有酒吧区域",
+                                                "value": 9
+                                            },
+                                            {
+                                                "name": "周末早午餐",
+                                                "value": 10
+                                            },
+                                            {
+                                                "name": "有机食物",
+                                                "value": 11
+                                            },
+                                            {
+                                                "name": "酒店内餐厅",
+                                                "value": 12
+                                            },
+                                            {
+                                                "name": "商务宴请",
+                                                "value": 13
+                                            },
+                                            {
+                                                "name": "适合小聚",
+                                                "value": 14
+                                            },
+                                            {
+                                                "name": "可带宠物",
+                                                "value": 15
+                                            },
+                                            {
+                                                "name": "宝宝椅",
+                                                "value": 16
+                                            },
+                                            {
+                                                "name": "残疾人设施",
+                                                "value": 17
+                                            }
+                                        ],
+                                        "name": "更多条件（可多选）",
+                                        "icon": "http://r.yhres.com/search2/more@2x.png",
+                                        "urlParam": "mc"
+                                    }
+                                ],
+                                "name": "全频道筛选",
+                                "value": "-1",
+                                "urlParam": "conds"
+                            },
+                            {
+                                "urlParamValues": [
+                                    {
+                                        "urlParamValues": [
+                                            {
+                                                "name": "不限",
+                                                "value": "0"
+                                            },
+                                            {
+                                                "name": "预订",
+                                                "value": "1"
+                                            },
+                                            {
+                                                "name": "促销",
+                                                "value": "2"
+                                            },
+                                            {
+                                                "name": "套餐",
+                                                "value": "3"
+                                            },
+                                            {
+                                                "name": "优惠买单",
+                                                "value": "4"
+                                            }
+                                        ],
+                                        "name": "服务及优惠",
+                                        "icon": "http://r.yhres.com/home/service@3x.png",
+                                        "urlParam": "sc"
+                                    },
+                                    {
+                                        "urlParamValues": [
+                                            {
+                                                "name": "不限",
+                                                "value": "0"
+                                            },
+                                            {
+                                                "name": "100以下",
+                                                "value": "1"
+                                            },
+                                            {
+                                                "name": "100-200",
+                                                "value": "2"
+                                            },
+                                            {
+                                                "name": "200-300",
+                                                "value": "3"
+                                            },
+                                            {
+                                                "name": "300-500",
+                                                "value": "4"
+                                            },
+                                            {
+                                                "name": "500以上",
+                                                "value": "5"
+                                            }
+                                        ],
+                                        "name": "价格",
+                                        "icon": "http://r.yhres.com/search2/price@2x.png",
+                                        "urlParam": "pc"
+                                    },
+                                    {
+                                        "urlParamValues": [
+                                            {
+                                                "name": "全部",
+                                                "value": "0"
+                                            },
+                                            {
+                                                "name": "客运港/江滩",
+                                                "value": "2436"
+                                            },
+                                            {
+                                                "name": "解放公园",
+                                                "value": "2438"
+                                            },
+                                            {
+                                                "name": "楚河汉街",
+                                                "value": "2443"
+                                            },
+                                            {
+                                                "name": "光谷/鲁巷",
+                                                "value": "2483"
+                                            },
+                                            {
+                                                "name": "西北湖",
+                                                "value": "2457"
+                                            },
+                                            {
+                                                "name": "徐东大街",
+                                                "value": "2447"
+                                            },
+                                            {
+                                                "name": "石牌岭/街道口",
+                                                "value": "2484"
+                                            },
+                                            {
+                                                "name": "江汉路步行街",
+                                                "value": "2454"
+                                            },
+                                            {
+                                                "name": "唐家墩/菱角湖",
+                                                "value": "2459"
+                                            },
+                                            {
+                                                "name": "王家湾",
+                                                "value": "2467"
+                                            },
+                                            {
+                                                "name": "其它",
+                                                "value": "-1"
+                                            }
+                                        ],
+                                        "name": "商圈",
+                                        "icon": "http://r.yhres.com/search2/district@2x.png",
+                                        "urlParam": "bc"
+                                    },
+                                    {
+                                        "urlParamValues": [
+                                            {
+                                                "name": "会员权益",
+                                                "value": "$VIPEQUITIES"
+                                            },
+                                            {
+                                                "name": "有套餐",
+                                                "value": "$HAVEMEAL"
+                                            },
+                                            {
+                                                "name": "到店付",
+                                                "value": "$DDF"
+                                            },
+                                            {
+                                                "name": "Wi-Fi",
+                                                "value": 1
+                                            },
+                                            {
+                                                "name": "停车位",
+                                                "value": 2
+                                            },
+                                            {
+                                                "name": "代客泊车",
+                                                "value": 3
+                                            },
+                                            {
+                                                "name": "地铁",
+                                                "value": 4
+                                            },
+                                            {
+                                                "name": "近商圈",
+                                                "value": 5
+                                            },
+                                            {
+                                                "name": "有观景位",
+                                                "value": 6
+                                            },
+                                            {
+                                                "name": "有包厢",
+                                                "value": 7
+                                            },
+                                            {
+                                                "name": "有露台",
+                                                "value": 8
+                                            },
+                                            {
+                                                "name": "有酒吧区域",
+                                                "value": 9
+                                            },
+                                            {
+                                                "name": "周末早午餐",
+                                                "value": 10
+                                            },
+                                            {
+                                                "name": "有机食物",
+                                                "value": 11
+                                            },
+                                            {
+                                                "name": "酒店内餐厅",
+                                                "value": 12
+                                            },
+                                            {
+                                                "name": "商务宴请",
+                                                "value": 13
+                                            },
+                                            {
+                                                "name": "适合小聚",
+                                                "value": 14
+                                            },
+                                            {
+                                                "name": "可带宠物",
+                                                "value": 15
+                                            },
+                                            {
+                                                "name": "宝宝椅",
+                                                "value": 16
+                                            },
+                                            {
+                                                "name": "残疾人设施",
+                                                "value": 17
+                                            }
+                                        ],
+                                        "name": "更多条件（可多选）",
+                                        "icon": "http://r.yhres.com/search2/more@2x.png",
+                                        "urlParam": "mc"
+                                    }
+                                ],
+                                "name": "餐厅筛选",
+                                "value": "31",
+                                "urlParam": "conds"
+                            },
+                            {
+                                "urlParamValues": [
+                                    {
+                                        "urlParamValues": [
+                                            {
+                                                "name": "不限",
+                                                "value": "0"
+                                            },
+                                            {
+                                                "name": "预订",
+                                                "value": "1"
+                                            },
+                                            {
+                                                "name": "促销",
+                                                "value": "2"
+                                            },
+                                            {
+                                                "name": "套餐",
+                                                "value": "3"
+                                            },
+                                            {
+                                                "name": "优惠买单",
+                                                "value": "4"
+                                            }
+                                        ],
+                                        "name": "服务及优惠",
+                                        "icon": "http://r.yhres.com/home/service@3x.png",
+                                        "urlParam": "sc"
+                                    },
+                                    {
+                                        "urlParamValues": [
+                                            {
+                                                "name": "不限",
+                                                "value": "0"
+                                            },
+                                            {
+                                                "name": "100以下",
+                                                "value": "1"
+                                            },
+                                            {
+                                                "name": "100-200",
+                                                "value": "2"
+                                            },
+                                            {
+                                                "name": "200-300",
+                                                "value": "3"
+                                            },
+                                            {
+                                                "name": "300-500",
+                                                "value": "4"
+                                            },
+                                            {
+                                                "name": "500以上",
+                                                "value": "5"
+                                            }
+                                        ],
+                                        "name": "价格",
+                                        "icon": "http://r.yhres.com/search2/price@2x.png",
+                                        "urlParam": "pc"
+                                    },
+                                    {
+                                        "urlParamValues": [
+                                            {
+                                                "name": "全部",
+                                                "value": "0"
+                                            },
+                                            {
+                                                "name": "光谷/鲁巷",
+                                                "value": "2483"
+                                            },
+                                            {
+                                                "name": "武汉广场",
+                                                "value": "2455"
+                                            },
+                                            {
+                                                "name": "江汉路步行街",
+                                                "value": "2454"
+                                            },
+                                            {
+                                                "name": "水果湖",
+                                                "value": "2450"
+                                            },
+                                            {
+                                                "name": "唐家墩/菱角湖",
+                                                "value": "2459"
+                                            },
+                                            {
+                                                "name": "楚河汉街",
+                                                "value": "2443"
+                                            },
+                                            {
+                                                "name": "石牌岭/街道口",
+                                                "value": "2484"
+                                            },
+                                            {
+                                                "name": "徐东大街",
+                                                "value": "2447"
+                                            },
+                                            {
+                                                "name": "解放公园",
+                                                "value": "2438"
+                                            },
+                                            {
+                                                "name": "王家湾",
+                                                "value": "2467"
+                                            },
+                                            {
+                                                "name": "其它",
+                                                "value": "-1"
+                                            }
+                                        ],
+                                        "name": "商圈",
+                                        "icon": "http://r.yhres.com/search2/district@2x.png",
+                                        "urlParam": "bc"
+                                    },
+                                    {
+                                        "urlParamValues": [
+                                            {
+                                                "name": "Wi-Fi",
+                                                "value": 60
+                                            },
+                                            {
+                                                "name": "停车位",
+                                                "value": 61
+                                            },
+                                            {
+                                                "name": "近地铁",
+                                                "value": 62
+                                            },
+                                            {
+                                                "name": "近商圈",
+                                                "value": 63
+                                            },
+                                            {
+                                                "name": "有包厢",
+                                                "value": 64
+                                            },
+                                            {
+                                                "name": "提供茶水",
+                                                "value": 65
+                                            },
+                                            {
+                                                "name": "提供点心",
+                                                "value": 66
+                                            }
+                                        ],
+                                        "name": "更多条件（可多选）",
+                                        "icon": "http://r.yhres.com/search2/more@2x.png",
+                                        "urlParam": "mc"
+                                    }
+                                ],
+                                "name": "美容/SPA筛选",
+                                "value": "32",
+                                "urlParam": "conds"
+                            },
+                            {
+                                "urlParamValues": [
+                                    {
+                                        "urlParamValues": [
+                                            {
+                                                "name": "不限",
+                                                "value": "0"
+                                            },
+                                            {
+                                                "name": "预订",
+                                                "value": "1"
+                                            },
+                                            {
+                                                "name": "促销",
+                                                "value": "2"
+                                            },
+                                            {
+                                                "name": "套餐",
+                                                "value": "3"
+                                            },
+                                            {
+                                                "name": "优惠买单",
+                                                "value": "4"
+                                            }
+                                        ],
+                                        "name": "服务及优惠",
+                                        "icon": "http://r.yhres.com/home/service@3x.png",
+                                        "urlParam": "sc"
+                                    },
+                                    {
+                                        "urlParamValues": [
+                                            {
+                                                "name": "不限",
+                                                "value": "0"
+                                            },
+                                            {
+                                                "name": "100以下",
+                                                "value": "1"
+                                            },
+                                            {
+                                                "name": "100-200",
+                                                "value": "2"
+                                            },
+                                            {
+                                                "name": "200-300",
+                                                "value": "3"
+                                            },
+                                            {
+                                                "name": "300-500",
+                                                "value": "4"
+                                            },
+                                            {
+                                                "name": "500以上",
+                                                "value": "5"
+                                            }
+                                        ],
+                                        "name": "价格",
+                                        "icon": "http://r.yhres.com/search2/price@2x.png",
+                                        "urlParam": "pc"
+                                    },
+                                    {
+                                        "urlParamValues": [
+                                            {
+                                                "name": "全部",
+                                                "value": "0"
+                                            },
+                                            {
+                                                "name": "客运港/江滩",
+                                                "value": "2436"
+                                            },
+                                            {
+                                                "name": "解放公园",
+                                                "value": "2438"
+                                            },
+                                            {
+                                                "name": "楚河汉街",
+                                                "value": "2443"
+                                            },
+                                            {
+                                                "name": "光谷/鲁巷",
+                                                "value": "2483"
+                                            },
+                                            {
+                                                "name": "西北湖",
+                                                "value": "2457"
+                                            },
+                                            {
+                                                "name": "徐东大街",
+                                                "value": "2447"
+                                            },
+                                            {
+                                                "name": "石牌岭/街道口",
+                                                "value": "2484"
+                                            },
+                                            {
+                                                "name": "江汉路步行街",
+                                                "value": "2454"
+                                            },
+                                            {
+                                                "name": "唐家墩/菱角湖",
+                                                "value": "2459"
+                                            },
+                                            {
+                                                "name": "王家湾",
+                                                "value": "2467"
+                                            },
+                                            {
+                                                "name": "其它",
+                                                "value": "-1"
+                                            }
+                                        ],
+                                        "name": "商圈",
+                                        "icon": "http://r.yhres.com/search2/district@2x.png",
+                                        "urlParam": "bc"
+                                    },
+                                    {
+                                        "urlParamValues": [
+                                            {
+                                                "name": "会员权益",
+                                                "value": "$VIPEQUITIES"
+                                            },
+                                            {
+                                                "name": "有套餐",
+                                                "value": "$HAVEMEAL"
+                                            },
+                                            {
+                                                "name": "到店付",
+                                                "value": "$DDF"
+                                            },
+                                            {
+                                                "name": "Wi-Fi",
+                                                "value": 1
+                                            },
+                                            {
+                                                "name": "停车位",
+                                                "value": 2
+                                            },
+                                            {
+                                                "name": "代客泊车",
+                                                "value": 3
+                                            },
+                                            {
+                                                "name": "地铁",
+                                                "value": 4
+                                            },
+                                            {
+                                                "name": "近商圈",
+                                                "value": 5
+                                            },
+                                            {
+                                                "name": "有观景位",
+                                                "value": 6
+                                            },
+                                            {
+                                                "name": "有包厢",
+                                                "value": 7
+                                            },
+                                            {
+                                                "name": "有露台",
+                                                "value": 8
+                                            },
+                                            {
+                                                "name": "有酒吧区域",
+                                                "value": 9
+                                            },
+                                            {
+                                                "name": "周末早午餐",
+                                                "value": 10
+                                            },
+                                            {
+                                                "name": "有机食物",
+                                                "value": 11
+                                            },
+                                            {
+                                                "name": "酒店内餐厅",
+                                                "value": 12
+                                            },
+                                            {
+                                                "name": "商务宴请",
+                                                "value": 13
+                                            },
+                                            {
+                                                "name": "适合小聚",
+                                                "value": 14
+                                            },
+                                            {
+                                                "name": "可带宠物",
+                                                "value": 15
+                                            },
+                                            {
+                                                "name": "宝宝椅",
+                                                "value": 16
+                                            },
+                                            {
+                                                "name": "残疾人设施",
+                                                "value": 17
+                                            }
+                                        ],
+                                        "name": "更多条件（可多选）",
+                                        "icon": "http://r.yhres.com/search2/more@2x.png",
+                                        "urlParam": "mc"
+                                    }
+                                ],
+                                "name": "夜生活筛选",
+                                "value": "33",
+                                "urlParam": "conds"
+                            }
+                        ],
+                        "name": "分类筛选",
+                        "value": "2",
+                        "urlParam": "filter"
+                    },
+                    {
+                        "urlParamValues": [
+                            {
+                                "name": "智能排序",
+                                "icon": "http://r.yhres.com/search2/taxis_normal@2x.png",
+                                "selIcon": "http://r.yhres.com/search2/taxis_pressed@2x.png",
+                                "value": "1"
+                            },
+                            {
+                                "name": "离我最近",
+                                "icon": "http://r.yhres.com/search2/location_normal@2x.png",
+                                "selIcon": "http://r.yhres.com/search2/location_pressed@2x.png",
+                                "value": "2"
+                            },
+                            {
+                                "name": "最新上线",
+                                "icon": "http://r.yhres.com/search2/new_normal@2x.png",
+                                "selIcon": "http://r.yhres.com/search2/new_pressed@2x.png",
+                                "value": "3"
+                            },
+                            {
+                                "name": "人气最高",
+                                "icon": "http://r.yhres.com/search2/hot_normal@2x.png",
+                                "selIcon": "http://r.yhres.com/search2/hot_pressed@2x.png",
+                                "value": "4"
+                            },
+                            {
+                                "name": "价格最低",
+                                "icon": "http://r.yhres.com/search2/low_normal@2x.png",
+                                "selIcon": "http://r.yhres.com/search2/low_pressed@2x.png",
+                                "value": "5"
+                            },
+                            {
+                                "name": "价格最高",
+                                "icon": "http://r.yhres.com/search2/high_normal@2x.png",
+                                "selIcon": "http://r.yhres.com/search2/high_pressed@2x.png",
+                                "value": "6"
+                            }
+                        ],
+                        "name": "排序",
+                        "value": "3",
+                        "urlParam": "sort"
+                    }
+                ],
+                "name": "商户",
+                "value": "2",
+                "urlParam": "funcType"
+            },
+            {
+                "urlParamValues": [
+                    {
+                        "urlParamValues": [
+                            {
+                                "urlParamValues": [
+                                    {
+                                        "name": "全部",
+                                        "value": "0"
+                                    },
+                                    {
+                                        "name": "Yhouse2.0.0",
+                                        "count": "60",
+                                        "value": "2"
+                                    },
+                                    {
+                                        "name": "创意菜",
+                                        "count": "30",
+                                        "value": "25"
+                                    },
+                                    {
+                                        "name": "其它",
+                                        "count": "28",
+                                        "value": "40"
+                                    },
+                                    {
+                                        "name": "日本料理",
+                                        "count": "24",
+                                        "value": "1"
+                                    },
+                                    {
+                                        "name": "Yhouse3.0",
+                                        "count": "16",
+                                        "value": "3"
+                                    },
+                                    {
+                                        "name": "韩国料理",
+                                        "count": "12",
+                                        "value": "4"
+                                    },
+                                    {
+                                        "name": "酒吧",
+                                        "count": "10",
+                                        "value": "37"
+                                    },
+                                    {
+                                        "name": "海鲜",
+                                        "count": "6",
+                                        "value": "34"
+                                    },
+                                    {
+                                        "name": "火锅",
+                                        "count": "6",
+                                        "value": "23"
+                                    },
+                                    {
+                                        "name": "西餐",
+                                        "count": "6",
+                                        "value": "41"
+                                    },
+                                    {
+                                        "name": "江浙菜",
+                                        "count": "4",
+                                        "value": "9"
+                                    },
+                                    {
+                                        "name": "法国菜",
+                                        "count": "4",
+                                        "value": "27"
+                                    },
+                                    {
+                                        "name": "川菜",
+                                        "count": "2",
+                                        "value": "7"
+                                    },
+                                    {
+                                        "name": "粤菜",
+                                        "count": "2",
+                                        "value": "5"
+                                    },
+                                    {
+                                        "name": "融合菜",
+                                        "count": "2",
+                                        "value": "24"
+                                    }
+                                ],
+                                "name": "美食",
+                                "icon": "http://r.yhres.com/search2/food@2x.png",
+                                "value": "2",
+                                "urlParam": "cx"
+                            },
+                            {
+                                "urlParamValues": [
+                                    {
+                                        "name": "全部",
+                                        "value": "0"
+                                    },
+                                    {
+                                        "name": "文化艺术",
+                                        "count": "13",
+                                        "value": "4"
+                                    },
+                                    {
+                                        "name": "时尚生活",
+                                        "count": "7",
+                                        "value": "1"
+                                    },
+                                    {
+                                        "name": "户外探索",
+                                        "count": "2",
+                                        "value": "5"
+                                    },
+                                    {
+                                        "name": "探索其他",
+                                        "count": "1",
+                                        "value": "6"
+                                    }
+                                ],
+                                "name": "玩乐",
+                                "icon": "http://r.yhres.com/search2/play@2x.png",
+                                "value": "1",
+                                "urlParam": "ct"
+                            }
+                        ],
+                        "name": "频道分类",
+                        "value": "1",
+                        "urlParam": "catalog"
+                    },
+                    {
+                        "urlParamValues": [
+                            {
+                                "urlParamValues": [
+                                    {
+                                        "urlParamValues": [
+                                            {
+                                                "name": "不限",
+                                                "value": "0"
+                                            },
+                                            {
+                                                "name": "1人",
+                                                "value": "1"
+                                            },
+                                            {
+                                                "name": "2人",
+                                                "value": "2"
+                                            },
+                                            {
+                                                "name": "3-4人",
+                                                "value": "3"
+                                            },
+                                            {
+                                                "name": "4人以上",
+                                                "value": "4"
+                                            }
+                                        ],
+                                        "name": "人数",
+                                        "icon": "http://r.yhres.com/search2/people@2x.png",
+                                        "urlParam": "ps"
+                                    },
+                                    {
+                                        "urlParamValues": [
+                                            {
+                                                "name": "不限",
+                                                "value": "0"
+                                            },
+                                            {
+                                                "name": "午餐",
+                                                "value": "1"
+                                            },
+                                            {
+                                                "name": "晚餐",
+                                                "value": "2"
+                                            },
+                                            {
+                                                "name": "下午茶",
+                                                "value": "3"
+                                            },
+                                            {
+                                                "name": "早午餐",
+                                                "value": "4"
+                                            }
+                                        ],
+                                        "name": "时段",
+                                        "icon": "http://r.yhres.com/search2/time@2x.png",
+                                        "urlParam": "dt"
+                                    },
+                                    {
+                                        "urlParamValues": [
+                                            {
+                                                "name": "不限",
+                                                "value": "0"
+                                            },
+                                            {
+                                                "name": "100以下",
+                                                "value": "1"
+                                            },
+                                            {
+                                                "name": "100-200",
+                                                "value": "2"
+                                            },
+                                            {
+                                                "name": "200-300",
+                                                "value": "3"
+                                            },
+                                            {
+                                                "name": "300-500",
+                                                "value": "4"
+                                            },
+                                            {
+                                                "name": "500以上",
+                                                "value": "5"
+                                            }
+                                        ],
+                                        "name": "价格",
+                                        "icon": "http://r.yhres.com/search2/price@2x.png",
+                                        "urlParam": "pc"
+                                    },
+                                    {
+                                        "urlParamValues": [
+                                            {
+                                                "name": "全部",
+                                                "value": "0"
+                                            },
+                                            {
+                                                "name": "西北湖",
+                                                "value": "2457"
+                                            },
+                                            {
+                                                "name": "客运港/江滩",
+                                                "value": "2436"
+                                            },
+                                            {
+                                                "name": "楚河汉街",
+                                                "value": "2443"
+                                            },
+                                            {
+                                                "name": "解放公园",
+                                                "value": "2438"
+                                            },
+                                            {
+                                                "name": "国际广场",
+                                                "value": "2892"
+                                            },
+                                            {
+                                                "name": "武汉天地",
+                                                "value": "2893"
+                                            },
+                                            {
+                                                "name": "王家湾",
+                                                "value": "2467"
+                                            },
+                                            {
+                                                "name": "唐家墩/菱角湖",
+                                                "value": "2459"
+                                            },
+                                            {
+                                                "name": "光谷/鲁巷",
+                                                "value": "2483"
+                                            },
+                                            {
+                                                "name": "江汉路步行街",
+                                                "value": "2454"
+                                            },
+                                            {
+                                                "name": "其它",
+                                                "value": "-1"
+                                            }
+                                        ],
+                                        "name": "商圈",
+                                        "icon": "http://r.yhres.com/search2/district@2x.png",
+                                        "urlParam": "bc"
+                                    },
+                                    {
+                                        "urlParamValues": [
+                                            {
+                                                "name": "会员权益",
+                                                "value": "0"
+                                            },
+                                            {
+                                                "name": "可订今日",
+                                                "value": "1"
+                                            },
+                                            {
+                                                "name": "可组局",
+                                                "value": "2"
+                                            }
+                                        ],
+                                        "name": "更多条件（可多选）",
+                                        "icon": "http://r.yhres.com/search2/more@2x.png",
+                                        "urlParam": "mc"
+                                    }
+                                ],
+                                "name": "美食筛选",
+                                "value": "2",
+                                "urlParam": "conds"
+                            },
+                            {
+                                "urlParamValues": [
+                                    {
+                                        "urlParamValues": [
+                                            {
+                                                "name": "时间不限",
+                                                "value": "0"
+                                            },
+                                            {
+                                                "name": "本周末",
+                                                "value": "1"
+                                            },
+                                            {
+                                                "name": "7天内",
+                                                "value": "2"
+                                            },
+                                            {
+                                                "name": "7-30天",
+                                                "value": "3"
+                                            },
+                                            {
+                                                "name": "30天后",
+                                                "value": "4"
+                                            }
+                                        ],
+                                        "name": "时段",
+                                        "icon": "http://r.yhres.com/search2/time@2x.png",
+                                        "urlParam": "dt"
+                                    },
+                                    {
+                                        "urlParamValues": [
+                                            {
+                                                "name": "全部",
+                                                "value": "0"
+                                            },
+                                            {
+                                                "name": "汉南区",
+                                                "value": "2427"
+                                            },
+                                            {
+                                                "name": "光谷天地",
+                                                "value": "2482"
+                                            },
+                                            {
+                                                "name": "光谷/鲁巷",
+                                                "value": "2483"
+                                            },
+                                            {
+                                                "name": "江汉路步行街",
+                                                "value": "2454"
+                                            },
+                                            {
+                                                "name": "宝丰",
+                                                "value": "2462"
+                                            },
+                                            {
+                                                "name": "金银湖",
+                                                "value": "2490"
+                                            },
+                                            {
+                                                "name": "客运港/江滩",
+                                                "value": "2436"
+                                            },
+                                            {
+                                                "name": "楚河汉街",
+                                                "value": "2443"
+                                            },
+                                            {
+                                                "name": "积玉桥",
+                                                "value": "2446"
+                                            },
+                                            {
+                                                "name": "大东门/小东门",
+                                                "value": "2448"
+                                            },
+                                            {
+                                                "name": "其它",
+                                                "value": "-1"
+                                            }
+                                        ],
+                                        "name": "商圈",
+                                        "icon": "http://r.yhres.com/search2/district@2x.png",
+                                        "urlParam": "bc"
+                                    }
+                                ],
+                                "name": "活动筛选",
+                                "value": "1",
+                                "urlParam": "conds"
+                            }
+                        ],
+                        "name": "分类筛选",
+                        "value": "2",
+                        "urlParam": "filter"
+                    },
+                    {
+                        "urlParamValues": [
+                            {
+                                "name": "智能排序",
+                                "icon": "http://r.yhres.com/search2/taxis_normal@2x.png",
+                                "selIcon": "http://r.yhres.com/search2/taxis_pressed@2x.png",
+                                "value": "1"
+                            },
+                            {
+                                "name": "离我最近",
+                                "icon": "http://r.yhres.com/search2/location_normal@2x.png",
+                                "selIcon": "http://r.yhres.com/search2/location_pressed@2x.png",
+                                "value": "2"
+                            },
+                            {
+                                "name": "最新上线",
+                                "icon": "http://r.yhres.com/search2/new_normal@2x.png",
+                                "selIcon": "http://r.yhres.com/search2/new_pressed@2x.png",
+                                "value": "3"
+                            },
+                            {
+                                "name": "人气最高",
+                                "icon": "http://r.yhres.com/search2/hot_normal@2x.png",
+                                "selIcon": "http://r.yhres.com/search2/hot_pressed@2x.png",
+                                "value": "4"
+                            },
+                            {
+                                "name": "价格最低",
+                                "icon": "http://r.yhres.com/search2/low_normal@2x.png",
+                                "selIcon": "http://r.yhres.com/search2/low_pressed@2x.png",
+                                "value": "5"
+                            },
+                            {
+                                "name": "价格最高",
+                                "icon": "http://r.yhres.com/search2/high_normal@2x.png",
+                                "selIcon": "http://r.yhres.com/search2/high_pressed@2x.png",
+                                "value": "6"
+                            }
+                        ],
+                        "name": "排序",
+                        "value": "3",
+                        "urlParam": "sort"
+                    }
+                ],
+                "name": "商品",
+                "value": "1",
+                "urlParam": "funcType"
+            }
+        ],
+        "urlParam": "bizType"
+    },
+    "detail": "",
+    "message": "success"
+}

@@ -22,7 +22,7 @@
                     </a>
             </li></ul>
         </div>
-        <a ui-sref="catedetail"><div class="seeMore">{{obj.contentsNumStr}} ></div></a>
+        <a ui-sref="catedetail"><div class="seeMore" ng-click="cclick(i)">{{obj.contentsNumStr}} ></div></a>
     </div>
     <!--优选店铺-->
     <div class="box">
@@ -58,5 +58,5 @@
             <p>Copyright YHOUSE moblie</p>
         </div>
     </div>
-    <div ui-view></div>
+    <!--<div ui-view></div>-->
 </div>

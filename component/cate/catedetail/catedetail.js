@@ -12,13 +12,15 @@ angular.module('catedetailModule',['ui.router','angularCSS'])
 })
 
 .controller('catedetailCtrl',['$scope',function($scope){
-    //localStorage.clear();
-    var allCateDetail = JSON.parse(localStorage.getItem('shop'));
-    $scope.allPageDetail = allCateDetail[0];
-    //console.log($scope.allPageDetail);
-    $scope.otherDetail = allCateDetail[0].contentList;
-    //console.log($scope.otherDetail);
-    $scope.des = allCateDetail[0].topicDescription;
-    $scope.des = $($scope.des);
-    //console.log($scope.des);
+    $scope.allCateDetail= JSON.parse(localStorage.getItem('catedetailArr2'));
+	var topic=$($scope.allCateDetail.topicDescription);
+	$scope.topic=topic;
+	$scope.contentListArr=$scope.allCateDetail.contentList;
+	
+//	console.log($('.title>a').eq(0));
+//	function del(){
+//		localStorage.clear();
+//	}
+//	console.log($scope.allCateDetail);
+	
 }])

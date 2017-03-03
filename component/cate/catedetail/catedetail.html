@@ -1,14 +1,14 @@
 <div id="content">
     <div class="title">
-        <a ui-sref="cate"><i class="fa fa-chevron-left"></i></a>
+        <a ui-sref="cate" ng-click='del()'><i class="fa fa-chevron-left"></i></a>
         <p>专题详情</p>
         <a ui-sref="cate"><i class="fa fa-home"></i></a>
     </div>
     <div class="headImg">
-        <img src="{{allPageDetail.picUrl}}"/>
+        <img src="{{allCateDetail.picUrl}}"/>
     </div>
-    <div class="headMsg"><p ng-repeat="obj in des">{{obj.innerHTML}}</p></div>
-    <div class="shopInfo" ng-repeat="obj in otherDetail">
+    <div class="headMsg"><p ng-repeat='obj in topic'>{{obj.innerHTML}}</p></div>
+    <div class="shopInfo" ng-repeat="obj in contentListArr">
         <div class="shopImg"><img src="{{obj.picUrl}}"/></div>
         <div class="shadow">
             <p>{{obj.hostName}}</p>
