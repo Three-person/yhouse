@@ -5,30 +5,30 @@
 			<li>
 				<div class="myPlace">
 					<span>当前城市:</span>
-					{{}}
+					<span class="place"></span>
 				</div>
 			</li>
 		</ul>
 		<ul class="cityCategory">
 			<li>
 				<p>热门</p>
-				<div><span ng-repeat="obj in hotCityArr">{{obj}}</span></div>
+				<div><a ui-sref="city" ng-repeat="(i,obj) in hotCityArr" ng-click="showPlace(i)">{{obj}}</a></div>
 			</li>
 			<li>
 				<p>A~G</p>
-				<div><span ng-repeat="obj in agCityArr">{{obj}}</span></div>
+				<div><a ui-sref="city" ng-repeat="(i,obj) in agCityArr" ng-click="showPlace(i)">{{obj}}</a></div>
 			</li>
 			<li>
 				<p>H~N</p>
-				<div><span ng-repeat="obj in hnCityArr">{{obj}}</span></div>
+				<div><a ui-sref="city" ng-repeat="(i,obj) in hnCityArr" ng-click="showPlace(i)">{{obj}}</a></div>
 			</li>
 			<li>
 				<p>O~T</p>
-				<div><span ng-repeat="obj in otCityArr">{{obj}}</span></div>
+				<div><a ui-sref="city" ng-repeat="(i,obj) in otCityArr" ng-click="showPlace(i)">{{obj}}</a></div>
 			</li>
 			<li>
 				<p>U~Z</p>
-				<div><span ng-repeat="obj in uzCityArr">{{obj}}</span></div>
+				<div><a ui-sref="city" ng-repeat="(i,obj) in uzCityArr" ng-click="showPlace(i)">{{obj}}</a></div>
 			</li>
 		</ul>
 	</div>

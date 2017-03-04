@@ -16,6 +16,7 @@ angular.module('cityChangeModule',['ui.router'])
 }])
 .controller('cityCtrl',['$scope','$http','cityData',function($scope,$http,cityData){
 	cityData.get().success(function(res){
+		$('.place').text("武汉");
 		var cityGroup=res.cityGroup;
 		var city=res.city;
 		var remen=cityGroup["热门"];
@@ -36,6 +37,13 @@ angular.module('cityChangeModule',['ui.router'])
 					var hotCityName=city[cityId].name;
 					hotCityArr.push(hotCityName);
 					$scope.hotCityArr=hotCityArr;
+					$scope.showPlace=function(i){
+						var myplace=$(this)[0].obj;
+						$('.place').text(myplace);
+//						localStorage.setItem("place",myplace);
+//						var a=localStorage.getItem("place");
+//						console.log(a);
+					}
 				}
 			}
 			for(var j=0;j<AGCategory.length;j++){
@@ -43,6 +51,10 @@ angular.module('cityChangeModule',['ui.router'])
 					var agCityName=city[cityId].name;
 					agCityArr.push(agCityName);
 					$scope.agCityArr=agCityArr;
+					$scope.showPlace=function(i){
+						var myplace=$(this)[0].obj;
+						$('.place').text(myplace);
+					}
 				}
 			}
 			for(var k=0;k<HnCategory.length;k++){
@@ -50,6 +62,10 @@ angular.module('cityChangeModule',['ui.router'])
 					var hnCityName=city[cityId].name;
 					hnCityArr.push(hnCityName);
 					$scope.hnCityArr=hnCityArr;
+					$scope.showPlace=function(i){
+						var myplace=$(this)[0].obj;
+						$('.place').text(myplace);
+					}
 				}
 			}
 			for(var m=0;m<otCategory.length;m++){
@@ -57,6 +73,10 @@ angular.module('cityChangeModule',['ui.router'])
 					var otCityName=city[cityId].name;
 					otCityArr.push(otCityName);
 					$scope.otCityArr=otCityArr;
+					$scope.showPlace=function(i){
+						var myplace=$(this)[0].obj;
+						$('.place').text(myplace);
+					}
 				}
 			}
 			for(var n=0;n<uzCategory.length;n++){
@@ -64,8 +84,13 @@ angular.module('cityChangeModule',['ui.router'])
 					var uzCityName=city[cityId].name;
 					uzCityArr.push(uzCityName);
 					$scope.uzCityArr=uzCityArr;
+					$scope.showPlace=function(i){
+						var myplace=$(this)[0].obj;
+						$('.place').text(myplace);
+					}
 				}
 			}
+			
 			
 		}
 	})

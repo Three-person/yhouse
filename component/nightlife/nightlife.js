@@ -14,6 +14,11 @@ angular.module('nightlifeModule',['ui.router','jiuguanXQModule','fiveteenShopMod
 		$scope.arr=res.data.reserveList[0].content;	
 	});
 	liveData.get().success(function(res){
+		var pid=res.data.pid;
+//		console.log(pid);
+		var pidArr=pid.split(",");
+		console.log(pidArr);
+		localStorage.setItem('idArr',JSON.stringify(pidArr));
 		var arr1=res.data.doc[2].itemData[0].list;
 		var title=res.data.doc[2].itemData[0].title;
 		var viceTitle=res.data.doc[2].itemData[0].viceTitle;
@@ -25,7 +30,6 @@ angular.module('nightlifeModule',['ui.router','jiuguanXQModule','fiveteenShopMod
 		
 		var itemData=res.data.doc[3].itemData;
 		$scope.itemData=itemData;
-//		console.log(itemData);
 		
 	});
 }])

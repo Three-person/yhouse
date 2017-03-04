@@ -10,8 +10,8 @@ angular.module('everShopModule',['ui.router'])
 	})
 })
 .service('everShopData',['$http',function($http){
-	this.get=function(){
-		return $http.get('data/everShopData.json');
+	this.get=function(url){
+		return $http.get(url);
 	}
 }])
 
@@ -28,17 +28,26 @@ angular.module('everShopModule',['ui.router'])
 }])
 
 .controller('everShopCtrl',['$scope','$http','everShopData','swiper',function($scope,$http,everShopData,swiper){
-	everShopData.get().success(function(res){
-		$scope.headPics=res.data.headPics;
-		swiper.swiper();
-		$scope.hostName=res.data.hostName;
-		$scope.avgPrice=res.data.avgPrice;
-		$scope.businessesDistrict=res.data.goodList[0].businessesDistrict;
-		$scope.countOfInterested=res.data.countOfInterested;
-		$scope.address=res.data.address;
-		var tagArr=res.data.tagArr;
-		$scope.tagArr=tagArr;
-		$scope.highs=res.data.highs;
-		$scope.recommendAutomatic=res.recommendAutomatic;
-	})
+	var allId = JSON.parse(localStorage.getItem("idArr"));
+	$scope.allId=allId;
+	console.log(allId);
+	for(var i=0;i<allId.length;i++){
+		var id=allId[i];
+		console.log(id);
+		everShopData.get('http://m.yhouse.com/api/m/host/item-v3.8/'+id+'?from=h5').success(function(res){
+			console.log(res.data);
+			$scope.headPics=res.data.headPics;
+			swiper.swiper();
+			$scope.hostName=res.data.hostName;
+			$scope.avgPrice=res.data.avgPrice;
+			$scope.businessesDistrict=res.data.goodList[0].businessesDistrict;
+			$scope.countOfInterested=res.data.countOfInterested;
+			$scope.address=res.data.address;
+			var tagArr=res.data.tagArr;
+			$scope.tagArr=tagArr;
+			$scope.highs=res.data.highs;
+			$scope.recommendAutomatic=res.recommendAutomatic;
+		})
+		
+	}
 }])

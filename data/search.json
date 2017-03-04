@@ -1,0 +1,31 @@
+{
+    "code": "0",
+    "data": [
+        {
+            "icon": "http://r.yhres.com/search2/district@2x.png",
+            "itemList": [
+                "客运港/江滩",
+                "楚河汉街",
+                "解放公园"
+            ]
+        },
+        {
+            "icon": "http://r.yhres.com/search2/all@2x.png",
+            "itemList": [
+                "创意菜",
+                "酒吧",
+                "文化艺术"
+            ]
+        },
+        {
+            "icon": "http://r.yhres.com/search2/hot_normal@2x.png",
+            "itemList": [
+                "西餐",
+                "下午茶",
+                "演出"
+            ]
+        }
+    ],
+    "detail": "",
+    "message": "success"
+}
