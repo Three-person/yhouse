@@ -1,1 +1,97 @@
-<h1>ASDFGHJKASDFGJ</h1>
+<div class="everShop">
+    <div class="shopTop">
+        <a ui-sref="cate"><i class="fa fa-chevron-left"></i></a>
+        <div class="topTitle">{{allData.hostName}}</div>
+        <a ui-sref="cate"><i class="fa fa-home"></i></a>
+    </div>
+    <div class="everShopContent">
+        <!--轮播图-->
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide" ng-repeat="obj in headPics"><img src="{{obj}}"></div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+
+        <!---->
+        <div class="partials">
+            <div class="container">
+                <h1>{{allData.hostName}}</h1>
+                <p><span>{{allData.avgPrice}}</span><span>{{allData.tags[0]}}</span><span>{{allData.tags[1]}}</span></p>
+                <div class="sc"><span>{{allData.countOfInterested}}人收藏</span></div>
+                <!--<div class="tagArr"><span>{{tagArr[0]}}</span></div>-->
+                <div class="detail_contact">
+                    <div class="detail_address">
+                        <p>{{allData.address}}</p>
+                        <div class="dw"><a href=""></a></div>
+                        <div class="lx"><a href=""></a></div>
+                    </div>
+                </div>
+                <div class="openApp1"><a href="#">打开APP</a></div>
+                <!--推荐理由-->
+                <div class="tj">
+                    <h3><span></span>推荐理由</h3>
+                    <p ng-repeat="obj in highs">{{obj}}</p>
+                    <p class="more">查看详情 ></p>
+                </div>
+                <!--商户话题-->
+                <div class="shht">
+                    <h3><span></span>商户话题</h3>
+                    <p>{{hostShareTag.description}}</p>
+                    <p class="more">发布第一条内容 ></p>
+                </div>
+                <!--热文收录-->
+                <div class="rwsl">
+                    <h3><span></span>热文收录</h3>
+                    <p>本周最热<span>{{hotContent.numStr}} ></span></p>
+                </div>
+                <!--附加信息-->
+                <div class="fjxx">
+                    <h3><span></span>附加信息</h3>
+                    <div><p ng-repeat="obj in productLabels">{{obj.name}}</p></div>
+                    <p class="duration" ng-repeat="obj in durationList">{{obj}}</p>
+                    <p class="service"><span class="s1"></span>在线客服 ><span class="s2"></span>电话客服 ></p>
+                </div>
+                <!--&lt;!&ndash;猜你喜欢&ndash;&gt;-->
+                <!--<div class="cnxh">-->
+                    <!--<h3><span></span>猜你喜欢</h3>-->
+                    <!--<ul class="tjShopList">-->
+                        <!--<li ng-repeat="obj in recommendAutomatic">-->
+                            <!--<a href="">-->
+                                <!--<div class="tjShopImg">-->
+                                    <!--<img src="{{obj.data.picUrl}}"/>-->
+                                <!--</div>-->
+                                <!--<div class="tjShopMsg">-->
+                                    <!--<h4>{{obj.data.hostName}}</h4>-->
+                                    <!--<p>{{obj.data.businessesDistrict}}·{{obj.data.cuisineStyle}}</p>-->
+                                    <!--<p>人均:{{obj.data.price}}元</p>-->
+                                <!--</div>-->
+                                <!--<div class="clearFix"></div>-->
+                            <!--</a>-->
+                        <!--</li>-->
+                    <!--</ul>-->
+                <!--</div>-->
+            </div>
+        </div>
+
+    </div>
+
+    <!--关于我们-->
+    <div class="aboutUs">
+        <div>
+            <ul>
+                <li><a href="javascript:void(0)">首页<span>|</span></a></li>
+                <li><a href="javascript:void(0)">订单<span>|</span></a></li>
+                <li><a href="javascript:void(0)">登录</a></li>
+            </ul>
+        </div>
+        <div class="app">
+            <img src="img/icon_apple@2x.png"/>
+            <img src="img/icon_android@2x.png"/>
+        </div>
+        <div class="copyright">
+            <p>关于我们</p>
+            <p>Copyright YHOUSE moblie</p>
+        </div>
+    </div>
+</div>

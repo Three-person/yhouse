@@ -13,8 +13,8 @@
             <p class="viceTitle">{{obj.viceTitle}}</p>
         </div>
         <div class="shopImg">
-            <ul><li ng-repeat="obj1 in obj.list">
-                    <a ui-sref="shopDetail">
+            <ul><li ng-repeat="(i,obj1) in obj.list">
+                    <a ui-sref="shopDetail" ng-click="detail(i)">
                         <img src="{{obj1.icon}}">
                         <p class="p1">{{obj1.title}}</p>
                         <p class="p2">{{obj1.bdAndCs}}</p>

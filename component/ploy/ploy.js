@@ -32,5 +32,15 @@ angular.module('ployModule',['ui.router','angularCSS','popularModule','playgameM
     })
     ployData.get().success(function(res){
         $scope.allInfoArr = res.data.doc[2].itemData;
+        $scope.shop = function (i) {
+            var allId = [];
+            console.log(i);
+            var obj1 = $scope.allInfoArr;
+            var obj2 = obj1[i].linkUrl;
+            var str = obj2.substring(15);
+            allId.push(str)
+            console.log(allId);
+            sessionStorage.setItem('idArr',JSON.stringify(allId));
+        }
     })
 }])

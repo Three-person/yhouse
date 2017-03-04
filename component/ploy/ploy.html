@@ -12,8 +12,8 @@
         <div><a ui-sref="playgame"><img src="{{imgPopArr[1].picUrl}}"><div class="shadow"></div></a></div>
     </div>
     <!--商家信息-->
-    <div class="shopInfo" ng-repeat="obj in allInfoArr">
-        <a ui-sref="ploydetail">
+    <div class="shopInfo" ng-repeat="(i,obj) in allInfoArr">
+        <a ui-sref="ploydetail" ng-click="shop(i)">
         <div class="shopImg"><img src="{{obj.picUrl}}"/></div>
         <div class="shopMsg">
             <p class="title">{{obj.title}}</p>

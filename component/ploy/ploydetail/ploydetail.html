@@ -11,8 +11,8 @@
         <p class="like"><i class="fa fa-heart"></i> {{headArr.countOfInterested}}人喜欢</p>
     </div>
     <div class="other">
-        <p class="duration">{{headArr.duration}}<span class="tel"></span></p>
-        <p class="address">{{headArr.address}}<span class="map"></span></p>
+        <p class="duration"><span class="s1">{{headArr.duration}}</span><span class="tel"></span></p>
+        <p class="address"><span class="s1">{{headArr.address}}</span><span class="map"></span></p>
         <p class="hostname">{{headArr.hostName}}</p>
         <div class="app">
             <img src="img/sku_banner_text@2x.png"/>
@@ -56,7 +56,7 @@
                 <p>Copyright YHOUSE moblie</p>
             </div>
         </div>
-        <div class="buyNow">立即购买 ></div>
+        <a ui-sref="buyNow"><div class="buyNow">立即购买 ></div></a>
     </div>
 </div>
 

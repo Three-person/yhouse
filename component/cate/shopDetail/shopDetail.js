@@ -17,8 +17,33 @@ angular.module('shopDetailModule',['ui.router','angularCSS'])
     }
 }])
 
-.controller('shopDetailCtrl',['$scope',function($scope,shopDetailData){
-    shopDetailData.get('http://m.yhouse.com/api/m/host/item-v3.8/148750?from=').success(function(data){
-        console.log(data);
-    });
+.service('swiper1',['$timeout',function($timeout){
+    this.swiper = function(){
+        $timeout(function(){
+            Swiper('.swiper-container',{
+                loop: true,
+                autoplay: 2500,
+                pagination: '.swiper-pagination'
+            })
+        },50);
+    }
+}])
+
+.controller('shopDetailCtrl',['$scope','swiper1','shopDetailData',function($scope,swiper1,shopDetailData){
+    $scope.hostId = JSON.parse(localStorage.getItem('allId'));
+    var id = $scope.hostId;
+    //console.log(id);
+    for (var i = 0; i < id.length; i++){
+        shopDetailData.get('http://m.yhouse.com/api/m/host/item-v3.8/'+id[i]+'?from=h5').success(function(res){
+            $scope.allData = res.data;
+            console.log($scope.allData);
+            $scope.headPics = res.data.headPics;
+            swiper1.swiper();
+            $scope.highs = res.data.highs;
+            $scope.hostShareTag = res.data.hostShareTag;
+            $scope.hotContent = res.data.hotContent;
+            $scope.productLabels = res.data.productLabels;
+            $scope.durationList = res.data.durationList;
+        });
+    }
 }])

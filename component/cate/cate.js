@@ -52,7 +52,25 @@ angular.module('cateModule',['ui.router','angularCSS','catedetailModule','shopDe
     cateData.get().success(function(res){
         $scope.allInfoArr = res.data.doc[2].itemData;
         $scope.allShopArr = res.data.doc[3].itemData;
-        //console.log($scope.allShopArr);
+
+        var idArr = [];
+        $scope.detail = function(i){
+            console.log(i);
+        var obj1 = $scope.allInfoArr;
+        for (var i = 0; i < obj1.length; i++){
+            var obj2 = obj1[i].list;
+            //console.log(obj2);
+            for (var j = 0; j < obj2.length; j++){
+                var obj3 = obj2[j].link;
+                //console.log(obj3);
+                var str = obj3.substring(14);
+                //console.log(str);
+                idArr.push(str);
+            }
+        }
+        //console.log(idArr);
+        localStorage.setItem('allId',JSON.stringify(idArr));
+        }
     })
 
 	
@@ -127,4 +145,6 @@ angular.module('cateModule',['ui.router','angularCSS','catedetailModule','shopDe
               }
           }
 //    })(obj)
+
+
 }])
