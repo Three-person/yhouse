@@ -34,6 +34,7 @@
 	<script src="component/ploy/playgame/playgame.js" type="text/javascript" charset="utf-8"></script>
 	<script src="component/ploy/ploydetail/ploydetail.js" type="text/javascript" charset="utf-8"></script>
 	<script src="component/city/city.js" type="text/javascript" charset="utf-8"></script>
+	<script src="component/select/select.js" type="text/javascript" charset="utf-8"></script>
 </head>
 <body>
 	<div class="headAndTab">
@@ -44,7 +45,7 @@
 				<input type="search" value="" name="search" placeholder="请输入商家、商圈、菜系、活动..."/>
 				<span></span>
 			</div>
-			<div class="select">筛选<span></span></div>
+			<a ui-sref="select"><div class="select">筛选<span></span></div></a>
 		</div>
 		<!--tab切换-->
 		<ul id="tab">
@@ -82,7 +83,7 @@
 		
 		window.onscroll=function(){
 			var s=$(window).scrollTop();
-//			console.log(s);
+			console.log(s);
 			if(s==0){
 				$('#tab').css({
 					'position':'static'
