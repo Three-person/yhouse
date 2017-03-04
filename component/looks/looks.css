@@ -215,6 +215,248 @@
 	text-align: center;
 	background-color: #fff;
 }
+
+
+.filter{
+	width: 100%;
+	/*height: 4.5rem;*/
+	background-color: #fff;
+	z-index: 99;
+	position: fixed;
+}
+.filterHeader{
+	width: 100%;
+	height: 2.25rem;
+	display: flex;
+	font-size: 0.85rem;
+	color: #555;
+}
+.filterHeader>p{
+	width: 25%;
+	height: 100%;
+	line-height: 2.25rem;
+}
+.filterHeader>p:nth-child(1){
+	padding-left: 1rem;
+	font-size: 1rem;
+}
+.filterHeader>p:nth-child(3){
+	padding-left: 3rem;
+	font-size: 1rem;
+}
+.filterHeader>ul{
+	width: 50%;
+	height: 100%;
+	display: flex;
+}
+.filterHeader>ul>li{
+	width: 50%;
+	height: 100%;
+}
+.filterHeader>ul>li>a{
+	display: block;
+	width: 1.7rem;
+	height: 100%;
+	line-height: 2.25rem;
+	margin: 0 auto; 
+}
+.selectAndsort{
+	width: 100%;
+	height: 2.25rem;
+	border-bottom: 1px solid #ddd;
+	border-top: 1px solid #ddd;
+	display: flex;
+}
+.selectAndsort>li{
+	width: 33.33%;
+	height: 100%;
+	padding-top: 0.7rem;
+}
+.selectAndsort>li>span{
+	display: block;
+	height: 0.8rem;
+	line-height: 0.8rem;
+	text-align: center;
+	background-image: url(../../img-h/todown.png);
+	background-size: 0.5rem auto;
+	padding-right: 1.75rem;
+	background-position: 4rem center;
+	background-repeat: no-repeat;
+	font-size: 0.7rem;
+	border-right: 1px solid #999;
+}
+.all{
+	width: 100%;
+	height: 19.3rem;
+	background-color: #fff;
+	display: flex;
+}
+.all>ul{
+	width: 50%;
+	height: 100%;
+	float: left;
+}
+.all>ul:nth-child(1){
+	background-color: #f4f4f4;
+}
+.all>ul:nth-child(1)>li{
+	width: 100%;
+	height: 2.25rem;
+	line-height: 2.25rem;
+	background-image: url(../img-f/scbg.png);
+	background-size:0.7rem;
+	padding-left: 2.4rem;
+	background-position: 1.2rem center;
+	background-repeat: no-repeat;
+	font-size: 0.7rem;
+	color: #111;
+}
+.all>ul:nth-child(2){
+	padding-left: 0.75rem;
+	padding-right: 0.5rem;
+	font-size: 0.7rem;
+	color: #111;
+	overflow: auto;
+}
+.all>ul:nth-child(2)>li{
+	width: 8rem;
+	height: 2.25rem;
+	line-height: 2.25rem;
+	border-bottom: 1px solid #ddd;
+}
+.active{
+	background-color: #fff;
+}
+.activeGold{
+	color: #cba162;
+	background-image: url(../../img-h/true.png);
+	background-position: right center;
+	background-repeat: no-repeat;
+}
+.all{
+	display: none;
+}
+.all1{
+	width: 100%;
+	height: 22.3rem;
+	background-color: #fff;
+}
+.unlimited{
+	width: 100%;
+	height: 19.75rem;
+	overflow: auto;
+}
+.unlimited>div{
+	width: 100%;
+	padding: 0.7rem 0 0 0.75rem;
+}
+.fourunlimited>h3{
+	width: 18rem;
+	height: 0.8rem;
+	line-height: 0.8rem;
+	font-size: 0.7rem;
+	color: #111;
+	padding-left: 1.05rem;
+	background-position: left center;
+	background-repeat: no-repeat;
+	background-size: 0.7rem auto;
+}
+.fourunlimited>ul{
+	width: 18rem;
+	padding-bottom: 1rem;
+	display: flex;
+	flex-wrap: wrap;
+}
+.fourunlimited>ul>li{
+	width: 4rem;
+	height: 1.5rem;
+	line-height: 1.5rem;
+	margin-top: 0.45rem;
+	margin-right: 0.45rem;
+	/*color: #555555;*/
+	border: 1px solid #bbb;
+	text-align: center;
+	padding: 0 0.35rem;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	font-size: 0.7rem;
+}
+.all2{
+	width: 100%;
+	height: 15rem;
+	padding: 0 0.75rem;
+}
+.all2>ul{
+	width: 17.25rem;
+	/*height: 100%;*/
+	
+}
+.all2>ul>li{
+	width: 100%;
+	height: 2.5rem;
+	border-bottom: 1px solid #ddd;
+	font-size: 0.7rem;
+	color: #111;
+	padding-left: 1.3rem;
+	display: flex;
+	align-items: center;
+}
+.all2>ul>li>i{
+	display: inline-block;
+	width: 1.3rem;
+	height: 100%;
+	background-size: 0.7rem auto;
+	background-position:left center;
+	background-repeat: no-repeat;
+}
+.all2>ul>li>span{
+	display: inline-block;
+	width: 2.8rem;
+	height: 0.8rem;
+}
+.smartactive{
+	background-image: url(../../img-h/true.png);
+	background-position: right center;
+	background-repeat: no-repeat;
+}
+.smartli{
+	color: #cba162;
+}
+.sxactive{
+	border-color: #cba162;
+	background-color: #fbf8f3;
+	color: #cba162;
+}
+
+
+
+.filter_btn{
+	width: 100%;
+	height: 2.5rem;
+	font-size: 0.85rem;
+	display: flex;
+}
+.filter_btn>a{
+	display: block;
+	width: 50%;
+	height: 100%;
+	line-height: 2.5rem;
+	text-align: center;
+	border-top: 1px solid #bbb;
+}
+.filter_btn>a:nth-child(1){
+	background-color: #fff;
+	color: #cba162;
+}
+.filter_btn>a:nth-child(2){
+	background-color: #cba162;
+	color: #fff;
+	font-weight: 700;
+}
+
+
+
 .aboutUs{width: 100%;height: 10.6rem;padding: 1.3rem 0;}
 .aboutUs div{width: 100%;height: 2.25rem;}
 .aboutUs ul{padding: 0 2.3rem;}

@@ -1,4 +1,53 @@
 <div class="lookcontent">
+	<!--筛选页面-->
+	<div class="filter">
+		<div class="filterHeader">
+			<p><i class="fa fa-angle-left" aria-hidden="true"></i></p>
+			<ul>
+				<li ng-repeat='obj in urlParamValuesArr'><a>{{obj.name}}</a></li>
+			</ul>
+			<p><i class="fa fa-search" aria-hidden="true"></i></p>
+		</div>
+		<ul class="selectAndsort">
+			<li>
+				<span ng-click='uptodown(0)'>全部</span>
+			</li>
+			<li>
+				<span ng-click='uptodown(1)'>分类筛选</span>
+			</li>
+			<li>
+				<span ng-click='uptodown(2)'>智能排序</span>
+			</li>
+		</ul>
+		<div class="all">
+			<ul>
+				<li ng-repeat='(i,obj) in fourArr' style="background-image: url({{obj.icon}});" ng-click='fourArrchange(i);changecolor(i);diffty(i)'>{{obj.name}}</li>
+			</ul>
+			<ul>
+				<li ng-repeat='(i,obj) in fourMoreArr' ng-click='changestyle(i)'>{{obj.name}}</li>
+			</ul>
+		</div>
+		<div class="all1">
+			<div class="unlimited">
+				<div class="fourunlimited" ng-repeat='obj in fourunlimitedsArr'>
+					<h3 style="background-image:url({{obj.icon}})">{{obj.name}}</h3>
+					<ul>
+						<li ng-repeat='(i,obj1) in obj.urlParamValues' ng-click='sxstyle(i)'>{{obj1.name}}</li>
+					</ul>
+				</div>
+			</div>
+			<div class="filter_btn">
+				<a class="reset">重置</a>
+				<a class="ok">确定</a>
+			</div>
+		</div>
+		<div class="all2">
+			<ul>
+				<li ng-repeat='(i,obj) in smartsortArr' ng-click='smartstyle(i)'><i style="background-image: url({{obj.icon}});"></i><span>{{obj.name}}</span></li>
+			</ul>
+		</div>
+	</div>
+	<!--轮播-->
 	<div class="swiper-container">
 	    <div class="swiper-wrapper">
 	        <div class="swiper-slide" ng-repeat="obj in arr"><img src="{{obj.picUrl}}"/></div>
