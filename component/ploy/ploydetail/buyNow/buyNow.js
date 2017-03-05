@@ -5,13 +5,13 @@ angular.module('buyNowModule',['ui.router','angularCSS'])
     $stateProvider
     .state('buyNow',{
         url:'/buyNow',
-        templateUrl:'component/ploy/ploydetail/buyNwo/buyNow.html',
+        templateUrl:'component/ploy/ploydetail/buyNow/butNow.html',
         controller:'buyNowCtrl',
-        css:'component/ploy/ploydetail/buyNwo/buyNow.css'
+        css:'component/ploy/ploydetail/buyNow/buyNow.css'
     })
 })
 
-.service(buyNowData,['$http',function($http){
+.service('buyNowData',['$http',function($http){
     this.get = function(url){
         return $http.get(url)
     }

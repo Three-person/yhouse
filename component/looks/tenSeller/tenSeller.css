@@ -3,6 +3,7 @@
 	height: 100%;
 	position: fixed;
 	top: 0;
+	background-color: #fff;
 }
 .special{
 	display: flex;
@@ -11,6 +12,9 @@
 	justify-content: space-between;
 	align-items: center;
 	background-color: #fff;
+	position: fixed;
+	top: 0;
+	z-index:99;
 }
 .special>h2{
 	width: 80%;

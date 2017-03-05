@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 angular.module('ploydetailModule',['ui.router','me-lazyload','angularCSS'])
+=======
+angular.module('ploydetailModule',['ui.router','buyNowModule'])
+>>>>>>> 2ccf5d91c1ceab6be921c31d953ced32e78c1db6
 
 .config(function($stateProvider,$urlRouterProvider){
     $urlRouterProvider.otherwise('/ploy');
