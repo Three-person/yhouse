@@ -1,4 +1,4 @@
-angular.module('looksModule',['ui.router','tenSellerModule'])
+angular.module('looksModule',['ui.router','tenSellerModule','me-lazyload'])
 .service('bannerData4',['$http',function($http){
 	this.get=function(){
 		return $http.get('data/banner4.json');

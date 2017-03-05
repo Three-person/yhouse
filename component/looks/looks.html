@@ -2,7 +2,7 @@
 	<!--轮播-->
 	<div class="swiper-container">
 	    <div class="swiper-wrapper">
-	        <div class="swiper-slide" ng-repeat="obj in arr"><img src="{{obj.picUrl}}"/></div>
+	        <div class="swiper-slide" ng-repeat="obj in arr"><img lazy-src="{{obj.picUrl}}"/></div>
 	    </div>
 	    <!-- 如果需要分页器 -->
 	    <div class="swiper-pagination"></div>
@@ -13,7 +13,7 @@
 			<h4>{{fourArr1.viceTitle}}</h4>
 			<ul class="fourmeal">
 				<li ng-repeat='obj in fourArr1.list'>
-					<div class="pic"><img src="{{obj.icon}}"/></div>
+					<div class="pic"><img lazy-src="{{obj.icon}}"/></div>
 					<div class="desc">
 						<p class="p1">{{obj.title}}</p>
 						<p class="p2">{{obj.bdAndCs}}</p>
@@ -30,14 +30,14 @@
 		<li ng-repeat='obj in detailArr'>
 			<div class="logo">
 				<div class="left">
-					<img src="{{obj.logoUrl}}"/>
+					<img lazy-src="{{obj.logoUrl}}"/>
 				</div>
 				<div class="right">
 					<h2>{{obj.hostName}}</h2>
 				</div>
 			</div>
 			<div class="grids">
-				<img src="{{obj.picUrl}}"/>
+				<img lazy-src="{{obj.picUrl}}"/>
 			</div>
 			<div class="desc2">
 				<p>{{obj.highLigth}}</p>
@@ -61,8 +61,8 @@
             </ul>
         </div>
         <div class="app">
-            <img src="img/icon_apple@2x.png"/>
-            <img src="img/icon_android@2x.png"/>
+            <img lazy-src="img/icon_apple@2x.png"/>
+            <img lazy-src="img/icon_android@2x.png"/>
         </div>
         <div class="copyright">
             <p>关于我们</p>
