@@ -9,13 +9,13 @@
 		</div>
 		<ul class="selectAndsort">
 			<li>
-				<span ng-click='uptodown(0)'>全部</span>
+				<span>全部</span>
 			</li>
 			<li>
-				<span ng-click='uptodown(1)'>分类筛选</span>
+				<span>分类筛选</span>
 			</li>
 			<li>
-				<span ng-click='uptodown(2)'>智能排序</span>
+				<span>智能排序</span>
 			</li>
 		</ul>
 		<div class="all">
@@ -42,18 +42,24 @@
 		</div>
 		<div class="all2">
 			<ul>
-				<li ng-repeat='(i,obj) in smartsortArr' ng-click="smartstyle(i);orderStyle='productInfo.price-0'"><i style="background-image: url({{obj.icon}});"></i><span>{{obj.name}}</span></li>
+				<!--<li ng-repeat='(i,obj) in smartsortArr' ng-click="smartstyle(i);orderStyle='productInfo.price'"><i style="background-image: url({{obj.icon}});"></i><span>{{obj.name}}</span></li>-->
+				<li ng-click="orderStyle='smart'"><i style="background-image: url({{smartsortArr[0].icon}});"></i><span>{{smartsortArr[0].name}}</span></li>
+				<li><i style="background-image: url({{smartsortArr[1].icon}});"></i><span>{{smartsortArr[1].name}}</span></li>
+				<li><i style="background-image: url({{smartsortArr[2].icon}});"></i><span>{{smartsortArr[2].name}}</span></li>
+				<li><i style="background-image: url({{smartsortArr[3].icon}});"></i><span>{{smartsortArr[3].name}}</span></li>
+				<li ng-click="orderStyle='productInfo.price'"><i style="background-image: url({{smartsortArr[4].icon}});"></i><span>{{smartsortArr[4].name}}</span></li>
+				<li ng-click="orderStyle='-productInfo.price'"><i style="background-image: url({{smartsortArr[5].icon}});"></i><span>{{smartsortArr[5].name}}</span></li>
 			</ul>
 		</div>
 	</div>
 	<ul class="storesss">
-			<li ng-repeat='obj in selectArr | orderBy:orderStyle'>
+			<li ng-repeat="obj in selectArr | orderBy:orderStyle" ng-init="orderStyle='smart'">
 				<a>
 					<div><img src="{{obj.productInfo.picUrl}}"/></div>
 					<div>
 						<h3>{{obj.productInfo.hostName}}</h3>
 						<p><span>{{obj.productInfo.businessesDistrict}}</span>·<span>{{obj.productInfo.cuisineStyle}}</span></p>
-						<span class="average">人均:<span class="money">{{obj.productInfo.priceStr}}</span></span>
+						<span class="average">人均:<span class="money">{{obj.productInfo.price}}</span></span>
 						<div>套餐</div>
 					</div>
 				</a>

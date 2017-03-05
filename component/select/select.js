@@ -23,6 +23,9 @@ angular.module('selectModule',['ui.router','angularCSS'])
 		}
 	}])
 
+
+
+
 .controller('selectCtrl',['$scope','selectData','spaSelectData',function($scope,selectData,spaSelectData){
 	//筛选
 	selectData.get().success(function(res){
@@ -50,12 +53,12 @@ angular.module('selectModule',['ui.router','angularCSS'])
 		}
 		
 		//点击按钮翻转动画
-		$scope.uptodown=function(i){
-//			console.log("123");
-			$('.selectAndsort>li').eq(i).find('span').css({
-				'background-image':'url(img-h/toup.png)'
-			})
-		}
+//		$scope.uptodown=function(i){
+////			console.log("123");
+//			$('.selectAndsort>li').eq(i).find('span').css({
+//				'background-image':'url(img-h/toup.png)'
+//			})
+//		}
 		
 		
 		//点击类型有不同筛选
@@ -70,12 +73,16 @@ angular.module('selectModule',['ui.router','angularCSS'])
 		//智能排序
 		$scope.smartsortArr=$scope.urlParamValuesArr[0].urlParamValues[2].urlParamValues;
 		//点击只能排序切换样式
-		$scope.smartstyle=function(i){
-			$('.all2>ul>li').removeClass();
-			$('.all2>ul>li').find('span').removeClass();
-			$('.all2>ul>li').eq(i).addClass('smartactive');
-			$('.all2>ul>li').eq(i).find('span').addClass('smartli');
-		}
+//		$scope.smartstyle=function(){
+			$('.all2>ul>li').click(function(){
+				var index=$(this).index();
+				console.log(index);
+				$('.all2>ul>li').removeClass();
+				$('.all2>ul>li').find('span').removeClass();
+				$('.all2>ul>li').eq(index).addClass('smartactive');
+				$('.all2>ul>li').eq(index).find('span').addClass('smartli');
+			})
+//		}
 		
 		
 		
@@ -99,9 +106,15 @@ angular.module('selectModule',['ui.router','angularCSS'])
 			$('.all2').css({
 				'display':'none'
 			})
+			$('.selectAndsort>li').eq(0).find('span').css({
+				'background-image':'url(img-h/toup.png)'
+			})
 			if(i%2==0){
 				$('.all').css({
 					'display':'none'
+				})
+				$('.selectAndsort>li').eq(0).find('span').css({
+					'background-image':'url(img-h/todown.png)'
 				})
 				i=0;
 			}
@@ -117,9 +130,15 @@ angular.module('selectModule',['ui.router','angularCSS'])
 			$('.all2').css({
 				'display':'none'
 			})
+			$('.selectAndsort>li').eq(1).find('span').css({
+				'background-image':'url(img-h/toup.png)'
+			})
 			if(j%2==0){
 				$('.all1').css({
 					'display':'none'
+				})
+				$('.selectAndsort>li').eq(1).find('span').css({
+					'background-image':'url(img-h/todown.png)'
 				})
 				j=0;
 			}
@@ -135,9 +154,15 @@ angular.module('selectModule',['ui.router','angularCSS'])
 			$('.all2').css({
 				'display':'block'
 			})
+			$('.selectAndsort>li').eq(2).find('span').css({
+				'background-image':'url(img-h/toup.png)'
+			})
 			if(k%2==0){
 				$('.all2').css({
 					'display':'none'
+				})
+				$('.selectAndsort>li').eq(2).find('span').css({
+					'background-image':'url(img-h/todown.png)'
 				})
 				k=0;
 			}
@@ -168,13 +193,32 @@ angular.module('selectModule',['ui.router','angularCSS'])
 	spaSelectData.get().success(function(res){
 		$scope.selectArr=res.data.searchData.doc;
 		console.log($scope.selectArr);
+//		for(var i=0;i<$scope.selectArr.length;i++){
+//			var str=$scope.selectArr[i];
+//			if(str.productInfo.price==null){
+//				$('.storesss>li').eq(i).find('.average').css({
+//					'backgroundColor':'red'
+//				})
+//				console.log(i);
+//			}
+//		}
 	})
 	
 	
-	//价格排序
-	$('.all2>ul>li').eq(4)
-	$scope.pricedown=function(i){
-		
-	}
+	
+	//切换到那个排序
+//	$scope.order=function(i){
+//		var s;
+//		console.log(i);
+//		if(i==4){
+//			s= "orderStyle='productInfo.price'";
+//		}
+//		if(i==5){
+//			s ="orderStyle='-productInfo.price'";
+//		}
+//		console.log(s);
+//		return s;
+//	}
+
 	
 }])
