@@ -1,0 +1,28 @@
+#content{width: 100%;height: 100%;overflow: auto;background: #f5f5f5;position: fixed;top: 0;z-index: 999;}
+.title{width: 100%;height: 2.25rem;padding: 0.5rem 0.5rem;text-align: center;border-bottom: 0.005rem solid #cccccc;font-size: 1rem;font-weight: bold;background: #ffffff;display: flex;z-index: 50;position: fixed;top: 0;}
+.title p{text-align: center;width: 100%;height: 100%;display: inline-block;}
+.title a{display: inline-block;width: 1.2rem;height: 1.2rem;position: relative;}
+.title a .s1{display: block;width: 100%;height: 100%;background: url("../../../../img/icon_nav@3x.png") no-repeat -0.6rem;position: absolute;top: 0.5rem;}
+.title a .s2{display: block;width: 100%;height: 100%;background: url("../../../../img/icon_nav@3x.png") no-repeat;position: absolute;top: 0.5rem;}
+
+.product{width: 100%;height: 5.5rem;padding: 0.8rem;background: #ffffff;margin-top: 2.25rem;border-bottom: 0.005rem solid #cccccc;}
+.product>div{display: inline-block;float: left;}
+.product .img img{width: 6rem;height: 3.75rem;}
+.product .proName{width: 10.5rem;height: 4rem;margin-left: 0.5rem;font-size: 0.8rem;}
+
+.count{width: 100%;height: 2.5rem;line-height: 2.5rem;padding: 0 0.8rem;font-size: 0.8rem;background: #ffffff;border-bottom: 0.005rem solid #cccccc;margin-bottom: 0.6rem;}
+.count>div{display: inline-block;}
+.count>div:last-child{float: right;}
+.count>div:last-child input{display: inline-block;width: 1.5rem;height: 1.5rem;border: 0.005rem solid #CCCCCC;float: left;background: none;margin-top: 0.5rem;border-radius: 0.1rem;outline: none;}
+.count>div:last-child input:nth-child(2){width: 2.5rem;height: 1.5rem;display: inline-block;text-align: center;}
+
+.user{width: 100%;height: 7.5rem;background: #ffffff;border-bottom: 0.005rem solid #cccccc;border-top: 0.005rem solid #cccccc;font-size: 0.8rem;color: #CCCCCC;}
+.user ul{padding-left: 0.8rem;}
+.user ul li{width: 100%;height: 2.5rem;line-height: 2.5rem;border-bottom: 0.005rem solid #cccccc;}
+.user ul li:nth-child(2) input{width: 10.2rem;}
+.user ul li:nth-child(2) span{width: 6.7rem;color: gray;text-align: center;border-left: 0.005rem solid #cccccc;}
+.user ul li:last-child{border-bottom: none;}
+.user ul li span,.user ul li input{display: inline-block;margin-left: 0.5rem;border: none;outline: none;}
+
+.buyNow{width: 100%;height: 2.5rem;background: #cba162;line-height: 2.5rem;text-align: center;color: #ffffff;font-size: 0.9rem;font-weight: bold;position: fixed;bottom: 0;}
+.buyNow span{font-size: 0.8rem;}
