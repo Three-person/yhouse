@@ -1,4 +1,4 @@
-angular.module('fiveteenShopModule',['ui.router'])
+angular.module('fiveteenShopModule',['ui.router','me-lazyload'])
 .config(function($stateProvider,$urlRouterProvider){
 	$urlRouterProvider.otherwise('/nightlife');
 	$stateProvider

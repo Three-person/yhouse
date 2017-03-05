@@ -1,4 +1,4 @@
-angular.module('playgameModule',['ui.router','angularCSS'])
+angular.module('playgameModule',['ui.router','me-lazyload','angularCSS'])
 
 .config(function($stateProvider,$urlRouterProvider){
     $urlRouterProvider.otherwise('/ploy');

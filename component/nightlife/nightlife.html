@@ -2,7 +2,7 @@
 	<!--banner图-->
 	<div class="liveBanner" ng-repeat="obj in arr">
 		<a class="bannerLink" ui-sref="jiuguan">
-			<img src="{{obj.picUrl}}"/>
+			<img lazy-src="{{obj.picUrl}}"/>
 		</a>
 	</div>
 	<!--人气潮Bar-->
@@ -13,7 +13,7 @@
 			<li ng-repeat="obj1 in arr1">
 				<a ui-sref="everShop">
 					<div class="imgBox">
-						<img src="{{obj1.icon}}"/>
+						<img lazy-src="{{obj1.icon}}"/>
 					</div>
 					<div class="shopMsg">
 						<p>{{obj1.title}}</p>
@@ -32,14 +32,14 @@
 			<a ui-sref="everShop">
 				<div class="barTitle">
 					<div class="barLogo">
-						<img src="{{obj2.logoUrl}}"/>
+						<img lazy-src="{{obj2.logoUrl}}"/>
 					</div>
 					<div class="titleText">
 						<p>{{obj2.title}}</p>
 					</div>
 				</div>
 				<div class="barImg">
-					<img src="{{obj2.picUrl}}"/>
+					<img lazy-src="{{obj2.picUrl}}"/>
 				</div>
 				<div class="barMsg">
 					<p class="barName">{{obj2.hostName}}</p>
@@ -58,8 +58,8 @@
             </ul>
         </div>
         <div class="app">
-            <img src="img/icon_apple@2x.png"/>
-            <img src="img/icon_android@2x.png"/>
+            <img lazy-src="img/icon_apple@2x.png"/>
+            <img lazy-src="img/icon_android@2x.png"/>
         </div>
         <div class="copyright">
             <p>关于我们</p>

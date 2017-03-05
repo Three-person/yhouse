@@ -1,4 +1,4 @@
-angular.module('everShopModule',['ui.router'])
+angular.module('everShopModule',['ui.router','me-lazyload'])
 .config(function($stateProvider,$urlRouterProvider){
 	$urlRouterProvider.otherwise('/nightlife');
 	$stateProvider

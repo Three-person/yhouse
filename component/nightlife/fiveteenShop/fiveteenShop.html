@@ -6,7 +6,7 @@
 	</div>
 	<div class="fiveteenShopContent">
 		<div class="picUrl">
-			<img src="{{picUrl}}"/>
+			<img lazy-src="{{picUrl}}"/>
 		</div>
 		<div class="floor1">
 			<div class="msg">
@@ -17,7 +17,7 @@
 		<div class="img-wrap" ng-repeat="obj in contentList">
 		<a href="#">
 			<div class="img-wrap-box">
-				<img src="{{obj.picUrl}}" />
+				<img lazy-src="{{obj.picUrl}}" />
 			</div>
 			<div class="backcover"></div>
 			<div class="img-wrap-text">
@@ -38,8 +38,8 @@
             </ul>
         </div>
         <div class="app">
-            <img src="img/icon_apple@2x.png"/>
-            <img src="img/icon_android@2x.png"/>
+            <img lazy-src="img/icon_apple@2x.png"/>
+            <img lazy-src="img/icon_android@2x.png"/>
         </div>
         <div class="copyright">
             <p>关于我们</p>

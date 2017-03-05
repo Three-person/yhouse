@@ -1,4 +1,4 @@
-angular.module('shopDetailModule',['ui.router','angularCSS'])
+angular.module('shopDetailModule',['ui.router','me-lazyload','angularCSS'])
 
 .config(function($stateProvider,$urlRouterProvider){
     $urlRouterProvider.otherwise('/cate.shopDetail');

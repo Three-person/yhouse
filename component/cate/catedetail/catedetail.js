@@ -1,4 +1,4 @@
-angular.module('catedetailModule',['ui.router','angularCSS'])
+angular.module('catedetailModule',['ui.router','me-lazyload','angularCSS'])
 
 .config(function($stateProvider,$urlRouterProvider){
     $urlRouterProvider.otherwise('/cate.catedetail');

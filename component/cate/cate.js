@@ -1,4 +1,4 @@
-angular.module('cateModule',['ui.router','angularCSS','catedetailModule','shopDetailModule'])
+angular.module('cateModule',['ui.router','angularCSS','me-lazyload','catedetailModule','shopDetailModule'])
 
 .service('cateBanner',['$http',function($http){
     this.get = function(){

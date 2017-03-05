@@ -1,4 +1,4 @@
-angular.module('popularModule',['ui.router','angularCSS'])
+angular.module('popularModule',['ui.router','me-lazyload','angularCSS'])
 
 .config(function($stateProvider,$urlRouterProvider){
     $urlRouterProvider.otherwise('/ploy');

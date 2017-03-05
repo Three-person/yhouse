@@ -1,4 +1,4 @@
-angular.module('jiuguanXQModule',['ui.router'])
+angular.module('jiuguanXQModule',['ui.router','me-lazyload'])
 .config(function($stateProvider,$urlRouterProvider){
 	$urlRouterProvider.otherwise('/nightlife');
 	$stateProvider

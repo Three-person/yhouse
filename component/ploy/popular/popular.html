@@ -5,11 +5,11 @@
         <a ui-sref="ploy"><i class="fa fa-home"></i></a>
     </div>
     <div class="headImg">
-        <img src="{{headArr.picUrl}}"/>
+        <img lazy-src="{{headArr.picUrl}}"/>
     </div>
     <div class="headMsg"><p ng-repeat="obj in des">{{obj.innerHTML}}</p></div>
     <div class="shopInfo" ng-repeat="obj in shopArr">
-        <div class="shopImg"><img src="{{obj.picUrl}}"/></div>
+        <div class="shopImg"><img lazy-src="{{obj.picUrl}}"/></div>
         <div class="shadow">
             <p>{{obj.hostName}}</p>
             <p>{{obj.title}}</p>
@@ -26,8 +26,8 @@
             </ul>
         </div>
         <div class="app">
-            <img src="img/icon_apple@2x.png"/>
-            <img src="img/icon_android@2x.png"/>
+            <img lazy-src="img/icon_apple@2x.png"/>
+            <img lazy-src="img/icon_android@2x.png"/>
         </div>
         <div class="copyright">
             <p>关于我们</p>

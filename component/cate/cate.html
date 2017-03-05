@@ -2,7 +2,7 @@
     <!--轮播图-->
     <div class="swiper-container">
         <div class="swiper-wrapper">
-            <div class="swiper-slide" ng-repeat="obj in imgSwiperArr"><img src="{{obj.picUrl}}"></div>
+            <div class="swiper-slide" ng-repeat="obj in imgSwiperArr"><img lazy-src="{{obj.picUrl}}"></div>
         </div>
         <div class="swiper-pagination"></div>
     </div>
@@ -15,7 +15,7 @@
         <div class="shopImg">
             <ul><li ng-repeat="(i,obj1) in obj.list">
                     <a ui-sref="shopDetail" ng-click="detail(i)">
-                        <img src="{{obj1.icon}}">
+                        <img lazy-src="{{obj1.icon}}">
                         <p class="p1">{{obj1.title}}</p>
                         <p class="p2">{{obj1.bdAndCs}}</p>
                         <p class="p3">{{obj1.price}}</p>
@@ -28,10 +28,10 @@
     <div class="box">
         <div class="shopInfo" ng-repeat="obj in allShopArr">
             <div class="logoAndName">
-                <img src="{{obj.logoUrl}}">
+                <img lazy-src="{{obj.logoUrl}}">
                 <p>{{obj.hostName}}</p>
             </div>
-            <div class="shopPic"><img src="{{obj.picUrl}}"/></div>
+            <div class="shopPic"><img lazy-src="{{obj.picUrl}}"/></div>
             <div class="joinShop">
                 <p class="p1">{{obj.highLigth}}</p>
                 <p class="p2">{{obj.businessesDistrict}} <span>|</span> {{obj.cuisineStyle}}<span class="s2"><a href="#">进店逛逛 ></a></span></p>
@@ -50,8 +50,8 @@
             </ul>
         </div>
         <div class="app">
-            <img src="img/icon_apple@2x.png"/>
-            <img src="img/icon_android@2x.png"/>
+            <img lazy-src="img/icon_apple@2x.png"/>
+            <img lazy-src="img/icon_android@2x.png"/>
         </div>
         <div class="copyright">
             <p>关于我们</p>

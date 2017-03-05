@@ -8,13 +8,13 @@
     </div>
     <!--流行/游戏-->
     <div class="popular">
-        <div><a ui-sref="popular"><img src="{{imgPopArr[0].picUrl}}"><div class="shadow"></div></a></div>
-        <div><a ui-sref="playgame"><img src="{{imgPopArr[1].picUrl}}"><div class="shadow"></div></a></div>
+        <div><a ui-sref="popular"><img lazy-src="{{imgPopArr[0].picUrl}}"><div class="shadow"></div></a></div>
+        <div><a ui-sref="playgame"><img lazy-src="{{imgPopArr[1].picUrl}}"><div class="shadow"></div></a></div>
     </div>
     <!--商家信息-->
     <div class="shopInfo" ng-repeat="(i,obj) in allInfoArr">
         <a ui-sref="ploydetail" ng-click="shop(i)">
-        <div class="shopImg"><img src="{{obj.picUrl}}"/></div>
+        <div class="shopImg"><img lazy-src="{{obj.picUrl}}"/></div>
         <div class="shopMsg">
             <p class="title">{{obj.title}}</p>
             <p class="otherInfo"><span class="address">{{obj.district}} </span>|&nbsp;<span class="des">{{obj.hostName}}</span><span class="price">{{obj.neededCredits}}</span></p>
@@ -34,8 +34,8 @@
             </ul>
         </div>
         <div class="app">
-            <img src="img/icon_apple@2x.png"/>
-            <img src="img/icon_android@2x.png"/>
+            <img lazy-src="img/icon_apple@2x.png"/>
+            <img lazy-src="img/icon_android@2x.png"/>
         </div>
         <div class="copyright">
             <p>关于我们</p>
