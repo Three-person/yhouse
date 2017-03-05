@@ -1,4 +1,4 @@
-angular.module('ploydetailModule',['ui.router','angularCSS'])
+angular.module('ploydetailModule',['ui.router','buyNowModule'])
 
 .config(function($stateProvider,$urlRouterProvider){
     $urlRouterProvider.otherwise('/ploy');
