@@ -24,6 +24,7 @@ angular.module('ploydetailModule',['ui.router','me-lazyload','angularCSS','buyNo
     for (var i = 0; i < id.length; i++){
         ploydetailData.get('http://m.yhouse.com/api/m/event/item-v2.3/'+id[i]+'?from=h5').success(function (res) {
             $scope.headArr = res.data;
+            console.log($scope.headArr);
             $scope.reason = res.data.highs;
             $scope.detail = res.data.content;
             $scope.detail = $($scope.detail);
@@ -32,7 +33,11 @@ angular.module('ploydetailModule',['ui.router','me-lazyload','angularCSS','buyNo
             })
             $scope.attention = res.data.productLabels;
             $scope.tips = res.data.productAdvice;
-            console.log($scope.tips);
+
+            $scope.proImg = res.data.mPicUrl;
+            $scope.proName = res.data.title;
+            $scope.proPrice = res.data.neededCredits;
+            sessionStorage.setItem('buyNow',JSON.stringify([$scope.proImg,$scope.proName,$scope.proPrice]));
         })
     }
 }])

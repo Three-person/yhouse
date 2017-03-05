@@ -1,29 +1,40 @@
-angular.module('buyNowModule',['ui.router','angularCSS'])
+angular.module('buyNowModule',['ui.router','angularCSS','me-lazyload'])
 
 .config(function($stateProvider,$urlRouterProvider){
-    $urlRouterProvider.otherwise('/ploydetail.buyNow');
+    $urlRouterProvider.otherwise('/ploydetail.butNow');
     $stateProvider
-    .state('buyNow',{
-        url:'/buyNow',
+
+    .state('butNow',{
+        url:'/butNow',
         templateUrl:'component/ploy/ploydetail/buyNow/butNow.html',
         controller:'buyNowCtrl',
         css:'component/ploy/ploydetail/buyNow/buyNow.css'
     })
 })
 
-.service('buyNowData',['$http',function($http){
-    this.get = function(url){
-        return $http.get(url)
-    }
-}])
+.controller('buyNowCtrl',['$scope',function($scope){
+    $scope.proInfo = JSON.parse(sessionStorage.getItem('buyNow'));
+    //console.log($scope.proInfo);
+    $scope.proImg = $scope.proInfo[0];
+    $scope.proName = $scope.proInfo[1];
+    $scope.proPrice = $scope.proInfo[2];
+    var price = $scope.proPrice;
 
-.controller('buyNowCtrl',['$scope','buyNowData',function($scope,buyNowData){
-    $scope.hostId = JSON.parse(sessionStorage.getItem('idArr'));
-    var id = $scope.hostId;
-    console.log(id);
-    for (var i = 0; i < id.length; i++){
-        buyNowData.get('http://m.yhouse.com/api/m/event/item-v2.3/'+id[i]+'?from=h5').success(function(res){
-            console.log(res.data);
-        })
-    }
+    var count = $('.num').val();
+    $('.cut').on('click',function(){
+        count--;
+        if (count == 0){
+            count = 1;
+        }
+        $('.num').val(count);
+        var total = Number(count)*price;
+        $('.buyNow>span').text(total+'元');
+    }),
+    $('.add').on('click',function(){
+        count++;
+        $('.num').val(count);
+        var total = Number(count)*price;
+        $('.buyNow>span').text(total+'元');
+    })
+
 }])
