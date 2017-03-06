@@ -1,0 +1,28 @@
+<div class="searchPage">
+	<div class="searchheader">
+		<div class="searchbg">
+			<input type="search" value="" name="search" placeholder="请输入商家、商圈、菜系、活动..."/>
+			<!--<span></span>-->
+		</div>
+		<div class="cancel" ui-sref="cate">取消</div>
+	</div>
+	<div class="searchContent">
+		<div class="searchData" ng-repeat="obj in searchData">
+			<div class="searchTitle" style="background-image: url({{obj.icon}});">{{obj.title}}<span>{{obj.desc}}</span></div>
+			<ul class="searchedList">
+				<li ng-repeat="obj1 in obj.productInfo">
+					<div class="searchedImg">
+						<img src="{{obj1.picUrl}}"/>
+					</div>
+					<div class="searchedMsg">
+						<h3>{{obj1.hostName}}</h3>
+						<p>{{obj1.businessesDistrict}}&nbsp;&nbsp;{{obj1.cuisineStyle}}</p>
+						<p>{{obj1.priceStr}}</p>
+					</div>
+					<div class="clearFix"></div>
+				</li>
+			</ul>
+			<div class="bottomDesc">{{obj.bottomDesc}}</div>
+		</div>
+	</div>
+</div>

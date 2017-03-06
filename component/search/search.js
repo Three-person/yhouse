@@ -1,4 +1,4 @@
-angular.module('searchModule',['ui.router'])
+angular.module('searchModule',['ui.router','searchedPageModule'])
 .config(function($stateProvider,$urlRouterProvider){
 	$urlRouterProvider.otherwise('/');
 	$stateProvider
@@ -18,13 +18,12 @@ angular.module('searchModule',['ui.router'])
 	searchData.get().success(function(res){
 		console.log(res.data);
 		var data=res.data;
+		$scope.data=data;
 		for(var i=0;i<data.length;i++){
-			var obj=data[i];
-			console.log(obj);
-			var icon=obj.icon;
-			var itemList=obj.itemList;
+			var itemList=data[i].itemList;
 			for(var j=0;j<itemList.length;j++){
-				console.log(itemList[j]);
+				var itemListName=itemList[j];
+				
 			}
 		}
 	})
