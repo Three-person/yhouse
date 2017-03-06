@@ -38,6 +38,12 @@ angular.module('ploydetailModule',['ui.router','me-lazyload','angularCSS','buyNo
             $scope.proName = res.data.title;
             $scope.proPrice = res.data.neededCredits;
             sessionStorage.setItem('buyNow',JSON.stringify([$scope.proImg,$scope.proName,$scope.proPrice]));
+
+            var map = new AMap.Map('container',{
+                zoom: 11,
+                center: [arr[1].longitude, arr[1].latitude]
+            })
         })
     }
+
 }])
