@@ -28,7 +28,7 @@
 	
 	<!--酒吧-->
 	<div class="barClubContent">
-		<div class="barClub" ng-repeat="obj2 in itemData">
+		<div class="barClub" ng-repeat="(i,obj2) in itemData" ng-click="login(i)">
 			<a ui-sref="everShop">
 				<div class="barTitle">
 					<div class="barLogo">
