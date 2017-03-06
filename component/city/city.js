@@ -16,7 +16,8 @@ angular.module('cityChangeModule',['ui.router'])
 }])
 .controller('cityCtrl',['$scope','$http','cityData',function($scope,$http,cityData){
 	cityData.get().success(function(res){
-		$('.place').text("武汉");
+//		var places=[];
+		$('.place').text(JSON.parse(localStorage.getItem("place")));
 		var cityGroup=res.cityGroup;
 		var city=res.city;
 		var remen=cityGroup["热门"];
@@ -36,12 +37,15 @@ angular.module('cityChangeModule',['ui.router'])
 				if(cityId==remen[i]){
 					var hotCityName=city[cityId].name;
 					hotCityArr.push(hotCityName);
+//					console.log(hotCityArr);
 					$scope.hotCityArr=hotCityArr;
 					$scope.showPlace=function(i){
+						console.log(hotCityArr[i]);
 						var myplace=$(this)[0].obj;
-						$('.place').text(myplace);
-//						localStorage.setItem("place",myplace);
-//						var a=localStorage.getItem("place");
+						localStorage.setItem("place",JSON.stringify(myplace));
+						var a=JSON.parse(localStorage.getItem("place"));
+						$('.place').text(a);
+						$('.city').text(a);
 //						console.log(a);
 					}
 				}
@@ -53,7 +57,10 @@ angular.module('cityChangeModule',['ui.router'])
 					$scope.agCityArr=agCityArr;
 					$scope.showPlace=function(i){
 						var myplace=$(this)[0].obj;
-						$('.place').text(myplace);
+						localStorage.setItem("place",JSON.stringify(myplace));
+						var b=JSON.parse(localStorage.getItem("place"));
+						$('.place').text(b);
+						$('.city').text(b);
 					}
 				}
 			}
@@ -64,7 +71,10 @@ angular.module('cityChangeModule',['ui.router'])
 					$scope.hnCityArr=hnCityArr;
 					$scope.showPlace=function(i){
 						var myplace=$(this)[0].obj;
-						$('.place').text(myplace);
+						localStorage.setItem("place",JSON.stringify(myplace));
+						var c=JSON.parse(localStorage.getItem("place"));
+						$('.place').text(c);
+						$('.city').text(c);
 					}
 				}
 			}
@@ -75,7 +85,10 @@ angular.module('cityChangeModule',['ui.router'])
 					$scope.otCityArr=otCityArr;
 					$scope.showPlace=function(i){
 						var myplace=$(this)[0].obj;
-						$('.place').text(myplace);
+						localStorage.setItem("place",JSON.stringify(myplace));
+						var d=JSON.parse(localStorage.getItem("place"));
+						$('.place').text(d);
+						$('.city').text(d);
 					}
 				}
 			}
@@ -86,7 +99,10 @@ angular.module('cityChangeModule',['ui.router'])
 					$scope.uzCityArr=uzCityArr;
 					$scope.showPlace=function(i){
 						var myplace=$(this)[0].obj;
-						$('.place').text(myplace);
+						localStorage.setItem("place",JSON.stringify(myplace));
+						var e=JSON.parse(localStorage.getItem("place"));
+						$('.place').text(e);
+						$('.city').text(e);
 					}
 				}
 			}

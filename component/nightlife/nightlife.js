@@ -14,11 +14,7 @@ angular.module('nightlifeModule',['ui.router','me-lazyload','jiuguanXQModule','f
 		$scope.arr=res.data.reserveList[0].content;	
 	});
 	liveData.get().success(function(res){
-		var pid=res.data.pid;
-//		console.log(pid);
-		var pidArr=pid.split(",");
-		console.log(pidArr);
-		localStorage.setItem('idArr',JSON.stringify(pidArr));
+		var pid=[];
 		var arr1=res.data.doc[2].itemData[0].list;
 		var title=res.data.doc[2].itemData[0].title;
 		var viceTitle=res.data.doc[2].itemData[0].viceTitle;
@@ -30,6 +26,13 @@ angular.module('nightlifeModule',['ui.router','me-lazyload','jiuguanXQModule','f
 		
 		var itemData=res.data.doc[3].itemData;
 		$scope.itemData=itemData;
+		//点击存储当前对象id
+		$scope.login=function(i){
+			var id=itemData[i].id;
+			pid.push(id);
+			console.log(id);
+		localStorage.setItem('idArr',JSON.stringify(pid));
+		}
 		
 	});
 }])
