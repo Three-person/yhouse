@@ -10,14 +10,18 @@ angular.module('searchedPageModule',['ui.router'])
 	})
 })
 .service('searchedPageData',['$http',function($http){
-	this.get=function(){
-		return $http.get('data/searchedPage.json');
+	this.get=function(url){
+		return $http.get(url);
 	}
 }])
 .controller('searchedPageCtrl',['$scope','$http','searchedPageData',function($scope,$http,searchedPageData){
-	searchedPageData.get().success(function(res){
-		console.log(res.data);
-		var searchData=res.data.searchData;
-		$scope.searchData=searchData;
-	})
+	var allKeys=JSON.parse(localStorage.getItem("keys"));
+	for(var i=0;i<allKeys.length;i++){
+		var keya=allKeys[i];
+		console.log(keya);
+		searchedPageData.get('http://m.yhouse.com/api/m/fullSearch-v3.3?cityId=37&key='+keya+'&type=2').success(function(res){
+			var searchData=res.data.searchData;
+			$scope.searchData=searchData;
+		})
+	}
 }])
