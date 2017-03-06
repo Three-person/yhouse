@@ -23,6 +23,11 @@
 .user ul li:nth-child(2) span{width: 6.7rem;color: gray;text-align: center;border-left: 0.005rem solid #cccccc;}
 .user ul li:last-child{border-bottom: none;}
 .user ul li span,.user ul li input{display: inline-block;margin-left: 0.5rem;border: none;outline: none;}
+.user ul li input{height: 1.5rem;font-size: 0.8rem;}
+
+.alert{height: 100%;height: 2rem;padding-left: 1.5rem;position: absolute;top: 15rem;display: none;}
+.alert span{display: inline-block;width: 15.75rem;height: 100%;border-radius: 0.2rem;background: grey;text-align: center;line-height: 2rem;color: #ffffff;font-size: 0.8rem;}
 
 .buyNow{width: 100%;height: 2.5rem;background: #cba162;line-height: 2.5rem;text-align: center;color: #ffffff;font-size: 0.9rem;font-weight: bold;position: fixed;bottom: 0;}
 .buyNow span{font-size: 0.8rem;}
+

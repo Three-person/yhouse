@@ -21,13 +21,15 @@
     
     <div class="user">
         <ul>
-            <li><input type="text" class="userName" placeholder="预定人姓名"></li>
-            <li><input type="tel" class="userTel" placeholder="联系电话"><span>获取验证码</span></li>
-            <li><input type="text" class="userCode" placeholder="请输入您收到的验证码"><input type="text" class="code"></li>
+            <li><input type="text" id="userName" placeholder="预定人姓名" value=""></li>
+            <li><input type="tel" id="userTel" placeholder="联系电话" value=""><span>获取验证码</span></li>
+            <li><input type="text" id="userCode" placeholder="请输入您收到的验证码" value=""></li>
         </ul>
     </div>
 
-    <a ui-sref="butNow"><div class="buyNow"><span>{{proPrice}}元</span> 确认 ></div></a>
+    <div class="alert"><span></span></div>
+
+    </a><div class="buyNow"><span>{{proPrice}}元</span> 确认 ></div>
 </div>
 
 

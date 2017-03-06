@@ -36,4 +36,45 @@ angular.module('buyNowModule',['ui.router','angularCSS','me-lazyload'])
         $('.buyNow>span').text(total+'元');
     })
 
+    //验证
+    function isName(){
+        var name = $('#userName').val();
+        if (name.length!=0){
+            reg = /^[\u0391-\uFFE5]|[a-zA-Z]$/
+            if (!reg.test(name)){
+                $('.alert').css({display:'block'});
+                $('.alert>span').text("姓名输入格式不正确");
+            }
+        }
+    }
+    function isTel(){
+        var tel = $('#userTel').val();
+        if (tel.length!=0){
+            reg = /^1[3|5|7|8][0-9]{9}$/
+            if (!reg.test(tel)){
+                $('.alert').css({display:'block'});
+                $('.alert>span').text("手机号输入格式不正确");
+            }
+        }
+    }
+    function isCode(){
+        var code = $('#userCode').val();
+        if (code.length!=0){
+            reg = /^[a-zA-Z0-9]{4}$/
+            if (!reg.test(code)){
+                $('.alert').css({display:'block'});
+                $('.alert>span').text("验证码无效");
+            }
+        }
+    }
+
+    $('.buyNow').on('click',function(){
+        isName();
+        isTel();
+        isCode();
+        setTimeout(function(){
+            $('.alert').css({display:'none'});
+        },1000)
+    })
+
 }])
