@@ -55,19 +55,19 @@ angular.module('cateModule',['ui.router','angularCSS','me-lazyload','catedetailM
 
         var idArr = [];
         $scope.detail = function(i){
-            console.log(i);
         var obj1 = $scope.allInfoArr;
-        for (var i = 0; i < obj1.length; i++){
+        for (var i = 0; i < obj1.length; i++) {
             var obj2 = obj1[i].list;
-            //console.log(obj2);
-            for (var j = 0; j < obj2.length; j++){
-                var obj3 = obj2[j].link;
-                //console.log(obj3);
-                var str = obj3.substring(14);
-                //console.log(str);
-                idArr.push(str);
-            }
+            console.log(obj2);
         }
+        for (var j = 0; j < obj2.length; j++){
+            var obj3 = obj2[j].link;
+            //console.log(obj3);
+            var str = obj3.substring(14);
+            //console.log(str);
+            idArr.push(str);
+        }
+
         //console.log(idArr);
         localStorage.setItem('allId',JSON.stringify(idArr));
         }
@@ -123,7 +123,7 @@ angular.module('cateModule',['ui.router','angularCSS','me-lazyload','catedetailM
                   secondPage1.get().success(function(res){
                       var allDetailArr = res.data;
 					  detailData=allDetailArr;
-                      console.log(detailData);
+                      //console.log(detailData);
                       localStorage.setItem('catedetailArr2',JSON.stringify(detailData));
                   })
               }
@@ -131,7 +131,7 @@ angular.module('cateModule',['ui.router','angularCSS','me-lazyload','catedetailM
                   secondPage2.get().success(function(res){
                       var allDetailArr = res.data;
 					  detailData=allDetailArr;
-                      console.log(detailData);
+                      //console.log(detailData);
                       localStorage.setItem('catedetailArr2',JSON.stringify(detailData));
                   })
               }
@@ -139,7 +139,7 @@ angular.module('cateModule',['ui.router','angularCSS','me-lazyload','catedetailM
                   secondPage3.get().success(function(res){
                       var allDetailArr = res.data;
 					  detailData=allDetailArr;
-                      console.log(detailData);
+                      //console.log(detailData);
                       localStorage.setItem('catedetailArr2',JSON.stringify(detailData));
                   })
               }

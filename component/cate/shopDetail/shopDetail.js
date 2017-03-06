@@ -30,7 +30,7 @@ angular.module('shopDetailModule',['ui.router','me-lazyload','angularCSS'])
 }])
 
 .controller('shopDetailCtrl',['$scope','swiper1','shopDetailData',function($scope,swiper1,shopDetailData){
-    $scope.hostId = JSON.parse(localStorage.getItem('allId'));
+    $scope.hostId = JSON.parse(sessionStorage.getItem('allId'));
     var id = $scope.hostId;
     //console.log(id);
     for (var i = 0; i < id.length; i++){
