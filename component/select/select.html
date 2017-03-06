@@ -3,7 +3,7 @@
 		<div class="filterHeader">
 			<p><a ui-sref="cate"><i class="fa fa-angle-left" aria-hidden="true"></i></a></p>
 			<ul>
-				<li ng-repeat='obj in urlParamValuesArr'><a>{{obj.name}}</a></li>
+				<li ng-repeat='(i,obj) in urlParamValuesArr' ng-click='twoss(i)'><a>{{obj.name}}</a></li><!--商户商品-->
 			</ul>
 			<p><i class="fa fa-search" aria-hidden="true"></i></p>
 		</div>
@@ -20,24 +20,24 @@
 		</ul>
 		<div class="all">
 			<ul>
-				<li ng-repeat='(i,obj) in fourArr' style="background-image: url({{obj.icon}});" ng-click='fourArrchange(i);changecolor(i);diffty(i)'>{{obj.name}}</li>
+				<li ng-repeat='(i,obj) in fourArr' style="background-image: url({{obj.icon}});" ng-click='fourArrchange(i);changecolor(i);diffty(i,obj.name)'>{{obj.name}}</li>
 			</ul>
 			<ul>
-				<li ng-repeat='(i,obj) in fourMoreArr' ng-click='changestyle(i)'>{{obj.name}}</li>
+				<li ng-repeat='(i,obj) in fourMoreArr' ng-click='changestyle(i,obj.name)'>{{obj.name}}</li>
 			</ul>
 		</div>
 		<div class="all1">
-			<div class="unlimited">
-				<div class="fourunlimited" ng-repeat='obj in fourunlimitedsArr'>
+			<div class="unlimited" ng-init='origin'>
+				<div class="fourunlimited" ng-repeat='(k,obj) in fourunlimitedsArr'>
 					<h3 style="background-image:url({{obj.icon}})">{{obj.name}}</h3>
 					<ul>
-						<li ng-repeat='(i,obj1) in obj.urlParamValues' ng-click='sxstyle(i)'>{{obj1.name}}</li>
+						<li ng-repeat="(i,obj1) in obj.urlParamValues" ng-click="sxstyle(i,k,obj1.name)">{{obj1.name}}</li>
 					</ul>
 				</div>
 			</div>
 			<div class="filter_btn">
-				<a class="reset">重置</a>
-				<a class="ok">确定</a>
+				<a class="reset" ng-click="reset();orderStyle='smart'">重置</a>
+				<a class="ok" ng-click='ok()'>确定</a>
 			</div>
 		</div>
 		<div class="all2">
@@ -52,8 +52,8 @@
 			</ul>
 		</div>
 	</div>
-	<ul class="storesss">
-			<li ng-repeat="obj in selectArr | orderBy:orderStyle" ng-init="orderStyle='smart'">
+	<ul class="storesss" ng-init="filterStyle">
+			<li ng-repeat="obj in selectArr | orderBy:orderStyle | filter:filterStyle" ng-init="orderStyle='smart'">
 				<a>
 					<div><img src="{{obj.productInfo.picUrl}}"/></div>
 					<div>

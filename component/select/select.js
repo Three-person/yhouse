@@ -27,6 +27,8 @@ angular.module('selectModule',['ui.router','angularCSS'])
 
 
 .controller('selectCtrl',['$scope','selectData','spaSelectData',function($scope,selectData,spaSelectData){
+	
+	
 	//筛选
 	selectData.get().success(function(res){
 		$scope.urlParamValuesArr=res.data.urlParamValues;
@@ -39,7 +41,7 @@ angular.module('selectModule',['ui.router','angularCSS'])
 			$('.all>ul:nth-child(1)>li').removeClass();
 			$('.all>ul:nth-child(1)>li').eq(i).addClass('active');
 		}
-		$scope.changestyle=function(i){
+		$scope.changestyle=function(i,s){
 			$('.all>ul:nth-child(2)>li').removeClass();
 			$('.all>ul:nth-child(2)>li').eq(i).addClass('activeGold');
 			
@@ -50,6 +52,8 @@ angular.module('selectModule',['ui.router','angularCSS'])
 //			}
 			$('.selectAndsort>li:nth-child(1)>span').text(texts);
 			
+			
+			$scope.filterStyle=s;
 		}
 		
 		//点击按钮翻转动画
@@ -63,10 +67,12 @@ angular.module('selectModule',['ui.router','angularCSS'])
 		
 		//点击类型有不同筛选
 		$scope.fourunlimitedArr=$scope.urlParamValuesArr[0].urlParamValues[1].urlParamValues;
-		$scope.diffty=function(i){
+		$scope.diffty=function(i,d){
 			$scope.fourunlimitedsArr=$scope.fourunlimitedArr[i].urlParamValues;
 			console.log(i);
 			console.log($scope.fourunlimitedsArr);
+			
+			$scope.filterStyle=d;
 			
 		}
 		
@@ -83,11 +89,33 @@ angular.module('selectModule',['ui.router','angularCSS'])
 				$('.all2>ul>li').eq(index).find('span').addClass('smartli');
 			})
 //		}
+		//点击商户商品
+		$scope.twoss=function(i){
+			$('.filterHeader>ul>li').find('a').removeClass();
+			$('.filterHeader>ul>li').eq(i).find('a').addClass('twosssactive');
+		}
 		
+		//点击all1的风格
+		$scope.sxstyle=function(i,k,ss){
+			$('.unlimited>div').eq(k).find('ul').find('li').removeClass();
+			$('.unlimited>div').eq(k).find('ul').find('li').eq(i).addClass('sxactive');
+				
+			$scope.filterStyle=ss;
+
+		}
 		
-		
-		
-		
+		//重置按钮
+		$scope.reset=function(){
+			$('.all1').css({
+				'display':'none'
+			})
+		}
+		//确定按钮
+		$scope.ok=function(){
+			$('.all1').css({
+				'display':'none'
+			})
+		}
 		
 		
 		//全部 筛选 只能排序之间的切换
@@ -96,7 +124,6 @@ angular.module('selectModule',['ui.router','angularCSS'])
 		var k=0;
 		$('.selectAndsort>li').eq(0).on('click',function(){
 			++i;
-			console.log(i);
 			$('.all').css({
 				'display':'block'
 			})
@@ -187,38 +214,21 @@ angular.module('selectModule',['ui.router','angularCSS'])
 //						
 //					})
 //	    })(i);
-	
+		
 	})
 	
 	spaSelectData.get().success(function(res){
 		$scope.selectArr=res.data.searchData.doc;
 		console.log($scope.selectArr);
-//		for(var i=0;i<$scope.selectArr.length;i++){
-//			var str=$scope.selectArr[i];
-//			if(str.productInfo.price==null){
-//				$('.storesss>li').eq(i).find('.average').css({
-//					'backgroundColor':'red'
-//				})
-//				console.log(i);
-//			}
-//		}
 	})
 	
 	
-	
-	//切换到那个排序
-//	$scope.order=function(i){
-//		var s;
-//		console.log(i);
-//		if(i==4){
-//			s= "orderStyle='productInfo.price'";
-//		}
-//		if(i==5){
-//			s ="orderStyle='-productInfo.price'";
-//		}
-//		console.log(s);
-//		return s;
-//	}
-
+	//给商户添加class
+		function addClass(){
+			console.log($('.filterHeader>ul>li').eq(1));
+			$('.filterHeader>ul>li').eq(1).find('a').addClass('twosssactive');
+			console.log('进来了');
+		}
+		addClass();
 	
 }])

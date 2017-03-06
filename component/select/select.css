@@ -208,10 +208,16 @@
 .smartli{
 	color: #cba162;
 }
-.sxactive{
+.fourunlimited>ul>li.sxactive{
 	border-color: #cba162;
 	background-color: #fbf8f3;
 	color: #cba162;
+}
+
+.twosssactive{
+	color: #111;
+	font-weight: 700;
+	border-bottom: 2px solid #111;
 }
 
 
