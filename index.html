@@ -66,6 +66,15 @@
 	</div>
 	<div ui-view class="content"></div>
 	<script type="text/javascript">
+		//关闭弹窗
+		$('.close').on('click',function(){
+			$('.twindow').css({
+				'display':'none'
+			})
+		})
+		
+		
+		
 		document.documentElement.style.fontSize=innerWidth/18.75+'px';
 		window.onresize=function(){
 			document.documentElement.style.fontSize=innerWidth/18.75+'px';
