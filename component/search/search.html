@@ -1,9 +1,15 @@
-<!DOCTYPE html>
-<html>
-	<head>
-		<meta charset="UTF-8">
-		<title></title>
-	</head>
-	<body>
-	</body>
-</html>
+<div class="searchPage">
+	<div class="searchheader">
+		<div class="searchbg">
+			<input type="search" value="" name="search" placeholder="请输入商家、商圈、菜系、活动..."/>
+			<!--<span></span>-->
+		</div>
+		<div class="cancel" ui-sref="cate">取消</div>
+	</div>
+	<div class="searchContent">
+		<div class="searchHotKey" ng-repeat="obj in data">
+			<i><img src="{{obj.icon}}"/></i>
+			<ul><li ng-repeat="obj1 in obj.itemList" ui-sref="searchedPage">{{obj1}}</li><div class="clearFix"></div></ul>
+		</div>
+	</div>
+</div>
