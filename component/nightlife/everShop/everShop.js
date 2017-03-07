@@ -30,12 +30,9 @@ angular.module('everShopModule',['ui.router','me-lazyload'])
 .controller('everShopCtrl',['$scope','$http','everShopData','swiper',function($scope,$http,everShopData,swiper){
 	var allId = JSON.parse(localStorage.getItem("idArr"));
 	$scope.allId=allId;
-	console.log(allId);
 	for(var i=0;i<allId.length;i++){
 		var id=allId[i];
-		console.log(id);
 		everShopData.get('http://m.yhouse.com/api/m/host/item-v3.8/'+id+'?from=h5').success(function(res){
-			console.log(res.data);
 			$scope.headPics=res.data.headPics;
 			swiper.swiper();
 			$scope.hostName=res.data.hostName;

@@ -37,14 +37,20 @@ angular.module('jiuguanXQModule',['ui.router','me-lazyload'])
 		$scope.pic1=pic1;
 		$scope.pic2=pic2;
 		$scope.pic3=pic3;
-		$scope.pic4=pic4;
-		
-
-		
+		$scope.pic4=pic4;	
 	});
 	
 	jiuguanXQData.get().success(function(res){
 		var contentList=res.data.contentList;
 		$scope.contentList=contentList;
+		
+		//点击存储当前对象id
+		var linkId=[];
+		$scope.login=function(i){
+			var id=contentList[i].linkId;
+			linkId.push(id);
+		localStorage.setItem('idArr',JSON.stringify(linkId));
+		}
+		
 	});
 }])
